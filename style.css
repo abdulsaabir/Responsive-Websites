@@ -131,6 +131,7 @@ header img:hover{
 
 .about .container{
     display: flex;
+    box-sizing: border-box
 }
 .about .left-one{
     align-self: center;
@@ -138,14 +139,12 @@ header img:hover{
 
 .about .container-icons{
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 10px;
+    grid-template-columns: 350px 350px;
+    gap: 30px;
     
     
 }
-/* .about .easy{
-    background-color: yellowgreen;
-} */
+
 .about .about-icon{
     width: 60px;
     height: 60px;
@@ -162,8 +161,9 @@ header img:hover{
 }
 .about h1{
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    letter-spacing: 1.9px;
+    letter-spacing: 1.5px;
     margin-bottom: 10px;
+    font-family: "Mulish" , sans-serif;
 }
 .about p{
     font-size: 16px;
@@ -188,7 +188,36 @@ header img:hover{
 }
 
 .container-icons .easy{
-    background-color: yellowgreen;
     padding: 15px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     text-align: center;
+    box-shadow: 0 3px 12px 
+    rgba(6, 10, 45, 0.06);
+    transition: transform 0.4s ease-in-out;
+    border-radius: 10px;
 }
+.container-icons .about-icon{
+    border-radius: 250px;
+}
+.container-icons .easy:hover{
+    box-shadow: 0 5px 18px hsla(245, 67%, 59%, 0.4);
+    background-color:rgb(92, 80, 220);
+    color: white;
+    transform: translateY(-5px);
+}
+
+.container-icons .one , .container-icons .three
+{
+
+  transform: translateY(75px);
+}
+.container-icons .one:hover, .container-icons .three:hover{
+    transform: translateY(70px);
+}
+
+
+
+
