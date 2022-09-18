@@ -37,8 +37,8 @@
       <div class="container">
         <div class="text-content">
           <h1>Creative Landing Page</h1>
-          <p>
-            A creative & modern landing page with Landio template & We love make
+          <p class="first-text">
+            A Creative & Modern landing Page with Landio template & We love make
             things amazing.
           </p>
           <p class="second-text">
@@ -46,14 +46,17 @@
             fugit.
           </p>
           <div class="email">
-            <input
-              type="text"
-              name="eMAIL"
-              id="email"
-              required
-              placeholder="Enter Your Email"
-            />
-            <button class="Subscribe">Subscribe</button>
+            <form action="" class="hero-form">
+              <input
+                type="email"
+                name="email"
+                required=""
+                placeholder="Enter Your Email"
+                class="email-field"
+              />
+
+              <button type="submit" class="btn btn-primary">Subscribe</button>
+            </form>
           </div>
         </div>
         <div class="img-container">
@@ -64,6 +67,8 @@
         </div>
       </div>
     </section>
+
+    <!-- end of the section -->
 
     <script src="./app.js"></script>
   </body>

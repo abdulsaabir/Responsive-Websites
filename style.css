@@ -19,6 +19,9 @@ a{
     width: 85%;
     margin: auto;
 }
+/* img{
+    width: 100%;
+} */
 
 
 /* header style */
@@ -51,3 +54,69 @@ header a {
 header a:hover{
     color: rgb(92, 80, 220);
 }
+header img:hover{
+    cursor: pointer;
+}
+
+
+
+/* SECTION STYLE */
+
+.section{
+    width: 100%;
+    background-color: rgb(248, 247, 247);
+}
+.section .container{
+    display: flex;
+}
+.section .text-content{
+    width: 80%;
+    padding-top: 200px;
+}
+.section img{
+    width: 100%;
+}
+.section h1{
+    font-size: 4rem;
+    margin-bottom: 1rem;
+    color: rgb(59, 57, 81);
+}
+.section .first-text{
+    font-size: 1.5rem;
+    width: 500px;
+    line-height: 1.5;
+    margin-bottom: 50px;
+    color: rgb(141, 139, 172);
+}
+.section .second-text{
+    margin-bottom: 30px;
+    font-size: 23px;
+    width: 500px;
+}
+.section input{
+    padding: 18px;
+    border: transparent;
+    width: 350px;
+    font-size: 18px;
+    background-color: rgb(240, 242, 250);
+}
+.section button{
+    padding: 14px 25px;
+    border: transparent;
+    background-color: rgb(92, 80, 220);
+    border-radius: 10px;
+    color: white;
+    font-size: 20px;
+    transition: transform 0.25s ease-in-out;
+}
+.section button:hover{
+    cursor: pointer;
+    transform: translateY(-8px);
+}
+
+.section input:focus{
+    outline-color: rgb(92, 80, 220);
+    caret-color: rgb(92, 80, 220);
+}
+
+/* end of section */
