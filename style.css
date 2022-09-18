@@ -123,3 +123,72 @@ header img:hover{
 
 
 /* about section */
+
+.about{
+    padding: 150px 0;
+    background-color: white;
+}
+
+.about .container{
+    display: flex;
+}
+.about .left-one{
+    align-self: center;
+}
+
+.about .container-icons{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    
+    
+}
+/* .about .easy{
+    background-color: yellowgreen;
+} */
+.about .about-icon{
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:  rgb(240, 237, 237);
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+.about  .about-icon i{
+    color: rgb(92, 80, 220);
+    font-size: 30px;
+}
+.about h1{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    letter-spacing: 1.9px;
+    margin-bottom: 10px;
+}
+.about p{
+    font-size: 16px;
+    width: 400px;
+    line-height: 1.4;
+    color: rgb(211, 204, 204);
+    margin-bottom: 30px;
+}
+.about button{
+    padding: 15px 30px;
+    border: 1.4px solid  rgb(92, 80, 220);
+    background-color: white;
+    border-radius: 10px;
+    font-size: 15px;
+    color: rgb(92, 80, 220);
+    transition: background-color 0.25s ease-in-out;
+    font-weight: bold;
+}
+.about button:hover{
+    background-color: rgb(92, 80, 220);
+    color: white;
+}
+
+.container-icons .easy{
+    background-color: yellowgreen;
+    padding: 15px 0;
+    text-align: center;
+}
