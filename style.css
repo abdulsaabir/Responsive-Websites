@@ -201,10 +201,15 @@ header img:hover{
     box-shadow: 0 3px 12px 
     rgba(6, 10, 45, 0.06);
     transition: transform 0.4s ease-in-out;
-    border-radius: 10px;
+    border-radius: 5px;
 }
 .about .easy p{
     width: 300px;
+}
+.about .easy h3{
+    font-weight: 500;
+    margin: 10px 0;
+    font-family:"Mulish", sans-serif;
 }
 .container-icons .about-icon{
     border-radius: 250px;
