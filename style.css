@@ -228,8 +228,18 @@ header img:hover{
 /* FEATURES SECTION */
 .features{
     background-color: rgb(250, 250, 255);
+    margin-bottom: 50rem;
 }
-
+.features .textAwesome p{
+     text-align: center; 
+    width: 450px;
+}
+.features .ContainerFeatures h3{
+    font-size: 1.6rem;
+    letter-spacing: 2px;
+    color: rgb(83, 82, 82);
+    margin-bottom: 15px;
+} 
 .features .textAwesome{
     width: 100%;
     height: 14rem;
@@ -251,12 +261,43 @@ header img:hover{
 }
 .features .featurestext h4 .is {
     color: rgb(92, 80, 220);
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     margin-right: 15px;
 }
 
 .features .featurestext h4{
     font-size: 1rem;
-    letter-spacing: 2px;
+    letter-spacing: 1.5px;
+    color: black;
+    font-weight: 200;
+    margin-bottom: 20px;
+}
+.features .featurestext h2{
+    line-height: 1.1;
+    font-weight: 400;
+    font-size: 1.7rem;
+    margin-bottom: 3rem;
+}
+.features .featurestext .temp{
+    margin-bottom: 25px;
+    line-height: 1.6;
     color: gray;
+}
+.features .featurestext .icons{
+    color: gray;
+    
+}
+.features .featurestext .two {
+    margin-bottom: 50px;
+}
+.features .featurestext button{
+    padding: 15px 30px;
+    margin: 0 10px;
+    border: none;
+    border-radius: 5px;
+}
+.features .featurestext .read{
+    background-color: rgb(92, 80, 220) ;
+    color: white;
+    font-weight:bold;
 }
