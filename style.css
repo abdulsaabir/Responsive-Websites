@@ -215,7 +215,7 @@ header img:hover{
     border-radius: 250px;
 }
 .container-icons .easy:hover{
-    box-shadow: 0 5px 18px hsla(245, 67%, 59%, 0.4);
+    box-shadow: 0 5px 18px rgba(92, 80, 220, 0.4);
     background-color:rgb(92, 80, 220);
     color: white;
     transform: translateY(-5px);
