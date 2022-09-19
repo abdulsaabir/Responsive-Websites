@@ -231,8 +231,11 @@ header img:hover{
     margin-bottom: 50rem;
 }
 .features .textAwesome p{
-     text-align: center; 
+    text-align: center;
+    line-height: 1.6; 
     width: 450px;
+    color: gray;
+    opacity: 60%;
 }
 .features .ContainerFeatures h3{
     font-size: 1.6rem;
@@ -285,19 +288,46 @@ header img:hover{
 }
 .features .featurestext .icons{
     color: gray;
-    
+    font-size: 1.1em;
+  
+}
+
+
+.features .featurestext .texticon{
+    display: flex;
+
+    /* align-items: center;
+    text-align: center; */
+}
+.features .featurestext .texticon iconify-icon {
+    margin-right: 10px;
+    font-size: 1.6rem;
+    color: rgb(92, 80, 220);
 }
 .features .featurestext .two {
     margin-bottom: 50px;
+   
 }
 .features .featurestext button{
     padding: 15px 30px;
     margin: 0 10px;
     border: none;
     border-radius: 5px;
+    /* font-family:; */
+    font-weight:bold;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    transition: transform 0.25s ease-in-out;
 }
 .features .featurestext .read{
     background-color: rgb(92, 80, 220) ;
-    color: white;
-    font-weight:bold;
+    color: white; 
+}
+.features .featurestext .buy{
+    background-color: rgba(92, 80, 220, 0.15);
+    color: rgb(92, 80, 220);
+    
+}
+
+.features .featurestext button:hover{
+    transform: translateY(-5px);
 }
