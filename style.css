@@ -378,8 +378,22 @@ header img:hover{
 color: rgb(92, 80, 220);
 }
 
-.container1 h3{
-    font-family: serif;
+.container1 h4{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.4rem;
+    color: rgb(92, 80, 220);
+    margin-bottom: 10px;
+}
+.container1 .integer{
+    color: rgb(174, 174, 174);
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+.container1 a{
+    font-size: 1.2rem;
+}
+.container1 a:hover{
+    transform: scale(1.3);
 }
 
 
