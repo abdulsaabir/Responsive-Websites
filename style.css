@@ -67,17 +67,23 @@ header img:hover{
     background-color: rgb(248, 247, 247);
 }
 .section .container{
-    display: flex;
+    /* display: flex;
+    justify-content: space-between; */
+    display: grid;
+    grid-template-columns:1fr 400px;
 }
 .section .text-content{
     width: 80%;
-    padding-top: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* padding-top: 200px; */
 }
 .section img{
     width: 100%;
 }
 .section h1{
-    font-size: 4rem;
+    font-size: 3rem;
     margin-bottom: 1rem;
     color: rgb(59, 57, 81);
 }
@@ -96,7 +102,7 @@ header img:hover{
 .section input{
     padding: 18px;
     border: transparent;
-    width: 350px;
+    width: 250px;
     font-size: 18px;
     background-color: rgb(240, 242, 250);
 }
@@ -258,14 +264,18 @@ header img:hover{
 }
 .features .container{
     display: grid;
-    grid-template-columns: 1fr 600px;
+    grid-template-columns:500px 500px;
+    justify-content: space-around;
 }
 .features img{
    width: 100%;
 }
 
 .features .featurestext{
-    padding: 5rem;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: flex-start;
 }
 .features .featurestext h4 .is {
     color: rgb(92, 80, 220);
@@ -335,4 +345,60 @@ header img:hover{
 
 .features .featurestext button:hover{
     transform: translateY(-5px);
+}
+
+
+
+@media only screen and (max-width: 1000px) {
+    .section .container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .section .img-container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .section img{
+        width: 80%;
+    }
+    .section .text-content{
+        padding-top: 100px;
+
+    }
+    .about .container {
+        display: flex;
+        flex-direction: column;
+    }
+    .features .container{
+        display: flex;
+        flex-direction: column;
+    }
+    .features .img{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .features .img img{
+        width: 80%;
+    }
+    .features .featurestext{
+        flex-direction: column;
+       
+    }
+}
+
+
+@media only screen and (max-width: 820px) {
+   .about .container-icons{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   }
+   .about .container-icons .easy{
+    margin: 10px 0;
+   }
 }
