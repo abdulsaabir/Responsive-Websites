@@ -397,8 +397,31 @@ header img:hover{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding-top: 30px;
    }
-   .about .container-icons .easy{
+ 
+   .container-icons .one , .container-icons .three
+{
+
+  transform: translateY(0px);
+}
+.container-icons .one:hover, .container-icons .three:hover{
+    transform: translateY(0px);
+}
+.about .container-icons .easy{
     margin: 10px 0;
    }
+   .about .left-one{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+   }
+}
+
+@media only screen and (max-width: 650px) {
+    body{
+        color: red;
+    }
 }
