@@ -239,7 +239,7 @@ header img:hover{
 /* FEATURES SECTION */
 .features{
     background-color: rgb(250, 250, 255);
-    margin-bottom: 50rem;
+    padding-bottom:4rem ;
 }
 .features .textAwesome p{
     text-align: center;
@@ -388,6 +388,9 @@ header img:hover{
         flex-direction: column;
        
     }
+    .version2  .container{
+        flex-direction: column-reverse;
+    }
 }
 
 
@@ -421,7 +424,26 @@ header img:hover{
 }
 
 @media only screen and (max-width: 650px) {
-    body{
-        color: red;
+    
+    .section .text-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .section h1{
+        font-size: 2.5rem;
+    }
+    .section .first-text{
+        font-size: 1rem;
+        width: 400px;
+    }
+    .section .second-text {
+        font-size: 1.5rem;
+    }
+    .section .btn{
+        margin-top: 15px;
     }
 }
+
