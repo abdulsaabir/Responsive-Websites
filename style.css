@@ -349,7 +349,38 @@ header img:hover{
 
 
 /* news */
+.container1{
+    width: 80%;
+    margin: auto;
+    /* background-color: red; */
+}
+.container1 .newses{
+    width: 100%;
+    display: flex;
+    gap: 15px;
+    justify-content: space-between;
 
+}
+.container1 img{
+    width: 100%;
+}
+.container1 .admin{
+    margin: 20px 0;
+    display: flex;
+    width: 100%;
+    color: rgb(211, 204, 204);
+}
+.container1 .admin .april{
+    margin-right: 30px;
+}
+.container1 iconify-icon{
+    margin: 0 4px;
+color: rgb(92, 80, 220);
+}
+
+.container1 h3{
+    font-family: serif;
+}
 
 
 @media only screen and (max-width: 1000px) {
