@@ -473,10 +473,26 @@ header img:hover {
   justify-content: center;
   gap: 30px;
   margin-left: 3rem;
-  opacity: 0h6;
+  opacity: 0.6;
+}
+.features .socialMedia .weird-problem {
+  display: flex;
+}
+.features .socialMedia .weird-problem p {
+  margin-left: 6px;
 }
 
 /* media query */
+
+@media only screen and (max-width: 1050px) {
+  .features .contactForm {
+    flex-direction: column;
+    gap: 4rem;
+  }
+  .features .socialMedia {
+    margin-left: 1rem;
+  }
+}
 @media only screen and (max-width: 1000px) {
   .section .container {
     display: flex;
@@ -568,5 +584,26 @@ header img:hover {
   }
   .section .btn {
     margin-top: 15px;
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  .features .contactForm .forms {
+    flex-direction: column;
+  }
+  .features .contactForm {
+    width: 70%;
+    margin: auto;
+  }
+  .features .contactForm input {
+    width: 100%;
+    font-size: 1rem;
+    padding-left: 10px;
+    box-sizing: border-box;
+  }
+}
+@media only screen and (max-width: 750px) {
+  .features .contactForm input {
+    width: 100%;
   }
 }
