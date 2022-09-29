@@ -7,7 +7,8 @@
 body {
   font-family: sans-serif;
   background-color: rgb(211, 204, 204);
-  overflow: hidden;
+  overflow-x: hidden;
+  width: 100vw;
 }
 
 li {
