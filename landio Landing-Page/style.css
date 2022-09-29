@@ -565,6 +565,17 @@ footer p {
   }
 }
 @media only screen and (max-width: 1000px) {
+  header .container {
+    display: flex;
+    justify-content: center;
+  }
+  .linksone {
+    display: none;
+  }
+  .formone {
+    display: none;
+  }
+
   .section .container {
     display: flex;
     flex-direction: column;
