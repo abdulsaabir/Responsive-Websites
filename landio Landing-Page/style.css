@@ -511,13 +511,28 @@ header img:hover {
 .footer .text {
   padding-top: 3rem;
 }
+.footer ul li {
+  transition: transform 0.35s ease-in-out;
+}
+.footer ul li:hover {
+  cursor: pointer;
+  transform: translateX(+10px);
+  color: white;
+}
 
 .footer .footerabout {
   display: flex;
   padding-top: 3rem;
   justify-content: space-around;
 }
-.footer iconify
+.footer iconify-icon {
+  margin: 0 1rem;
+  font-size: 1.8rem;
+  color: rgba(255, 255, 255, 0.534);
+}
+.footer iconify-icon:hover {
+  color: white;
+}
 
 /* footer copy */
 footer {
