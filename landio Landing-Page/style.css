@@ -7,6 +7,7 @@
 body {
   font-family: sans-serif;
   background-color: rgb(211, 204, 204);
+  overflow: hidden;
 }
 
 li {
@@ -519,11 +520,14 @@ header img:hover {
   transform: translateX(+10px);
   color: white;
 }
+.footer h4 {
+  color: white;
+}
 
 .footer .footerabout {
   display: flex;
   padding-top: 3rem;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 .footer iconify-icon {
   margin: 0 1rem;
@@ -599,6 +603,16 @@ footer p {
   .version2 .container {
     flex-direction: column-reverse;
   }
+  .footer .container {
+    display: flex;
+    flex-direction: column;
+  }
+  .footer .footerabout {
+    margin-top: 2rem;
+  }
+  .footer p {
+    width: auto;
+  }
 }
 
 @media only screen and (max-width: 820px) {
@@ -666,6 +680,11 @@ footer p {
     font-size: 1rem;
     padding-left: 10px;
     box-sizing: border-box;
+  }
+  .footer .footerabout {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
   }
 }
 @media only screen and (max-width: 750px) {
