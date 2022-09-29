@@ -483,6 +483,43 @@ header img:hover {
 }
 
 /* footer */
+
+.footer {
+  display: flex;
+  background-color: rgb(41, 40, 57);
+  color: rgba(255, 255, 255, 0.534);
+  padding-bottom: 4.5rem;
+  padding-top: 3rem;
+}
+.footer p {
+  width: 300px;
+  margin: 1.5rem 0;
+  line-height: 150%;
+}
+.footer .container {
+  display: grid;
+  grid-template-columns: 400px 1fr;
+}
+.footer .aboutus,
+.footer .customers,
+.footer .support {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.footer .text {
+  padding-top: 3rem;
+}
+
+.footer .footerabout {
+  display: flex;
+  padding-top: 3rem;
+  justify-content: space-around;
+}
+.footer iconify
+
+/* footer copy */
 footer {
   width: 100%;
   height: 10vh;
