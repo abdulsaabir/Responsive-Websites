@@ -556,6 +556,15 @@ footer p {
 /* media query screen */
 
 @media only screen and (max-width: 1050px) {
+  .linksHome {
+    transform: translateY(-150%);
+  }
+  .linksHome {
+    transform: translateY(0);
+    position: absolute;
+    top: 10;
+    left: 0;
+  }
   .features .contactForm {
     flex-direction: column;
     gap: 4rem;
