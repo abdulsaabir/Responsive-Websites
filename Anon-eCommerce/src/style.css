@@ -1,0 +1,118 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+li {
+  list-style: none;
+}
+
+.container {
+  width: 90%;
+  margin: auto;
+}
+
+.navbar {
+  border-bottom: 1px rgba(0, 0, 0, 0.089) solid;
+}
+
+.navbar .container {
+  display: flex;
+  height: 10vh;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+.navbar .social {
+  display: flex;
+  gap: 10px;
+  cursor: pointer;
+}
+.navbar p {
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 1.25px;
+  color: rgba(0, 0, 0, 0.527);
+}
+.navbar .social li {
+  background-color: rgba(211, 211, 211, 0.452);
+  padding: 6px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 6px;
+}
+.navbar .social li:hover {
+  background-color: lightcoral;
+  color: white;
+}
+
+.drop select {
+  background-color: rgba(211, 211, 211, 0.452);
+  padding: 8px 6px;
+  /* border-radius: 6px; */
+  border: transparent;
+  outline: none;
+  font-size: 16px;
+  color: gray;
+  cursor: pointer;
+}
+
+/* section2 */
+
+.anon img {
+  width: 200px;
+  cursor: pointer;
+}
+.anon {
+  height: 15vh;
+}
+.anon .container {
+  display: grid;
+  grid-template-columns: 15% 1fr 20%;
+  height: 100%;
+  gap: 50px;
+  /* justify-content: space-between; */
+  align-items: center;
+}
+.anon .container form,
+.anon .container .options {
+  display: flex;
+  gap: 20px;
+}
+.anon input {
+  border: none;
+  background-color: transparent;
+}
+.anon form {
+  padding: 15px;
+  background-color: rgba(255, 255, 255, 0.452);
+  justify-content: space-between;
+  border: 1px solid rgba(0, 0, 0, 0.089);
+  border-radius: 10px;
+}
+.anon .options {
+  justify-content: center;
+}
+.anon .options p {
+  font-size: 30px;
+  margin: 0 15px;
+  cursor: pointer;
+}
+.anon .options .cart {
+  position: relative;
+}
+.anon .options .cart::before {
+  position: absolute;
+  content: "0";
+  background-color: rgba(255, 0, 0, 0.644);
+  padding: 2px 4px;
+  color: white;
+  right: -8px;
+  top: -6px;
+  border-radius: 20px;
+  font-size: 13px;
+  font-family: "Poppins", sans-serif;
+}
