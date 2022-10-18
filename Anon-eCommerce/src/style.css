@@ -68,6 +68,7 @@ li {
 }
 .anon {
   height: 15vh;
+  border-bottom: 1px rgba(0, 0, 0, 0.089) solid;
 }
 .anon .container {
   display: grid;
@@ -115,4 +116,23 @@ li {
   border-radius: 20px;
   font-size: 13px;
   font-family: "Poppins", sans-serif;
+}
+
+@media (max-width: 1024px) {
+  .anon .container {
+    grid-template-columns: 30% 1fr;
+    /* background-color: red; */
+  }
+  .anon .options {
+    display: none !important;
+  }
+  .navbar .container .drop {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .anon .container {
+    grid-template-rows: 1fr 1fr;
+  }
 }
