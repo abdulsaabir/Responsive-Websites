@@ -67,14 +67,14 @@ li {
   cursor: pointer;
 }
 .anon {
-  height: 15vh;
+  min-height: 15vh;
   border-bottom: 1px rgba(0, 0, 0, 0.089) solid;
 }
 .anon .container {
   display: grid;
   grid-template-columns: 15% 1fr 20%;
   height: 100%;
-  gap: 50px;
+  /* gap: 50px; */
   /* justify-content: space-between; */
   align-items: center;
 }
@@ -133,6 +133,12 @@ li {
 
 @media (max-width: 768px) {
   .anon .container {
-    grid-template-rows: 1fr 1fr;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 25px;
+  }
+  .anon input {
+    width: 400px;
   }
 }
