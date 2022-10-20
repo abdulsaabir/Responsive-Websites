@@ -14,7 +14,7 @@ li {
 }
 
 .navbar {
-  border-bottom: 1px rgba(0, 0, 0, 0.089) solid;
+  border-bottom: 1px rgba(1, 0, 0, 0.089) solid;
 }
 
 .navbar .container {
@@ -74,7 +74,7 @@ li {
   display: grid;
   grid-template-columns: 15% 1fr 20%;
   height: 100%;
-  /* gap: 50px; */
+  gap: 50px;
   /* justify-content: space-between; */
   align-items: center;
 }
