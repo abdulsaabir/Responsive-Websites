@@ -61,8 +61,6 @@ header img:hover {
   background-color: rgb(248, 247, 247);
 }
 .section .container {
-  /* display: flex;
-    justify-content: space-between; */
   display: grid;
   grid-template-columns: 1fr 400px;
 }
