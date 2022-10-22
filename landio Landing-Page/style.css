@@ -22,7 +22,7 @@ body {
 }
 
 .hero .container {
-  padding: 75px;
+  padding: 120px 75px;
   text-align: center;
 }
 
@@ -35,15 +35,51 @@ body {
   line-height: 150%;
 }
 .hero button {
-  padding: 8px 30px;
+  padding: 18px 40px;
   border-radius: 35px;
   margin: 15px 8px;
   font-size: 18px;
-  font-family: "Fasthand", cursive;
   background-color: lightseagreen;
   border: transparent;
   color: white;
+  margin-top: 2rem;
+  font-weight: bold;
 }
 
-/* font-family: 'Fasthand', cursive;
-font-family: 'Ubuntu', sans-serif; */
+.hero button:hover {
+  background-color: rgba(32, 178, 171, 0.808);
+  color: rgb(107, 107, 107);
+}
+.hero .btn:hover {
+  background-color: rgba(107, 147, 160, 0.863);
+  color: rgb(124, 124, 124);
+}
+
+.hero p {
+  font-size: 20px;
+  max-width: 600px;
+  text-align: center;
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  /* font-family: "Fasthand", cursive; */
+  color: rgba(0, 0, 0, 0.493);
+}
+.hero .btn {
+  background-color: rgb(107, 147, 160);
+}
+
+@media (max-width: 769px) {
+  .hero .container {
+    padding: 70px 40px;
+  }
+  .hero h1 {
+    font-size: 2rem;
+  }
+  .hero button {
+    margin: 10px 0;
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 0;
+  }
+}
