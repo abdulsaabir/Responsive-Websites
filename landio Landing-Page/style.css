@@ -34,3 +34,10 @@ body {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   /* line-height: 200%; */
 }
+
+.hero button {
+  padding: 15px 30px;
+  border-radius: 15px;
+  margin: 15px 8px;
+  font-size: 18px;
+}
