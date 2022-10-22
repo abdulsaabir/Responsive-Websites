@@ -15,7 +15,6 @@ body {
 .hero {
   height: 100vh;
   background-image: url("./images/bg-header-desktop.png");
-  /* background-position: center; */
   background-size: contain;
   background-repeat: no-repeat;
   font-family: "Ubuntu", sans-serif;
@@ -70,6 +69,13 @@ p {
 .hero .btn {
   background-color: rgb(107, 147, 160);
 }
+.snip .container {
+  text-align: center;
+}
+.snip p {
+  width: 70%;
+  margin: auto;
+}
 
 @media (max-width: 769px) {
   .hero .container {
@@ -86,9 +92,4 @@ p {
   }
 }
 @media (max-width: 480px) {
-  /* .snip p {
-    font-size: 12px;
-    width: 300px;
-    color: red;
-  } */
 }
