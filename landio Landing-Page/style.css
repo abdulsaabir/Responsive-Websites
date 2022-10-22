@@ -1,1 +1,10 @@
-Typo in static class property declaration  react/no-typos
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.hero {
+  background-image: "./images/bg-header-mobile.png";
+  background-position: center;
+}
