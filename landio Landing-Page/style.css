@@ -73,8 +73,7 @@ p {
   text-align: center;
 }
 .snip p {
-  width: 70%;
-  margin: auto;
+  margin-top: 20px;
 }
 
 @media (max-width: 769px) {
@@ -83,6 +82,8 @@ p {
   }
   h1 {
     font-size: 2rem;
+    width: 80%;
+    margin: auto;
   }
   .hero button {
     margin: 10px 0;
@@ -90,6 +91,10 @@ p {
     margin-top: 20px;
     margin-bottom: 0;
   }
-}
-@media (max-width: 480px) {
+  .snip p {
+    width: 70%;
+    margin: auto;
+    font-size: 16px;
+    line-height: 170%;
+  }
 }
