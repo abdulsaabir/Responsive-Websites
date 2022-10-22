@@ -31,7 +31,6 @@ body {
 .hero h1 {
   font-size: 2.5rem;
   color: rgb(99, 99, 99);
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
   /* line-height: 200%; */
 }
 
@@ -41,3 +40,6 @@ body {
   margin: 15px 8px;
   font-size: 18px;
 }
+
+/* font-family: 'Fasthand', cursive;
+font-family: 'Ubuntu', sans-serif; */
