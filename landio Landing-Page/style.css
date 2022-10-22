@@ -65,25 +65,17 @@ p {
   margin-top: 20px;
   margin-bottom: 20px;
   color: rgba(0, 0, 0, 0.493);
-  line-height: 145%;
+  line-height: 175%;
 }
 .hero .btn {
   background-color: rgb(107, 147, 160);
-}
-
-.snip {
-  font-family: "Ubuntu", sans-serif;
-  text-align: center;
-}
-.snip p {
-  font-size: 18px;
 }
 
 @media (max-width: 769px) {
   .hero .container {
     padding: 70px 40px;
   }
-  .hero h1 {
+  h1 {
     font-size: 2rem;
   }
   .hero button {
@@ -92,4 +84,11 @@ p {
     margin-top: 20px;
     margin-bottom: 0;
   }
+}
+@media (max-width: 480px) {
+  /* .snip p {
+    font-size: 12px;
+    width: 300px;
+    color: red;
+  } */
 }
