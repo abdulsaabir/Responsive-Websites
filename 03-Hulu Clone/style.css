@@ -27,6 +27,7 @@ img {
   width: 100%;
   margin-top: 30px;
   background-color: #13b67a;
+  color: white;
 }
 h4 {
   color: #00ed82;
@@ -65,7 +66,7 @@ header .header-content {
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  width: 70%;
+  width: 56%;
   margin: auto;
   text-align: center;
   margin-top: 60px;
@@ -73,7 +74,7 @@ header .header-content {
 }
 
 .header-content h1 {
-  font-size: 29px;
+  font-size: 25px;
   font-weight: bold;
   margin-top: 20px;
   line-height: 1.3;
