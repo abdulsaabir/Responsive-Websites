@@ -4,7 +4,19 @@
   box-sizing: border-box;
 }
 
+.container {
+  max-width: 1440px;
+  margin: auto;
+  overflow: hidden;
+}
 .hero {
-  background-image: "./images/bg-header-mobile.png";
-  background-position: center;
+  height: 100vh;
+  background-image: url("./images/bg-header-desktop.png");
+  /* background-position: center; */
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.hero .container {
+  padding: 130px 160px 75px;
 }
