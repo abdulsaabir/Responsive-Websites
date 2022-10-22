@@ -10,7 +10,7 @@ body {
 .container {
   max-width: 1440px;
   margin: auto;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 .hero {
   height: 100vh;
