@@ -18,10 +18,11 @@ body {
   /* background-position: center; */
   background-size: contain;
   background-repeat: no-repeat;
+  font-family: "Ubuntu", sans-serif;
 }
 
 .hero .container {
-  padding: 130px;
+  padding: 75px;
   text-align: center;
 }
 
@@ -29,16 +30,19 @@ body {
   margin-bottom: 2rem;
 }
 .hero h1 {
-  font-size: 2.5rem;
+  font-size: 2.6rem;
   color: rgb(99, 99, 99);
-  /* line-height: 200%; */
+  line-height: 150%;
 }
-
 .hero button {
-  padding: 15px 30px;
-  border-radius: 15px;
+  padding: 8px 30px;
+  border-radius: 35px;
   margin: 15px 8px;
   font-size: 18px;
+  font-family: "Fasthand", cursive;
+  background-color: lightseagreen;
+  border: transparent;
+  color: white;
 }
 
 /* font-family: 'Fasthand', cursive;
