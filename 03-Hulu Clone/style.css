@@ -39,7 +39,14 @@ header .logo {
 header nav {
   display: flex;
   justify-content: flex-end;
+  padding: 20px 40px;
 }
 
 header nav .login-btn {
+  background-color: transparent;
+  border: none;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 1px;
 }
