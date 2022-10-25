@@ -1,3 +1,12 @@
+/** @type {import('tailwindcss').Config} */
+module.exports = {
+  content: ["./dist/*.{html,js}"],
+  theme: {
+    extend: {},
+  },
+  plugins: [],
+};
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -6,7 +15,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Stream TV and Movies Live and Online | Hulu</title>
   </head>
-  <body>
+  <body bg-red-700>
     <header>
       <nav>
         <ul>
@@ -18,7 +27,7 @@
 
       <div>
         <h4>Try up to one month free</h4>
-        <img src="img/logo.png" alt="Hulu" />
+        <img src="../img/logo.png" alt="Hulu" />
         <div>Watch thousands of TV shows and movies.</div>
         <div>
           HBO Max™, SHOWTIME®, CINEMAX® and STARZ® available as add-ons.
