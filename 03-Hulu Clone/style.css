@@ -26,3 +26,17 @@ ul {
 img {
   width: 100%;
 }
+header {
+  height: 530px;
+  background: url("./img/header.jpg") no-repeat center center / cover;
+}
+
+header .logo {
+  width: 270px;
+  margin: 20px 0;
+}
+
+header nav {
+  display: flex;
+  justify-content: flex-end;
+}
