@@ -27,14 +27,14 @@ header {
 header nav {
   display: flex;
   justify-content: flex-end;
-  padding: 0px 0px important;
+  padding: 0px 0px;
   background-color: rgb(237, 33, 33);
   height: 8vh;
 }
 header nav li {
   list-style: none;
 }
-nav button {
+.login-btn {
   background-color: transparent;
   border: none;
   font-size: 18px;
