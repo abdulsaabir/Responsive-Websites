@@ -83,7 +83,6 @@ h4 {
 
 .sub-header {
   display: flex;
-  color: white;
 }
 
 @media (max-width: 700px) {
