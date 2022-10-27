@@ -14,9 +14,6 @@ body {
   line-height: 1.7;
   overflow-x: hidden;
 }
-img {
-  width: 300px;
-}
 button {
   padding: 18px 32px;
   background-color: white;
@@ -82,7 +79,19 @@ h4 {
 }
 
 .sub-header {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  align-items: center;
+  background: linear-gradient(
+    318.68deg,
+    #0f495c 0%,
+    #0d3640 49.72%,
+    #08141f 100%
+  );
+  padding: 15px 40px;
+}
+.sub-header img {
+  width: 300px;
 }
 
 @media (max-width: 700px) {
