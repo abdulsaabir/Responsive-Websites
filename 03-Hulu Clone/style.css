@@ -132,4 +132,14 @@ h3 {
     grid-template-columns: 1fr;
     text-align: center;
   }
+  .sub-header img {
+    width: 250px;
+    margin: auto;
+  }
+  .sub-header div:last-child {
+    justify-self: center;
+  }
+  .header-content .header-text-2 {
+    display: none;
+  }
 }
