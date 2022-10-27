@@ -82,6 +82,7 @@ h4 {
   display: grid;
   grid-template-columns: 1fr 2fr 1fr;
   align-items: center;
+  gap: 20px;
   background: linear-gradient(
     318.68deg,
     #0f495c 0%,
@@ -92,6 +93,14 @@ h4 {
 }
 .sub-header img {
   width: 300px;
+}
+.sub-header h3 {
+  color: rgb(184, 184, 184);
+  font-weight: normal;
+  font-size: 20px;
+}
+.sub-header > div .sub-link {
+  color: gray;
 }
 
 @media (max-width: 700px) {
