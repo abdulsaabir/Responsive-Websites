@@ -4,9 +4,19 @@
   margin: 0;
   box-sizing: border-box;
   padding: 0;
-  font-family: "Rubik", sans-serif;
 }
 
+html,
+body {
+  font-family: "Rubik", sans-serif;
+  background: #000;
+  color: #fff;
+  line-height: 1.7;
+  overflow-x: hidden;
+}
+img {
+  width: 100%;
+}
 button {
   padding: 18px 32px;
   background-color: white;
@@ -19,7 +29,6 @@ button {
 }
 
 header {
-  color: white;
   background: url("./img/header.jpg") no-repeat center center / cover;
   height: 550px;
 }
@@ -70,4 +79,11 @@ header .header-content {
 h4 {
   color: #00ed82d0;
   font-size: 15px;
+}
+
+@media (max-width: 700px) {
+  .header-content {
+    text-align: center;
+    padding: 0 20px;
+  }
 }
