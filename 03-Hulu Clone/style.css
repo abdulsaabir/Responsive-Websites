@@ -103,9 +103,12 @@ h3 {
   display: block;
   color: #ccc;
   font-size: 12px;
-  margin-top: 5px;
+  margin-top: 10px;
 }
-
+.btn-outline {
+  background-color: transparent;
+  border: 2px solid white;
+}
 @media (max-width: 700px) {
   .header-content {
     text-align: center;
