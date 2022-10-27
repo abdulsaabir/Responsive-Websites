@@ -27,7 +27,7 @@ body {
 
 header {
   background: url("./img/header.jpg") no-repeat center center / cover;
-  height: 550px;
+  height: 500px;
 }
 
 header nav {
@@ -92,23 +92,20 @@ h4 {
   padding: 30px 40px;
 }
 .sub-header img {
-  width: 300px;
+  width: 100%;
 }
-.sub-header h3 {
+h3 {
   color: rgb(184, 184, 184);
   font-weight: normal;
-  font-size: 20px;
+  font-size: 26px;
 }
-.sub-header > div .sub-link {
-  color: gray;
+.sub-link {
+  display: block;
+  color: #ccc;
+  font-size: 12px;
+  margin-top: 5px;
 }
 
-.sub-header .btn-outline {
-  background-color: transparent;
-  border: 2px gray solid;
-  padding: 10px 15px;
-  display: block;
-}
 @media (max-width: 700px) {
   .header-content {
     text-align: center;
