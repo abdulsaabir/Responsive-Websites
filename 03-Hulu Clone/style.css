@@ -15,7 +15,7 @@ body {
   overflow-x: hidden;
 }
 img {
-  width: 100%;
+  width: 300px;
 }
 button {
   padding: 18px 32px;
@@ -79,6 +79,10 @@ header .header-content {
 h4 {
   color: #00ed82d0;
   font-size: 15px;
+}
+
+.sub-header {
+  display: flex;
 }
 
 @media (max-width: 700px) {
