@@ -14,7 +14,7 @@ body {
   line-height: 1.7;
   overflow-x: hidden;
 }
-button {
+.btn {
   padding: 18px 32px;
   background-color: white;
   margin: 20px 0;
@@ -103,6 +103,12 @@ h4 {
   color: gray;
 }
 
+.sub-header .btn-outline {
+  background-color: transparent;
+  border: 2px gray solid;
+  padding: 10px 15px;
+  display: block;
+}
 @media (max-width: 700px) {
   .header-content {
     text-align: center;
