@@ -207,7 +207,24 @@ h3 {
 }
 /* live tv */
 
+.live {
+  padding: 40px;
+  background-color: #151516;
+}
 .live-border {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 90px 40px;
+  border-radius: 10px;
+  border: 4px solid #1ce783;
+}
+.live a {
+  margin-top: 20px;
+  text-transform: uppercase;
+  color: white;
 }
 
 /* media */
