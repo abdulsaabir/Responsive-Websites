@@ -227,6 +227,17 @@ h3 {
   color: white;
 }
 
+/* live-sports */
+.live-sports {
+  background: url("./img/live-sports.jpg") no-repeat center center / cover;
+  position: relative;
+}
+.live-sports-content {
+  position: absolute;
+}
+.live-sports img {
+  width: 200px;
+}
 /* media */
 @media (max-width: 1100px) {
   .categories .covers {
