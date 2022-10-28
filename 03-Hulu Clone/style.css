@@ -30,7 +30,7 @@ body {
 
 header {
   background: url("./img/header.jpg") no-repeat center center / cover;
-  min-height: 480px;
+  height: 530px;
 }
 
 header nav {
@@ -69,6 +69,9 @@ header .header-content {
 .header-content .header-text-2 {
   font-size: 18px;
   margin-top: 20px;
+}
+.header-content .btn-cta {
+  color: black;
 }
 
 .legal-text {
