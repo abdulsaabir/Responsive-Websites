@@ -262,6 +262,22 @@ h3 {
 .footer {
   background-color: gray;
   padding: 40px 0;
+  color: #000;
+}
+.footer-container {
+  width: 80%;
+  margin: auto;
+}
+.footer a {
+  color: #000;
+  text-decoration: none;
+}
+.footer li {
+  list-style: none;
+}
+.footer .footer-lists {
+  display: flex;
+  justify-content: space-between;
 }
 /* media */
 @media (max-width: 1100px) {
