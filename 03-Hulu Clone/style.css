@@ -297,9 +297,6 @@ h3 {
   border: 1px solid #ccc;
   margin-top: 30px;
 }
-.footer .social-icons {
-  align-items: center;
-}
 
 .footer .social-icons img {
   width: 25px;
@@ -355,6 +352,10 @@ h3 {
   .live-sports-content {
     left: 40px;
     top: 120px;
+  }
+  .footer .social-icons {
+    display: flex;
+    justify-content: center;
   }
 }
 @media (max-width: 767px) {
