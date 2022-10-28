@@ -294,10 +294,10 @@ h3 {
     font-size: 18px;
     line-height: 1.3;
   }
-  .categories .covers {
+  /* .categories .covers {
     grid-template-columns: 1fr;
     gap: 10px;
-  }
+  } */
   .live-sports {
     background: url("./img/live-sports-small.jpg") no-repeat center center /
       cover;
@@ -306,5 +306,11 @@ h3 {
   .live-sports-content {
     left: 40px;
     top: 120px;
+  }
+}
+@media (max-width: 767px) {
+  .categories .covers {
+    grid-template-columns: 1fr;
+    gap: 10px;
   }
 }
