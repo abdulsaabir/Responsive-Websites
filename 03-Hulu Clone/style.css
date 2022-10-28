@@ -311,6 +311,6 @@ h3 {
 @media (max-width: 767px) {
   .categories .covers {
     grid-template-columns: 1fr;
-    gap: 1px;
+    gap: 10px;
   }
 }
