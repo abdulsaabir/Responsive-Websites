@@ -30,14 +30,54 @@ section{
 .section-inner{
     position: absolute;
     bottom: 200px;
-    left: 200px;
+    left: 150px;
     max-width: 500px;
 }
 
 .section-inner h4{
-    font-size: 20px;
+    font-size: 25px;
     font-weight: 300;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
+}
+
+.section-inner h2{
+    font-size: 55px;
+    font-weight: 600;
+    margin-bottom: 40px;
+}
+.btn{
+    padding: 15px 47px;
+    border: 2px white solid;
+    font-size: 20px;
+    position: relative;
+    z-index: 2;
+    overflow: hidden;
+    position: relative;
+   
+}
+.btn:hover{
+    color: black;
+    z-index: 2;
+}
+
+.btn::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    transform: translateY(100%);
+    opacity: 0;
+    pointer-events: none;
+    z-index: 1;
+    transition: transform 0.5s 
+    cubic-bezier(0.075, 0.82, 0.165, 1)  ;
+}
+.btn:hover::after{
+    opacity: 1;
+    transform: translateY(0);
 }
 
 /* header */
@@ -80,7 +120,8 @@ header{
     height: 1px;
     background-color: lightskyblue;
     transform: scaleX(0);
-    transition: transform 0.5s cubic-bezier(0.075, 0.82, 0.165, 1)  ;
+    transition: transform 0.5s 
+    cubic-bezier(0.075, 0.82, 0.165, 1)  ;
     transform-origin: right;
 }
 .desktop-menu ul li:hover::after{
