@@ -31,19 +31,20 @@ section{
     position: absolute;
     bottom: 200px;
     left: 150px;
-    max-width: 500px;
+    max-width: 560px;
+
 }
 
 .section-inner h4{
-    font-size: 25px;
+    font-size: 22px;
     font-weight: 300;
     margin-bottom: 10px;
 }
 
 .section-inner h2{
-    font-size: 55px;
-    font-weight: 600;
-    margin-bottom: 40px;
+    font-size: 50px;
+    font-weight: 700;
+    margin-bottom: 20px;
 }
 .btn{
     padding: 15px 47px;
@@ -63,7 +64,6 @@ section{
 .btn:hover span{
     color: black;
 }
-
 .btn::after{
     content: "";
     position: absolute;
@@ -75,6 +75,7 @@ section{
     transform: translateY(100%);
     transition: transform 0.5s 
     cubic-bezier(0.075, 0.82, 0.165, 1)  ;
+  z-index: -1;
 }
 .btn:hover::after{
     transform: translateY(0);
@@ -86,18 +87,26 @@ header{
     top: 0;
     left: 0;
     width: 100%;
+    z-index: 3;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 10vh;
-    padding: 0  30px;
     text-transform: uppercase;
+    height: 100px;
+    padding: 0 30px;
 }
 
 
-.logo img{
+.logo {
     width: 210px;
-}
+    height: auto;
+  }
+  
+  .logo img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
 .desktop-menu{
     margin-right: 50px;
 }
@@ -106,7 +115,7 @@ header{
 }
 
 .desktop-menu ul li {
-    margin: 0 20px;
+    margin-right: 20px;
     position: relative;
     padding-bottom: 2px;
    
@@ -133,3 +142,9 @@ header{
 .section-a{
     background-image: url('./img/section-a.webp');
 }
+
+
+
+
+
+/* animation */
