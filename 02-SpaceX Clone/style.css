@@ -216,7 +216,8 @@ footer ul li a {
     z-index: 10;
     border: none;
     background: none;
-    cursor:pointer
+    cursor:pointer;
+    transition:0.3s ease-in-out;
 }
 .top,.middle,.bottom{
 position:absolute;
@@ -233,6 +234,19 @@ background-color: #fff;
     transform: translateY(10px);
 }
 
+
+.open{
+    transform: rotate(90deg);
+}
+.open .top{
+    transform: rotate(45deg) translateX(6px) translateY(6px);
+}
+.open .middle{
+    display: none;
+}
+.open .bottom{
+    transform: rotate(-45deg) translateX(-6px) translateY(6px);
+}
 
 
 /* animation */
