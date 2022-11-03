@@ -21,11 +21,16 @@ ul{
 
 /* header */
 header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: 10vh;
     padding: 0  30px;
+    text-transform: uppercase;
 }
 
 .logo{
@@ -35,4 +40,12 @@ header{
 .logo img{
     width: 100%;
     height: auto;
+}
+
+.desktop-menu ul{
+    display: flex;
+}
+
+.desktop-menu ul li {
+    margin: 0 20px;
 }
