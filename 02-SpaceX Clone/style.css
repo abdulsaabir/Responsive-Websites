@@ -19,6 +19,15 @@ ul{
     list-style: none;
 }
 
+section {
+    position: relative;
+    height: 100vh;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-transform: uppercase;
+  }
+
 /* header */
 header{
     position: fixed;
@@ -65,4 +74,10 @@ header{
 .desktop-menu ul li:hover::after{
     transform: scale(1);
     transform-origin: left;
+}
+
+/* section a */
+.section-a{
+    background-image: url('./img/section-a.webp');
+   
 }
