@@ -39,12 +39,15 @@ section{
     font-size: 22px;
     font-weight: 300;
     margin-bottom: 10px;
+    animation: fadeInUp 0.5s ease-in-out;
 }
 
 .section-inner h2{
     font-size: 50px;
     font-weight: 700;
     margin-bottom: 20px;
+    animation: fadeInUp 0.5s ease-in-out 0.2s;
+    animation-fill-mode: both;
 }
 .btn{
     padding: 15px 47px;
@@ -60,6 +63,11 @@ section{
     min-width: 130px;
     text-transform: uppercase; 
    
+}
+.section-inner a{
+    animation: fadeInUp 0.5s ease-in-out 0.4s;
+    animation-fill-mode: both;
+
 }
 .btn:hover span{
     color: black;
@@ -148,3 +156,14 @@ header{
 
 
 /* animation */
+
+@keyframes fadeInUp {
+    0%{
+        opacity: 0;
+        transform: translateY(140px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
