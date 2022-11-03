@@ -190,6 +190,7 @@ footer ul{
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    position: relative;
 }
 footer ul li {
     margin-right: 30px;
@@ -239,5 +240,22 @@ footer ul li a {
 }
 
 @media (max-width: 960px) {
-
+.desktop-menu{
+    display: none;
 }
+.section-inner{
+    bottom: 70px;
+    left:30px;
+}
+}
+@media (max-width: 600px) {
+    .section-inner{
+        bottom: 70px;
+        left:30px;
+    }
+
+    .section-inner h2{
+        font-size: 40px;
+    }
+
+    }
