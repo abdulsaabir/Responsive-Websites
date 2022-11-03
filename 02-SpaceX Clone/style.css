@@ -18,15 +18,27 @@ a{
 ul{
     list-style: none;
 }
-
-section {
-    position: relative;
+section{
     height: 100vh;
     background-position: center center;
-    background-repeat: no-repeat;
     background-size: cover;
+    background-repeat: no-repeat;
     text-transform: uppercase;
-  }
+    position: relative;
+}
+
+.section-inner{
+    position: absolute;
+    bottom: 200px;
+    left: 200px;
+    max-width: 500px;
+}
+
+.section-inner h4{
+    font-size: 20px;
+    font-weight: 300;
+    margin-bottom: 15px;
+}
 
 /* header */
 header{
@@ -79,5 +91,4 @@ header{
 /* section a */
 .section-a{
     background-image: url('./img/section-a.webp');
-   
 }
