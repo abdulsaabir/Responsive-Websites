@@ -98,6 +98,7 @@ section{
 
 /* header */
 header{
+  
     position: fixed;
     top: 0;
     left: 0;
@@ -109,6 +110,7 @@ header{
     text-transform: uppercase;
     height: 100px;
     padding: 0 30px;
+
 }
 
 
@@ -176,6 +178,33 @@ header{
 
 /* footer */
 
+footer{
+    display: flex;
+    min-height: 150px;
+    text-transform: uppercase;
+    padding: 55px;
+}
+footer ul{
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+footer ul li {
+    margin-right: 30px;
+    color: #aaa;
+    text-transform: uppercase;
+    font-size: 13px;
+    line-height: 2.5;
+}
+footer ul li a {
+    color: #fff;
+    transition: color 0.6s;
+  }
+  footer ul li a:hover {
+    color: #aaa;
+  }
 
 
 
@@ -207,4 +236,8 @@ header{
         opacity: 1;
         transform: translateY(0px);
     }
+}
+
+@media (max-width: 960px) {
+
 }
