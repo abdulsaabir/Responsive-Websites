@@ -408,6 +408,9 @@ background-color: #fff;
     bottom: 70px;
     left:30px;
 }
+.stats span{
+    font-size: 60px;
+}
 }
 
 
@@ -424,5 +427,6 @@ background-color: #fff;
        margin: auto;
        width: 170px;
     }
+   
 
     }
