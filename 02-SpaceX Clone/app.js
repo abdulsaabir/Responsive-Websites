@@ -11,6 +11,7 @@ function MenuShow(){
     showMenu.classList.toggle('show-menu    ')
 }
 
+let counter2 = 0
 function counterUp(){
 counter.forEach((counter) => {
     counter.innerText="0"
@@ -21,9 +22,12 @@ counter.forEach((counter) => {
         // Get current counter value
         const c = +counter.innerText;
         const increment = target / 100;
-        console.log(increment)
+        // console.log(increment)
         if(c < target){
-            counter.innerText = `${Math.ceil(c + increment)}`;
+            counter.innerText = `${Math.ceil(increment)}`;
+            // setTimeout(updateCounter, 75);
+        } else {
+          counter.innerText = target;
         }
     }
     updateCounter()
