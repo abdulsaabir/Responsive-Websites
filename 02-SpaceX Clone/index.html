@@ -4,12 +4,12 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/script.js" defer></script>
     <title>SpaceX</title>
-    <link rel="stylesheet" href="style.css" />
-    <script src="./app.js" defer></script>
   </head>
   <body>
-    <div id="overLay"></div>
+    <div id="overlay"></div>
     <div id="mobile-menu" class="mobile-main-menu">
       <ul>
         <li><a href="#">Mission</a></li>
@@ -29,11 +29,13 @@
         <li class="mobile-only"><a href="#">Starlink</a></li>
       </ul>
     </div>
-    <header>
+    <header class="main-header">
       <div class="logo">
-        <img src="./img/logo.png" alt="spaceX logo" />
+        <a href="index.html">
+          <img src="img/logo.png" alt="SpaceX" />
+        </a>
       </div>
-      <div class="desktop-menu">
+      <nav class="desktop-main-menu">
         <ul>
           <li><a href="falcon9.html">Falcon 9</a></li>
           <li><a href="falcon-heavy.html">Falcon Heavy</a></li>
@@ -44,13 +46,16 @@
           <li><a href="#">Starlink</a></li>
           <li><a href="#">Shop</a></li>
         </ul>
-      </div>
+      </nav>
     </header>
-    <button id="btn-menu" class="humberger">
-      <span class="top"></span>
-      <span class="middle"></span>
-      <span class="bottom"></span>
+
+    <!-- Hamburger Menu -->
+    <button id="menu-btn" class="hamburger" type="button">
+      <span class="hamburger-top"></span>
+      <span class="hamburger-middle"></span>
+      <span class="hamburger-bottom"></span>
     </button>
+
     <!-- Section A -->
     <section class="section-a">
       <div class="section-inner">
