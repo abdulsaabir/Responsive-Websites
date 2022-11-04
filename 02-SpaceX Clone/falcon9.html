@@ -8,10 +8,66 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <div id="overLay"></div>
+    <div id="mobile-menu" class="mobile-main-menu">
+      <ul>
+        <li><a href="#">Mission</a></li>
+        <li><a href="#">Launches</a></li>
+        <li><a href="#">Careers</a></li>
+        <li><a href="#">Updates</a></li>
+        <li><a href="#">Shop</a></li>
+
+        <li class="mobile-only"><a href="falcon9.html">Falcon 9</a></li>
+        <li class="mobile-only">
+          <a href="falcon-heavy.html">Falcon Heavy</a>
+        </li>
+        <li class="mobile-only"><a href="dragon.html">Dragon</a></li>
+        <li class="mobile-only"><a href="#">Starship</a></li>
+        <li class="mobile-only"><a href="#">Human Spaceflight</a></li>
+        <li class="mobile-only"><a href="#">Rideshare</a></li>
+        <li class="mobile-only"><a href="#">Starlink</a></li>
+      </ul>
+    </div>
+    <header>
+      <div class="logo">
+        <img src="./img/logo.png" alt="spaceX logo" />
+      </div>
+      <div class="desktop-menu">
+        <ul>
+          <li><a href="falcon9.html">Falcon 9</a></li>
+          <li><a href="falcon-heavy.html">Falcon Heavy</a></li>
+          <li><a href="dragon.html">Dragon</a></li>
+          <li><a href="#">Starship</a></li>
+          <li><a href="#">Human Spaceflight</a></li>
+          <li><a href="#">Rideshare</a></li>
+          <li><a href="#">Starlink</a></li>
+          <li><a href="#">Shop</a></li>
+        </ul>
+      </div>
+    </header>
+    <button id="btn-menu" class="humberger">
+      <span class="top"></span>
+      <span class="middle"></span>
+      <span class="bottom"></span>
+    </button>
+    <!-- Section A -->
     <section class="section-animate bg-falcon-9"></section>
     <div class="section-inner-center">
       <h3>Falcon 9</h3>
       <p>First orbital class rocket capable of reflight</p>
     </div>
+    <footer>
+      <ul>
+        <li>SpaceX &copy; 2022</li>
+        <li><a href="#">Twitter</a></li>
+        <li><a href="#">YouTube</a></li>
+        <li><a href="#">Instagram</a></li>
+        <li><a href="#">Flickr</a></li>
+        <li><a href="#">LinkedIn</a></li>
+        <li><a href="#">Privacy</a></li>
+        <li><a href="#">Suppliers</a></li>
+      </ul>
+    </footer>
+    <script src="./app.js"></script>
   </body>
 </html>

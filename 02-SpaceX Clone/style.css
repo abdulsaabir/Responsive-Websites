@@ -308,11 +308,39 @@ background-color: #fff;
 .mobile-main-menu ul li a:hover{
     color: #aaa;
 }
-/* section-animate bg-falcon-9 */
-/* 
-.section-animate-bg-falcon-9{
-background-image: url('./img/falcon-9.webp');
-} */
+/*  */
+
+.bg-falcon-9{
+    background-image: url('./img//falcon-9.webp');
+}
+.section-inner-center{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center; 
+    width: 80%;
+    text-transform: uppercase;
+}
+
+.section-inner-center h3{   
+    font-size: 100px;
+    margin-bottom: 15px; 
+    animation: fadeInUp 0.5s ease-in-out 0.4s;
+   
+
+}
+.section-animate {
+  animation: fadeIn 2s ease-in-out;
+  animation-fill-mode: both;  
+   
+}
+.section-inner-center p{
+    font-size: 20px;
+    animation: fadeInUp 0.5s ease-in-out 0.4s;
+  
+
+}
 /*animation */
 
 @keyframes fadeInUp {
@@ -323,6 +351,15 @@ background-image: url('./img/falcon-9.webp');
     100%{
         opacity: 1;
         transform: translateY(0);
+    }
+}
+@keyframes fadeIn {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+      
     }
 }
 
