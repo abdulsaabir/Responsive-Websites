@@ -3,6 +3,8 @@ let overLay = document.getElementById('overLay')
 let showMenu = document.querySelector('.mobile-main-menu');
 let counter = document.querySelectorAll('.counter')
 btnMenu.addEventListener('click' , MenuShow)
+let scrollStarted = false;
+
 
 function MenuShow(){
     btnMenu.classList.toggle('open')
@@ -11,7 +13,6 @@ function MenuShow(){
     showMenu.classList.toggle('show-menu    ')
 }
 
-let counter2 = 0
 function counterUp(){
 counter.forEach((counter) => {
     counter.innerText="0"
@@ -21,11 +22,9 @@ counter.forEach((counter) => {
         const target = +counter.getAttribute('data-target');
         // Get current counter value
         let c = +counter.innerText;
-        c++
         const increment = target / 100;
         if(c < target){
-            // counter.innerText = `${Math.ceil(increment + c)}`;
-            counter.innerText = c
+            counter.innerText = `${Math.ceil(increment + c)}`;
             setTimeout(updateCounter, 75);
         } else {
           counter.innerText = target;
@@ -34,4 +33,18 @@ counter.forEach((counter) => {
     updateCounter()
 })
 }
-counterUp()
+function scrollPage() {
+    const scrollPos = window.scrollY;
+  
+    if (scrollPos > 100 && !scrollStarted) {
+        counterUp();
+      scrollStarted = true;
+    } else if (scrollPos < 100 && scrollStarted) {
+      reset();
+      scrollStarted = false;
+    }
+  }
+  
+function reset() {
+    counters.forEach((counter) => (counter.innerHTML = '0'));
+  }
