@@ -14,6 +14,19 @@ function MenuShow(){
 function counterUp(){
 counter.forEach((counter) => {
     counter.innerText="0"
+
+    const updateCounter = () => {
+        // Get count target
+        const target = +counter.getAttribute('data-target');
+        // Get current counter value
+        const c = +counter.innerText;
+        const increment = target / 100;
+        console.log(increment)
+        if(c < target){
+            counter.innerText = `${Math.ceil(c + increment)}`;
+        }
+    }
+    updateCounter()
 })
 }
 counterUp()
