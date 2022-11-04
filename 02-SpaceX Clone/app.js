@@ -20,12 +20,13 @@ counter.forEach((counter) => {
         // Get count target
         const target = +counter.getAttribute('data-target');
         // Get current counter value
-        const c = +counter.innerText;
+        let c = +counter.innerText;
+        c++
         const increment = target / 100;
-        // console.log(increment)
         if(c < target){
-            counter.innerText = `${Math.ceil(increment)}`;
-            // setTimeout(updateCounter, 75);
+            // counter.innerText = `${Math.ceil(increment + c)}`;
+            counter.innerText = c
+            setTimeout(updateCounter, 75);
         } else {
           counter.innerText = target;
         }
