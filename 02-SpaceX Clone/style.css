@@ -259,7 +259,49 @@ background-color: #fff;
 .stop-scrolling{
     overflow: hidden;
 }
+/* mobile-main-menu */
+.mobile-only{
+    display: none;
+}
 
+.mobile-main-menu{
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 4;
+    width: 350px;
+    height: 100%;
+    background-color: #000;
+    display: fleX;
+    justify-content: center;
+    align-items: center;
+   
+  
+}
+.mobile-main-menu ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    padding: 50px;
+    width: 100%;
+}
+.mobile-main-menu ul li{
+    margin-bottom: 20px;
+    font-size: 18px;
+    text-transform: uppercase;
+    border-bottom: 1px #555 dotted;
+    width: 100%;
+    text-align: right;
+    padding-bottom: 8px;
+}
+.mobile-main-menu ul li a{
+    color: #fff;
+    transition: color 0.6s;
+}
+.mobile-main-menu ul li a:hover{
+    color: #333;
+}
 /*animation */
 
 @keyframes fadeInUp {
@@ -291,6 +333,9 @@ background-color: #fff;
 }
 
 @media (max-width: 960px) {
+ .mobile-only{
+    display: block;
+ }
 .desktop-menu{
     display: none;
 }
