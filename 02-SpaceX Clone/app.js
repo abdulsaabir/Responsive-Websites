@@ -11,4 +11,9 @@ function MenuShow(){
     showMenu.classList.toggle('show-menu    ')
 }
 
-counter.forEach(count)
+function counterUp(){
+// counter.forEach((counter) => {
+// console.log(counter)
+// })
+}
+counterUp()
