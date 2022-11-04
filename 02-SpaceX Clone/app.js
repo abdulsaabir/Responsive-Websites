@@ -12,8 +12,8 @@ function MenuShow(){
 }
 
 function counterUp(){
-// counter.forEach((counter) => {
-// console.log(counter)
-// })
+counter.forEach((counter) => {
+    counter.innerText="0"
+})
 }
 counterUp()
