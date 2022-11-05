@@ -258,12 +258,23 @@ header .container .btn:hover{
 .work img{
     width: 116px;
     margin-bottom: 20px;
+    position: relative;
+}
+
+.work .inst >div:nth-child(1n+2)::before{
+    content: url('./images/connect-line.png');
+    top: 30px;
+    left: -20px;
+    position: absolute;
+    background-size: 33px 16px; 
+    background-repeat: no-repeat
 }
 .work .inst{
     display: flex;
 }
 .work .inst >div{
     margin-right: 45px;
+    position: relative;
 }
 .work .inst >div p:nth-child(2){
    color: hsl(227, 13%, 73%);
