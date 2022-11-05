@@ -115,12 +115,14 @@ header .container .btn:hover{
 
 }
 
-.hero .container .btn{
+.btn-blue{
+    
     background-color: #0033AA;
     padding: 15px 30px;
     border: none;
     cursor: pointer;
 }
+.hero .container .btn{  padding: 20px 40px; font-size: 22px;}
 
 @media (max-width: 1260px){
 
