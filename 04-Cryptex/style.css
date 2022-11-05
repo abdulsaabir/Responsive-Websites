@@ -264,10 +264,8 @@ header .container .btn:hover{
 .work .inst >div:nth-child(1n+2)::before{
     content: url('./images/connect-line.png');
     top: 30px;
-    left: -20px;
+    left: -100px;
     position: absolute;
-    background-size: 33px 16px; 
-    background-repeat: no-repeat
 }
 .work .inst{
     display: flex;
