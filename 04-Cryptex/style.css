@@ -155,15 +155,42 @@ header .container .btn:hover{
     background-color: #0033AA;
     border-radius: 10px;
 }
-.hero .container .btn{  padding: 20px 40px; font-size: 22px;}
+.bitcoin .container .btn{  padding: 20px 40px; font-size: 22px;}
 
 
-.hero .container .taps{
+.bitcoin .container .taps{
     display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    align-items: center;
 }
-.hero .container .taps .btn-header img{
-    width: 40px !important; 
-    height: 40px !important;
+
+.bitcoin .container .taps > div .btn-header{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin-bottom: 20px ;
+}
+.bitcoin .container .taps > div .btn-header a{
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+    margin-left: 10px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+.bitcoin .container .taps > div .btn-header a span{
+    color: #bcb7ae;
+    margin-left: 6px;
+    text-transform: uppercase;
+}
+.bitcoin .container .taps .btn-header img{
+    width: 35px ;
+}
+.bitcoin .container .taps > div > p{
+    font-size: 24px;
+    font-weight: 700;
+    letter-spacing: 3px;
 }
 @media (max-width: 1260px){
 
