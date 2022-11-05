@@ -25,6 +25,26 @@ img{
     font-weight: bold;
     transition: all 0.2s ;
 }
+.container ul li a{
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 12px 10px;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    border-radius: 2px;
+
+}
+
+.container ul li a:hover{
+    background-color: #555;
+}
+
+.container ul {
+    display: flex;
+    list-style: none;
+}
 /* header */
 header{
     height: 10vh;
@@ -47,25 +67,8 @@ header .logo a{
     color: white;
     text-decoration: none;
 }
-header .container ul {
-    display: flex;
-    list-style: none;
-}
 
-header .container ul li
-{
-    /* margin-right: 10px; */
-}
-header .container ul li a{
-    color: white;
-    text-decoration: none;
-    text-transform: uppercase;
-    padding: 12px 10px;
-    font-size: 13px;
-    font-weight: bold;
-    letter-spacing: 2px;
-    border-radius: 2px;
-}
+
 
 header .container ul li:first-child a{
     background-color: #0033AA;
@@ -122,8 +125,46 @@ header .container .btn:hover{
     border: none;
     cursor: pointer;
 }
+
+/* bitcon */
+.bitcoin .container {
+    padding: 20px ;
+    border: 1px solid white;
+    border-radius: 20px;
+}
+.bitcoin .container ul{
+    align-content: center;
+}
+.bitcoin .container ul li{
+    padding: 6px;
+    margin-left: 10px;
+}
+
+.container-header{
+    border-bottom: 1px dotted #fff;
+    padding-bottom: 20px;
+}
+.bitcoin .container ul li a{
+    font-size: 16px;
+    text-transform: inherit;
+}
+.bitcoin .container ul li a:hover{
+    background-color: transparent;
+}
+.bitcoin .container ul li:first-child{
+    background-color: #0033AA;
+    border-radius: 10px;
+}
 .hero .container .btn{  padding: 20px 40px; font-size: 22px;}
 
+
+.hero .container .taps{
+    display: flex;
+}
+.hero .container .taps .btn-header img{
+    width: 40px !important; 
+    height: 40px !important;
+}
 @media (max-width: 1260px){
 
     header .container ul{
