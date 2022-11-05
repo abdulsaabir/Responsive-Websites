@@ -132,7 +132,7 @@ header .container .btn:hover{
 
 /* bitcon */
 .bitcoin{
-    padding-bottom: 50px;
+    padding-bottom: 150px;
 }
 .bitcoin .container {
     width: 95%;
@@ -237,7 +237,7 @@ header .container .btn:hover{
 /* how it works */
 
 .work{
-    background-color: #b1b5c325;
+    background-color: rgb(19, 18, 18);
 }
 .work .container {
     padding: 120px 0;
@@ -262,12 +262,24 @@ header .container .btn:hover{
 .work .inst{
     display: flex;
 }
+.work .inst >div{
+    margin-right: 45px;
+}
 .work .inst >div p:nth-child(2){
    color: hsl(227, 13%, 73%);
    font-size: 18px;
    font-weight: 700;
    text-transform: uppercase;
    margin-bottom: 10px;
+}
+.work .inst >div h1{
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+}
+.work .inst >div .last{
+    font-size: 20px;
+    color: hsl(227, 13%, 73%);
+    font-weight: 400;
 }
 
 @media (max-width: 1260px){
