@@ -239,22 +239,35 @@ header .container .btn:hover{
 .work{
     background-color: #b1b5c325;
 }
-.work .container{
+.work .container {
     padding: 120px 0;
     text-align: center;
+}
+.work .container .top{
+    margin-bottom: 100px;
 }
 .work .container .top h1{
     font-size: 68px;
     margin-bottom: 20PX;
 }
 .work .container  .top P{
-    font-size: 18px;
+    font-size: 24px;
+    width: 700px;
+    margin: auto;
 }
 .work img{
-    width: 60px;
+    width: 116px;
+    margin-bottom: 20px;
 }
 .work .inst{
     display: flex;
+}
+.work .inst >div p:nth-child(2){
+   color: hsl(227, 13%, 73%);
+   font-size: 18px;
+   font-weight: 700;
+   text-transform: uppercase;
+   margin-bottom: 10px;
 }
 
 @media (max-width: 1260px){
