@@ -261,11 +261,11 @@ header .container .btn:hover{
     position: relative;
 }
 
-.work .inst >div:nth-child(1n+2)::before{
-    content: url('./images/connect-line.png');
-    top: 30px;
-    left: -100px;
+.work .inst >div:nth-child(1n+2)::after{
+    content: url("./images/connect-line.png");
     position: absolute;
+    top: 50px;
+    left: -95px;
 }
 .work .inst{
     display: flex;
@@ -273,6 +273,11 @@ header .container .btn:hover{
 .work .inst >div{
     margin-right: 45px;
     position: relative;
+}
+.work .inst >div:hover img{
+    transform: rotate(360deg);
+    transition: all 0.2s ease-in-out 0s;
+
 }
 .work .inst >div p:nth-child(2){
    color: hsl(227, 13%, 73%);
