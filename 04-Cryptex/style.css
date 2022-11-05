@@ -128,12 +128,14 @@ header .container .btn:hover{
 
 /* bitcon */
 .bitcoin .container {
+    width: 95%;
     padding: 20px ;
     border: 1px solid white;
     border-radius: 20px;
 }
 .bitcoin .container ul{
     align-content: center;
+    flex-wrap: wrap;
 }
 .bitcoin .container ul li{
     padding: 6px;
@@ -161,15 +163,21 @@ header .container .btn:hover{
 .bitcoin .container .taps{
     display: flex;
     /* justify-content: space-between; */
-    padding: 20px;
+    padding: 20px 0;
     align-items: center;
     margin-top: 10px;
+    flex-wrap: wrap;
 }
 .bitcoin .container .taps >div{
-   
+    border-radius: 10px;
     flex: 1;
-    margin: 0 20px;
-    padding: 20px 30px;
+    margin: 0 5px;
+    padding: 20px 0px;
+    padding-left: 20px;
+    min-width: 400px;
+}
+.bitcoin .container .taps >div:hover{
+    background-color: rgba(38, 40, 52, 0.5);    
 }
 .bitcoin .container .taps div:nth-child(2){
     background-color: rgba(38, 40, 52, 0.5);
@@ -197,7 +205,7 @@ header .container .btn:hover{
     width: 35px ;
 }
 .bitcoin .container .taps > div > p{
-    font-size: 30px;
+    font-size: 24px;
     font-weight: 700;
     letter-spacing: 3px;
     margin-bottom: 20px;
@@ -243,6 +251,9 @@ header .container .btn:hover{
     .hero .container .mg{
         margin: auto;
     }
+    .bitcoin .container .taps >div{
+        margin-top: 15px;
+    }
 
 }
 
@@ -256,6 +267,9 @@ header .container .btn:hover{
     }
     .hero .container .text p{
         font-size: 18px;
+    }
+    .bitcoin .container .taps > div .btn-header a{
+        font-size: 16px;
     }
 
     
