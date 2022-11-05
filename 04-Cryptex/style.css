@@ -8,6 +8,7 @@
 body{
     font-family: 'DM Sans', sans-serif;
     background-color: #002;
+    color: white;
 }
 img{
     width: 100%;
@@ -44,6 +45,9 @@ img{
 .container ul {
     display: flex;
     list-style: none;
+}
+.menu{
+    display: none;
 }
 /* header */
 header{
@@ -127,6 +131,9 @@ header .container .btn:hover{
 }
 
 /* bitcon */
+.bitcoin{
+    padding-bottom: 50px;
+}
 .bitcoin .container {
     width: 95%;
     padding: 20px ;
@@ -226,11 +233,38 @@ header .container .btn:hover{
     background-color: #a22424;
     border: none;
 }
+
+/* how it works */
+
+.work{
+    background-color: #b1b5c325;
+}
+.work .container{
+    padding: 120px 0;
+    text-align: center;
+}
+.work .container .top h1{
+    font-size: 68px;
+    margin-bottom: 20PX;
+}
+.work .container  .top P{
+    font-size: 18px;
+}
+.work img{
+    width: 60px;
+}
+.work .inst{
+    display: flex;
+}
+
 @media (max-width: 1260px){
+    /* body{
+        /* overflow: hidden; */
 
     header .container ul{
         display: none;
     }
+
     header .container .btn{
         display: none;
     }
@@ -255,6 +289,7 @@ header .container .btn:hover{
         margin-top: 15px;
     }
 
+
 }
 
 @media (max-width: 600px){
@@ -273,4 +308,12 @@ header .container .btn:hover{
     }
 
     
+}
+@keyframes feFuncA {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
 }
