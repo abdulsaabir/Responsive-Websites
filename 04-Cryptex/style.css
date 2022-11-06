@@ -317,7 +317,12 @@ header .container .btn:hover{
     max-width: 650px;
 }
 .banner .container .right-banner h1{
-    font-size: 30px;
+    font-size: 70px;
+    margin-bottom: 30px;
+}
+.banner .container .right-banner p{
+    font-size: 22px;
+    margin-bottom: 30px;
 }
 @media (max-width: 1260px){
     /* body{
