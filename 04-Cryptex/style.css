@@ -254,7 +254,7 @@ header .container .btn:hover{
 }
 .work .container  .top P{
     font-size: 24px;
-    width: 700px;
+    max-width: 700px;
     margin: auto;
 }
 .work img{
@@ -347,12 +347,10 @@ header .container .btn:hover{
     .work .inst >div{
         width: 400px;
     }
-    .work .inst div::after{
+    .work .inst >div:nth-child(1n+2)::after{
         content: none;
-        position: absolute;
-        top: 10px;
-        left: -5px;
     }
+    
 }
 @media (max-width: 1260px){
     /* body{
@@ -398,9 +396,24 @@ header .container .btn:hover{
     /* .banner .container .img{
         width: 700px;
     } */
+    .work .inst >div{
+        width: 330px;
+    }
+  
+}
+@media (max-width: 850px){
+    .work .inst{
+        align-items: center;
+        justify-content: center;
+    }
+    .work .inst >div{
+        width: 430px;
+        margin-top: 30px;
+    }
 }
 
 @media (max-width: 600px){
+
  
     .hero .container .text h1{
         font-size: 30px;
@@ -412,7 +425,7 @@ header .container .btn:hover{
         font-size: 18px;
     }
     .bitcoin {
-        padding: 0 20px;
+        padding: 30px 20px;
     }
     .banner{
         padding: 40px 20px;
@@ -422,6 +435,10 @@ header .container .btn:hover{
     }
     .banner .container .right-banner h1{
         font-size: 40px;
+    }
+    .work .inst >div{
+        width: 430px;
+        margin-top: 10px;
     }
     
 }
