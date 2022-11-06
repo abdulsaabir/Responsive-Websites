@@ -354,15 +354,9 @@ header .container .btn:hover{
     justify-content: space-between;
 }
 .mobile .container img{
-    width: 800px;
+    width: 900px;
     position: relative;
 }
-/* .mobile .container img::after{
-    content: "Scan To Download";
-    position: absolute;
-    top: 50px;
-    left: -95px;
-} */
 .mobile .container  .money h1{
     font-size: 65px;
     max-width: 800px;
