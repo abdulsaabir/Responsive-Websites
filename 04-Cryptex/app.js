@@ -6,4 +6,3 @@ function ScrollCheck () {
     {
       }
 }
-document.addEventListener('scroll' , ScrollCheck)
