@@ -297,7 +297,28 @@ header .container .btn:hover{
     color: hsl(227, 13%, 73%);
     font-weight: 400;
 }
+/* banner */
+.banner {
+    padding: 150px 0;
+}
+.banner .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 
+.banner .container .img {
+    width: 900px;
+}
+.banner .container .img  img{
+    width: 100%;
+}
+.banner .container .right-banner{
+    max-width: 650px;
+}
+.banner .container .right-banner h1{
+    font-size: 30px;
+}
 @media (max-width: 1260px){
     /* body{
         /* overflow: hidden; */
