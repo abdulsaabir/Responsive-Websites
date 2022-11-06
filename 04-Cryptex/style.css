@@ -321,8 +321,24 @@ header .container .btn:hover{
     margin-bottom: 30px;
 }
 .banner .container .right-banner p{
-    font-size: 22px;
+    font-size: 23px;
     margin-bottom: 30px;
+    color: #bcb7ae;
+    line-height: 150%;
+}
+.banner .container .right-banner h3{
+    font-size: 25px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    letter-spacing: 1.6px;
+}
+.banner .container .right-banner h3 span{
+    color: #419cff;
+}
+.banner .container .right-banner .btn{
+    padding: 15px 35px;
+    background-color: #0033AA;
+    border: none;
 }
 @media (max-width: 1260px){
     /* body{
@@ -355,8 +371,12 @@ header .container .btn:hover{
     .bitcoin .container .taps >div{
         margin-top: 15px;
     }
-
-
+    .banner .container{
+        flex-direction: column;
+    }
+    .banner .container .right-banner{
+        width:auto
+    }
 }
 
 @media (max-width: 600px){
