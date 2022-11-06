@@ -271,9 +271,12 @@ header .container .btn:hover{
 }
 .work .inst{
     display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 .work .inst >div{
     margin-right: 45px;
+    width: 280px;
     position: relative;
 }
 .work .inst >div:hover img{
@@ -308,7 +311,7 @@ header .container .btn:hover{
 }
 
 .banner .container .img {
-    width: 900px;
+   max-width: 1000px;
 }
 .banner .container .img  img{
     width: 100%;
@@ -339,6 +342,17 @@ header .container .btn:hover{
     padding: 15px 35px;
     background-color: #0033AA;
     border: none;
+}
+@media (max-width: 1480px){
+    .work .inst >div{
+        width: 400px;
+    }
+    .work .inst div::after{
+        content: none;
+        position: absolute;
+        top: 10px;
+        left: -5px;
+    }
 }
 @media (max-width: 1260px){
     /* body{
@@ -375,8 +389,15 @@ header .container .btn:hover{
         flex-direction: column;
     }
     .banner .container .right-banner{
-        width:auto
+        max-width: 1000px;
+        align-self: flex-start;
     }
+    .banner .container .right-banner h1{
+        font-size: 50px;
+    }
+    /* .banner .container .img{
+        width: 700px;
+    } */
 }
 
 @media (max-width: 600px){
@@ -390,10 +411,18 @@ header .container .btn:hover{
     .hero .container .text p{
         font-size: 18px;
     }
+    .bitcoin {
+        padding: 0 20px;
+    }
+    .banner{
+        padding: 40px 20px;
+    }
     .bitcoin .container .taps > div .btn-header a{
         font-size: 16px;
     }
-
+    .banner .container .right-banner h1{
+        font-size: 40px;
+    }
     
 }
 @keyframes feFuncA {
