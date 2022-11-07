@@ -347,18 +347,18 @@ header .container .btn:hover{
     padding: 40px 20px;
     background-color:rgba(15, 15, 19, 0.797);
     padding-bottom: 0;
+    margin-bottom: 50px;
 }
 
 .mobile .container{
-    width: 95%;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 0.8fr 1fr;
+    align-items: flex-end;
+    gap: 30px;
 }
-
 .mobile .container img{
-    width: 800px;
-    position: relative;
+    width: 100%;
+    height: auto;
 }
 
 .mobile .container  .money h1{
@@ -407,6 +407,17 @@ header .container .btn:hover{
     }
     .work .inst >div:nth-child(1n+2)::after{
         content: none;
+    }
+    .mobile .container{
+        grid-template-columns: 1fr;
+        align-items: center;
+        justify-content: center;
+    }
+    .mobile .container img{
+        width: auto;
+    } 
+    .mobile.container .money .one{
+        max-width: 1000px
     }
     
 }
@@ -505,6 +516,11 @@ header .container .btn:hover{
     .work .inst >div{
         width: 430px;
         margin-top: 30px;
+    }
+    .mobile .container{
+        grid-template-columns: 1fr;
+        align-items: center;
+        justify-content: center;
     }
     
 }
