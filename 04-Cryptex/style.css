@@ -171,7 +171,6 @@ header .container .btn:hover{
 
 .bitcoin .container .taps{
     display: flex;
-    /* justify-content: space-between; */
     padding: 20px 0;
     align-items: center;
     margin-top: 10px;
@@ -179,11 +178,11 @@ header .container .btn:hover{
 }
 .bitcoin .container .taps >div{
     border-radius: 10px;
-    flex: 1;
+    flex-grow: 1;
     margin: 0 5px;
     padding: 20px 0px;
     padding-left: 20px;
-    min-width: 400px;
+    min-width: 300px;
 }
 .bitcoin .container .taps >div:hover{
     background-color: rgba(38, 40, 52, 0.5);    
@@ -461,9 +460,6 @@ header .container .btn:hover{
     .banner .container .right-banner h1{
         font-size: 50px;
     }
-    /* .banner .container .img{
-        width: 700px;
-    } */
     .work .inst >div{
         width: 330px;
     }
