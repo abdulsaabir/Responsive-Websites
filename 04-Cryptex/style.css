@@ -255,7 +255,7 @@ table{
     width: 100%;
     margin-top: 30px;
 }
-.market table thead tr{
+.market table thead .trow{
     display: flex;
     align-items: center;
     justify-content: space-between;
