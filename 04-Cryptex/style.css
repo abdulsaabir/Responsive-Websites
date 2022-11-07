@@ -108,20 +108,25 @@ header .container .btn:hover{
     font-size: 78px;
     margin-bottom: 30px;
     max-width: 700px;
-    /* animation: fadeInup 0.6s ease-in-out ; */
-    animation: fadeInUp 0.5s ease-in-out;
+    animation: fadeInUp 0.6s ease-in-out;
 }
 
 .hero .container .text p{
     font-size: 28px;
     max-width: 750px;
     margin-bottom: 30px;
+    animation: fadeInUp 0.6s ease-in-out 0.1s;
+    animation-fill-mode: both;
 }
 .hero .container .text h1 span{
     background-color: #0033AA;
     padding: 10px 20px;
     color: rgb(37, 218, 218)
 
+}
+.hero .container .btn{
+    animation: fadeInUp 0.6s ease-in-out 0.1s;
+    animation-fill-mode: both;
 }
 
 .btn-blue{
@@ -528,7 +533,7 @@ header .container .btn:hover{
 @keyframes fadeInUp {
     0% {
       opacity: 0;
-      transform: translateY(140px);
+      transform: translateY(100px);
     }
   
     100% {
