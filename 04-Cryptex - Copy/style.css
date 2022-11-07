@@ -1,0 +1,536 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'DM Sans', sans-serif;
+    background-color: #002;
+    color: white;
+}
+img{
+    width: 100%;
+}
+.container{
+    width: 88%;
+    margin: auto;
+}
+.btn{
+    padding: 5px 15px;
+    border-radius: 50px;
+    border: 1px solid #555;
+    background-color: transparent;
+    font-size: 16px;
+    font-weight: bold;
+    transition: all 0.2s ;
+}
+.container ul li a{
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 12px 10px;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    border-radius: 2px;
+
+}
+
+.container ul li a:hover{
+    background-color: #555;
+}
+
+.container ul {
+    display: flex;
+    list-style: none;
+}
+.menu{
+    display: none;
+}
+/* header */
+header{
+    height: 10vh;
+    width: 100%;
+    background-color: #004;
+}
+header .container {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    height: 100%;
+ 
+}
+
+header .logo img {
+width: 48px;
+margin-right: 40px;
+}
+header .logo a{
+    color: white;
+    text-decoration: none;
+}
+
+
+
+header .container ul li:first-child a{
+    background-color: #0033AA;
+}
+
+
+header .container ul li a:hover{
+    background-color: #0033AA;
+}
+
+header .container .btn
+{
+    margin-left:  auto;
+ 
+}
+header .container .btn:hover{
+    background-color: #0033AA;
+    opacity: 0.7;
+    border: none;
+}
+
+/* hero */
+
+.hero .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 160px 0;
+    margin: auto;
+}
+
+.hero .container .text h1{
+    font-size: 78px;
+    margin-bottom: 30px;
+    max-width: 700px;
+}
+
+.hero .container .text p{
+    font-size: 28px;
+    max-width: 750px;
+    margin-bottom: 30px;
+}
+.hero .container .text h1 span{
+    background-color: #0033AA;
+    padding: 10px 20px;
+    color: rgb(37, 218, 218)
+
+}
+
+.btn-blue{
+    
+    background-color: #0033AA;
+    padding: 15px 30px;
+    border: none;
+    cursor: pointer;
+}
+
+/* bitcon */
+.bitcoin{
+    padding: 150px 0;
+    background-color: #0033aa44;
+    /* animation:feFuncA 0.6s , ease-in-out ; */
+}
+.bitcoin .container {
+    width: 95%;
+    padding: 20px ;
+    border: 1px solid white;
+    border-radius: 20px;
+}
+.bitcoin .container ul{
+    align-content: center;
+    flex-wrap: wrap;
+}
+.bitcoin .container ul li{
+    padding: 6px;
+    margin-left: 10px;
+}
+
+.container-header{
+    border-bottom: 1px dotted #fff;
+    padding-bottom: 20px;
+}
+.bitcoin .container ul li a{
+    font-size: 16px;
+    text-transform: inherit;
+}
+.bitcoin .container ul li a:hover{
+    background-color: transparent;
+}
+.bitcoin .container ul li:first-child{
+    background-color: #0033AA;
+    border-radius: 10px;
+}
+.bitcoin .container .btn{  padding: 20px 40px; font-size: 22px;}
+
+
+.bitcoin .container .taps{
+    display: flex;
+    /* justify-content: space-between; */
+    padding: 20px 0;
+    align-items: center;
+    margin-top: 10px;
+    flex-wrap: wrap;
+}
+.bitcoin .container .taps >div{
+    border-radius: 10px;
+    flex: 1;
+    margin: 0 5px;
+    padding: 20px 0px;
+    padding-left: 20px;
+    min-width: 400px;
+}
+.bitcoin .container .taps >div:hover{
+    background-color: rgba(38, 40, 52, 0.5);    
+}
+.bitcoin .container .taps div:nth-child(2){
+    background-color: rgba(38, 40, 52, 0.5);
+}
+.bitcoin .container .taps > div .btn-header{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin-bottom: 20px ;
+}
+.bitcoin .container .taps > div .btn-header a{
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+    margin-left: 10px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+.bitcoin .container .taps > div .btn-header a span{
+    color: #bcb7ae;
+    margin-left: 6px;
+    text-transform: uppercase;
+}
+.bitcoin .container .taps .btn-header img{
+    width: 35px ;
+}
+.bitcoin .container .taps > div > p{
+    font-size: 24px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    margin-bottom: 20px;
+}
+.bitcoin .container .taps > div .text-footer{
+    display: flex;
+    align-items: center;
+}
+.bitcoin .container .taps > div .text-footer p{
+    font-size: 18px;
+    margin-right: 20px;
+    color: #bcb7ae;
+}
+.bitcoin .container .taps > div .text-footer .btn{
+    padding: 6px 12px;
+    font-size: 16px;
+    font-weight: 500;
+    background-color: #a22424;
+    border: none;
+}
+
+/* how it works */
+
+.work{
+    background-color: rgb(19, 18, 18);
+}
+.work .container {
+    padding: 120px 0;
+    text-align: center;
+}
+.work .container .top{
+    margin-bottom: 100px;
+}
+.work .container .top h1{
+    font-size: 68px;
+    margin-bottom: 20PX;
+}
+.work .container  .top P{
+    font-size: 24px;
+    max-width: 700px;
+    margin: auto;
+}
+.work img{
+    width: 116px;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.work .inst >div:nth-child(1n+2)::after{
+    content: url("./images/connect-line.png");
+    position: absolute;
+    top: 50px;
+    left: -95px;
+}
+.work .inst{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.work .inst >div{
+    margin-right: 45px;
+    width: 280px;
+    position: relative;
+}
+.work .inst >div:hover img{
+    transform: rotate(360deg);
+    transition: all 0.2s ease-in-out 0s;
+
+}
+.work .inst >div p:nth-child(2){
+   color: hsl(227, 13%, 73%);
+   font-size: 18px;
+   font-weight: 700;
+   text-transform: uppercase;
+   margin-bottom: 10px;
+}
+.work .inst >div h1{
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+}
+.work .inst >div .last{
+    font-size: 20px;
+    color: hsl(227, 13%, 73%);
+    font-weight: 400;
+}
+/* banner */
+.banner {
+    padding: 150px 0;
+}
+.banner .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.banner .container .img {
+   max-width: 1000px;
+}
+.banner .container .img  img{
+    width: 100%;
+}
+.banner .container .right-banner{
+    max-width: 650px;
+}
+.banner .container .right-banner h1{
+    font-size: 70px;
+    margin-bottom: 30px;
+}
+.banner .container .right-banner p{
+    font-size: 23px;
+    margin-bottom: 30px;
+    color: #bcb7ae;
+    line-height: 150%;
+}
+.banner .container .right-banner h3{
+    font-size: 25px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    letter-spacing: 1.6px;
+}
+.banner .container .right-banner h3 span{
+    color: #419cff;
+}
+.banner .container .right-banner .btn{
+    padding: 15px 35px;
+    background-color: #0033AA;
+    border: none;
+}
+.mobile{
+    padding: 40px 20px;
+    background-color:rgba(15, 15, 19, 0.797);
+    padding-bottom: 0;
+    margin-bottom: 50px;
+}
+
+.mobile .container{
+    display: grid;
+    grid-template-columns: 0.8fr 1fr;
+    align-items: flex-end;
+    gap: 30px;
+}
+.mobile .container img{
+    width: 100%;
+    height: auto;
+}
+
+.mobile .container  .money h1{
+    font-size: 65px;
+    max-width: 800px;
+    margin-bottom: 20px;
+}
+
+.mobile .container  .money .one{
+    font-size: 26px;
+    color: #bcb7ae;
+    margin-bottom: 40px;
+    max-width: 600px;
+}
+
+.mobile .container  .money p{
+    font-size: 23px;
+    color: #bcb7ae;
+    margin-bottom: 30px;
+}
+
+.mobile .container  .money h3{
+    font-size: 26px;
+    letter-spacing: 1.5px;
+    margin-bottom: 10px;
+}
+
+.mobile .container  .money h3 span{
+    color:#419cff ;
+}
+
+.mobile .container .money .google img{
+    width: 200px;
+}
+
+.mobile .container .money .google{
+    display: flex;
+    margin-top: 20px;
+    gap: 20px;
+} 
+
+/* app banner */
+@media (max-width: 1480px){
+    .work .inst >div{
+        width: 400px;
+    }
+    .work .inst >div:nth-child(1n+2)::after{
+        content: none;
+    }
+    .mobile .container{
+        grid-template-columns: 1fr;
+        align-items: center;
+        justify-content: center;
+    }
+    .mobile .container img{
+        width: auto;
+    } 
+    .mobile.container .money .one{
+        max-width: 1000px
+    }
+    
+}
+@media (max-width: 1260px){
+
+    .mobile .container{
+        flex-direction: column;
+    }
+
+    header .container ul{
+        display: none;
+    }
+
+    header .container .btn{
+        display: none;
+    }
+    .hero .container{
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 100px  0;
+    }
+    .hero .container .text h1{
+        max-width: 1300px;
+        font-size: 60px;
+    }
+    .hero   .container .text .btn
+    {
+        padding: 20px 30px;
+        margin-bottom: 30px;
+    }
+    .hero .container .mg{
+        margin: auto;
+    }
+    .bitcoin .container .taps >div{
+        margin-top: 15px;
+    }
+    .banner .container{
+        flex-direction: column;
+    }
+    .banner .container .right-banner{
+        max-width: 1000px;
+        align-self: flex-start;
+    }
+    .banner .container .right-banner h1{
+        font-size: 50px;
+    }
+    /* .banner .container .img{
+        width: 700px;
+    } */
+    .work .inst >div{
+        width: 330px;
+    }
+  
+}
+@media (max-width: 850px){
+    .work .inst{
+        align-items: center;
+        justify-content: center;
+    }
+    .work .inst >div{
+        width: 430px;
+        margin-top: 30px;
+    }
+    .work .container .top{
+    margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 600px){
+
+ 
+    .hero .container .text h1{
+        font-size: 30px;
+    }
+    .hero .container .text h1 span {
+        padding: 5px 10px;
+    }
+    .hero .container .text p{
+        font-size: 18px;
+    }
+    .bitcoin {
+        padding: 30px 20px;
+    }
+    .banner{
+        padding: 40px 20px;
+    }
+    .bitcoin .container .taps > div .btn-header a{
+        font-size: 16px;
+    }
+    .banner .container .right-banner h1{
+        font-size: 40px;
+    }
+    .work .inst .top{
+        margin-bottom: 0;
+    }
+    .work .inst >div{
+        width: 430px;
+        margin-top: 30px;
+    }
+    .mobile .container{
+        grid-template-columns: 1fr;
+        align-items: center;
+        justify-content: center;
+    }
+    
+}
+@keyframes feFuncA {
+    0% {
+      opacity: 0;
+      transform: translateY(140px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
