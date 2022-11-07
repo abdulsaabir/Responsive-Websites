@@ -363,7 +363,7 @@ header .container .btn:hover{
     height: auto;
 }
 
-.banner .container .money{
+.mobile .container .money{
     flex: 1;
 }
 .mobile .container  .money h1{
@@ -514,7 +514,20 @@ header .container .btn:hover{
         width: 430px;
         margin-top: 30px;
     }
- 
+    .mobile {
+        /* padding: 80px; */
+    }
+    .mobile  .container .img{
+        margin: auto;
+    }
+    .mobile  .container img{
+       max-width: 350px;
+    
+       
+    }
+    .mobile  .container .money h1{
+        font-size: 30px;
+    }
     
 }
 @keyframes feFuncA {
