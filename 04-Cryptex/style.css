@@ -351,16 +351,21 @@ header .container .btn:hover{
 }
 
 .mobile .container{
-    display: grid;
-    grid-template-columns: 0.8fr 1fr;
+    display: flex;
     align-items: flex-end;
-    gap: 30px;
+}
+.mobile .container .img{
+    flex: 1;
+    min-width: 600px;
 }
 .mobile .container img{
     width: 100%;
     height: auto;
 }
 
+.banner .container .money{
+    flex: 1;
+}
 .mobile .container  .money h1{
     font-size: 65px;
     max-width: 800px;
@@ -408,25 +413,17 @@ header .container .btn:hover{
     .work .inst >div:nth-child(1n+2)::after{
         content: none;
     }
-    .mobile .container{
-        grid-template-columns: 1fr;
-        align-items: center;
-        justify-content: center;
-    }
-    .mobile .container img{
-        width: auto;
-    } 
-    .mobile.container .money .one{
-        max-width: 1000px
-    }
+
     
 }
 @media (max-width: 1260px){
 
     .mobile .container{
         flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 60px;
     }
-
     header .container ul{
         display: none;
     }
@@ -517,11 +514,7 @@ header .container .btn:hover{
         width: 430px;
         margin-top: 30px;
     }
-    .mobile .container{
-        grid-template-columns: 1fr;
-        align-items: center;
-        justify-content: center;
-    }
+ 
     
 }
 @keyframes feFuncA {
