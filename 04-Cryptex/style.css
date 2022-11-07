@@ -260,6 +260,9 @@ table{
     align-items: center;
     justify-content: space-between;
 }
+.market table tbody .wrapper img{
+    width: 80px;
+}
 /* how it works */
 
 .work{
