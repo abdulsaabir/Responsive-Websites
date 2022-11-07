@@ -242,12 +242,21 @@ header .container .btn:hover{
     border: none;
 }
 
+/* market */
+.market{
+    padding: 50px;
+}
+.market .container .container-header h1{
+    font-size: 56px;
+    font-weight: 700;
+}
 /* how it works */
 
 .work{
     background-color: rgb(19, 18, 18);
 }
 .work .container {
+    animation: fadeInUp 0.6s ease-in-out 0.1s;
     padding: 120px 0;
     text-align: center;
 }
