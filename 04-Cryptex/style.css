@@ -524,14 +524,14 @@ header .container .btn:hover{
     }
     
 }
-@keyframes fadeInup{
-    0%{
-        opacity: 0;
-        transform: translateY(100px);
+@keyframes fadeInUp {
+    0% {
+      opacity: 0;
+      transform: translateY(140px);
     }
-    100%{
-        opacity: 1;
-        transform: translateY(0px);
+  
+    100% {
+      opacity: 1;
+      transform: translateY(0);
     }
-
-}
+  }
