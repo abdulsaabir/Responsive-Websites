@@ -108,6 +108,7 @@ header .container .btn:hover{
     font-size: 78px;
     margin-bottom: 30px;
     max-width: 700px;
+    transition: fadeInup 0.6s ease-in-out 2s;
 }
 
 .hero .container .text p{
@@ -523,13 +524,14 @@ header .container .btn:hover{
     }
     
 }
-@keyframes feFuncA {
-    0% {
-      opacity: 0;
-      transform: translateY(140px);
+@keyframes fadeInup{
+    0%{
+        opacity: 0;
+        transform: translateY(100px);
     }
-    100% {
+    100%{
         opacity: 1;
         transform: translateY(0px);
     }
+
 }
