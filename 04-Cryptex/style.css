@@ -343,7 +343,7 @@ header .container .btn:hover{
     background-color: #0033AA;
     border: none;
 }
-.mobile{
+/* .mobile{
     padding: 40px 20px;
     background-color:rgba(15, 15, 19, 0.797);
     padding-bottom: 0;
@@ -354,7 +354,7 @@ header .container .btn:hover{
     justify-content: space-between;
 }
 .mobile .container img{
-    width: 900px;
+    width: 800px;
     position: relative;
 }
 .mobile .container  .money h1{
@@ -389,7 +389,7 @@ header .container .btn:hover{
     display: flex;
     margin-top: 20px;
     gap: 20px;
-}
+} */
 
 /* app banner */
 @media (max-width: 1480px){
@@ -406,15 +406,14 @@ header .container .btn:hover{
         /* overflow: hidden; */
         /* .mobile{
             /* padding: 0 100px; */
-        } */
-        .mobile .container{
+        /* } */ */
+        /* .mobile .container{
             flex-direction: column;
             align-items: center;
             justify-content: center;
-        }
-        .mobile .container .img img{
+        } */
+        /* .mobile .container .img img{
             width: 400px;
-            
         }
         .mobile .container  .money h1{
             font-size: 40px;
@@ -422,7 +421,7 @@ header .container .btn:hover{
         }
         .mobile .container  .money h3{
             font-size: 20px;
-        }
+        } */
         
     header .container ul{
         display: none;
