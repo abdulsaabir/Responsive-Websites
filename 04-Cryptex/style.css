@@ -262,7 +262,12 @@ table{
     justify-content: space-between;
     margin-bottom: 20px;
 }
-
+.market table tbody .wrapper img{
+    width: 20px;
+}
+.market table tbody tr td:first-child{
+    width: 100px;
+}
 /* how it works */
 
 .work{
