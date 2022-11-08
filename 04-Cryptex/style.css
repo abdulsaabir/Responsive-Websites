@@ -342,6 +342,7 @@ table .wrapper img{
 table .trade img{
     width: 70px;
 }
+
 /* how it works */
 
 .work{
@@ -511,7 +512,25 @@ table .trade img{
     margin-top: 20px;
     gap: 20px;
 } 
-
+/* footer */
+footer .container {
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    grid-gap: 30px;
+}
+footer .container ul .Cryptex{
+    display: flex;
+    align-items: center;
+}
+footer .container ul {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: start;
+}
+footer .container ul img{
+    width: 50px;
+}
 /* app banner */
 @media (max-width: 1480px){
     .work .inst >div{
