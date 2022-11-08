@@ -536,7 +536,7 @@ footer .footer-container{
     width: 90%;
     margin: auto;
     display: grid;
-    grid-template-columns: 500px repeat(4, 1fr);
+    grid-template-columns: 500px repeat(auto-fill, 200px);
 }
 footer .footer-container ul:first-child{
     max-width: 400px;
@@ -555,6 +555,20 @@ footer .footer-container ul:not(.cryptexheader) a:hover{
 footer .footer-container .cryptexheader li a{
     font-size: 18px;
     color: #bcb7ae;
+}
+.footer-last{
+    background-color: hsl(228, 9%, 10%);
+    padding: 30px 0;
+}
+.footer-last p{
+    color: #bcb7ae;
+    font-size: 19px;
+}
+.footer-last p a{
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1.50px;
 }
 /* app banner */
 @media (max-width: 1480px){
@@ -629,7 +643,15 @@ footer .footer-container .cryptexheader li a{
     .work .container .top{
     margin-bottom: 10px;
     }
+    footer .footer-container{
+        grid-template-columns: 1fr;
+    }
+    .footer-last p{
+        text-align: center;
+        line-height: 150%;
+    }
 }
+
 
 @media (max-width: 600px){
 
