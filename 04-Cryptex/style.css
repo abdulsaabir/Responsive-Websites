@@ -255,22 +255,6 @@ table{
     width: 100%;
     margin-top: 30px;
 }
-.market table thead .trow{
-    display: grid;
-    grid-template-columns: 40px 1fr 3fr 1fr 3fr 2fr 1fr 
-}
-
-.market table tbody .row1{
-    display: grid;
-    grid-template-columns: 40px 1fr 3fr 1fr 3fr 2fr 1fr;
-        margin-top: 25px;
-}
-.market table tbody .wrapper img{
-    width: 25px;
-}
-.market table tbody .trade{
-    width: 50px;
-}
 /* how it works */
 
 .work{
