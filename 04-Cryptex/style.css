@@ -513,7 +513,18 @@ table .trade img{
     gap: 20px;
 } 
 /* footer */
+footer{
+    padding: 50px 0;
+    background-color: hsl(240, 5%, 8%);
 
+}
+footer a{
+color: #ddd;
+text-decoration: none;
+}
+footer ul{
+    list-style: none;
+}
 footer .footer-container ul .Cryptex{
     display: flex;
     align-items: center;
@@ -521,7 +532,30 @@ footer .footer-container ul .Cryptex{
 footer .footer-container ul img{
     width: 50px;
 }
-
+footer .footer-container{
+    width: 90%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 500px repeat(4, 1fr);
+}
+footer .footer-container ul:first-child{
+    max-width: 400px;
+}
+footer .footer-container ul li{
+    margin:  15px 0;
+}
+footer .footer-container ul li a{
+    font-size: 18px;
+    font-weight: 500;
+    transition: color 0.2s ease-in-out;
+}
+footer .footer-container ul:not(.cryptexheader) a:hover{
+    color: hsl(222, 100%, 61%);
+}
+footer .footer-container .cryptexheader li a{
+    font-size: 18px;
+    color: #bcb7ae;
+}
 /* app banner */
 @media (max-width: 1480px){
     .work .inst >div{
