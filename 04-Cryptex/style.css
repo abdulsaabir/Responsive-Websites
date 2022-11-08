@@ -256,11 +256,11 @@ table{
     margin-top: 30px;
 }
 .market table thead .trow{
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-bottom: 20px;
+    display: grid;
+    grid-template-columns: repeat(8,auto);
+}
+table tbody{
+    display: none;
 }
 
 /* how it works */
