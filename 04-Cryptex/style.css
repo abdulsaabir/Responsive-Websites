@@ -245,6 +245,24 @@ header .container .btn:hover{
 /* market */
 .market{
     padding: 50px;
+    background-color: hsl(240, 5%, 8%);
+}
+.market .container {
+    width: 92%;
+    
+}
+.market .container .container-header{
+    border-bottom: none;
+}
+.market .container .container-header ul li a{
+    padding: 8px 18px;
+}
+.market .container .container-header ul li a:hover{
+    background-color: inherit;
+}
+.market .container .container-header ul li:first-child a{
+    background-color: #0033AA;
+    border-radius: 50px;
 }
 .market .container .container-header h1{
     font-size: 56px;
@@ -256,11 +274,53 @@ table{
     border-collapse: collapse;
     width: 100%;
 }
-table  th, td {
+
+table tr, th {
+    border-bottom: 2px solid #ddd;
     padding: 15px;
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 1.35px;
+}
+table  tr, td {
+    padding: 35px;
+    padding-bottom: 20px;
     text-align: center;
-    border-bottom: 1px solid #ddd;
+    border-bottom: 1px solid rgba(221, 221, 221, 0.257);
+    font-size: 16px;
   }
+  table  tr:hover{
+    background-color: rgba(0, 0, 68, 0.367);
+  }
+  table .wrapper{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+table .wrapper a{
+    text-decoration: none;
+    color: white;
+    transition: color 0.2s ease-in-out;
+    }
+   table .wrapper a:hover{
+    color: hsl(222, 100%, 61%);
+   }
+   table .wrapper a span{
+    color:hsl(223, 10%, 52%);
+    text-transform: uppercase;
+    font-size: 16px;
+   }
+table .btn{
+    color: white;
+    border: 1px solid white;
+    border-radius: 50   px;
+    padding: 10px 20px;
+    transition: all 0.3s ease-in-out;
+}
+table .btn:hover{
+    border-color: #419cff ;
+    background-color: #419cff;
+}
 table .wrapper img{
     width: 25px;
 }
