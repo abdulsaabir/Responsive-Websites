@@ -256,10 +256,8 @@ table{
     border-collapse: collapse;
     width: 100%;
 }
-table tr td{
-    display: flex;
-    align-items: center;
-    justify-content: center;
+table td {
+    text-align: center;
 }
 table .wrapper img{
     width: 25px;
