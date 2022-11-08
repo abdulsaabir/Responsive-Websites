@@ -256,9 +256,11 @@ table{
     border-collapse: collapse;
     width: 100%;
 }
-table td {
-    text-align: left;
-}
+table  th, td {
+    padding: 15px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+  }
 table .wrapper img{
     width: 25px;
 }
