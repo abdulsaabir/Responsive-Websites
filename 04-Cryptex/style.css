@@ -298,6 +298,12 @@ table  tr, td {
     align-items: center;
     gap: 10px;
 }
+table .green{
+    color: green;
+}
+table .red{
+    color: red;
+}
 table .wrapper a{
     text-decoration: none;
     color: white;
