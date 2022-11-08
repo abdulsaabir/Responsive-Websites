@@ -269,10 +269,14 @@ header .container .btn:hover{
     font-weight: 700;
     margin-bottom: 20px;
 }
+.market .container .table {
+    overflow-x:auto;
+}
 table{
     margin-top: 30px;
     border-collapse: collapse;
     width: 100%;
+    max-width: 1400px;
     overflow:scroll
 }
 
@@ -298,11 +302,15 @@ table  tr, td {
     align-items: center;
     gap: 10px;
 }
-table .green{
+table tr:nth-child(even) td:nth-child(5){
     color: green;
+    font-weight: 400;
+    font-size: 18px;
 }
-table .red{
+table tr:nth-child(odd) td:nth-child(5){
+    font-weight: 400;
     color: red;
+    font-size: 18px;
 }
 table .wrapper a{
     text-decoration: none;
