@@ -513,24 +513,15 @@ table .trade img{
     gap: 20px;
 } 
 /* footer */
-footer .container {
-    display: grid;
-    grid-template-columns: repeat(5,1fr);
-    grid-gap: 30px;
-}
-footer .container ul .Cryptex{
+
+footer .footer-container ul .Cryptex{
     display: flex;
     align-items: center;
 }
-footer .container ul {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: start;
-}
-footer .container ul img{
+footer .footer-container ul img{
     width: 50px;
 }
+
 /* app banner */
 @media (max-width: 1480px){
     .work .inst >div{
