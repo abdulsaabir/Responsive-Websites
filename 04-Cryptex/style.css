@@ -273,6 +273,7 @@ table{
     margin-top: 30px;
     border-collapse: collapse;
     width: 100%;
+    overflow:scroll
 }
 
 table tr, th {
