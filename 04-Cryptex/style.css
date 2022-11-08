@@ -259,10 +259,6 @@ table{
     display: grid;
     grid-template-columns: repeat(8,auto);
 }
-table tbody{
-    display: none;
-}
-
 /* how it works */
 
 .work{
