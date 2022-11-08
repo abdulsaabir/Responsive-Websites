@@ -261,11 +261,8 @@ table{
     align-items: center;
     justify-content: space-between;
     margin-bottom: 20px;
-    background-color: #2f2f2f;
 }
-.market table tbody .wrapper img{
-    width: 20px;
-}
+
 /* how it works */
 
 .work{
