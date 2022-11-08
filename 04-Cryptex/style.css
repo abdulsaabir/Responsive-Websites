@@ -257,7 +257,7 @@ table{
     width: 100%;
 }
 table td {
-    text-align: center;
+    text-align: left;
 }
 table .wrapper img{
     width: 25px;
