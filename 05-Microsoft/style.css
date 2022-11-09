@@ -78,7 +78,7 @@ header .container a:hover{
 .hero{
     background: url('./img/hero.jpg') no-repeat center center / cover;
     height: 85vh;
-    border-bottom: 4px dashed #000;
+    /* border-bottom: 4px dashed #000; */
 }
 .hero .container{
     display: flex;
