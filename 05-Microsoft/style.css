@@ -86,7 +86,7 @@ header .container a:hover{
     align-items: flex-start;
     padding-top: 150px;
 }
-.hero .container p:first-child{
+/* .hero .container p:first-child{ */
     margin-bottom: 20px;
     padding: 6px 12px;
     background-color: #fff;
