@@ -83,6 +83,7 @@ header .container a:hover{
 .hero .container{
     display: flex;
     flex-direction: column;
+    align-items: flex-start;
     padding-top: 150px;
 }
 .hero .container p:first-child{
