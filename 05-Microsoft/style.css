@@ -81,7 +81,6 @@ header .container a:hover{
     border-bottom: 4px dashed #000;
 }
 .hero .container{
-    /* flex-direction: column; */
     align-items: flex-start;
     height: 100%;
     padding-top: 150px;
