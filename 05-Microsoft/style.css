@@ -81,16 +81,18 @@ header .container a:hover{
     border-bottom: 4px dashed #000;
 }
 .hero .container{
+    display: flex;
     padding-top: 150px;
 }
 .hero .container p:first-child{
-    /* margin-bottom: 20px; */
-    /* padding: 6px 12px; */
+    margin-bottom: 20px;
+    padding: 6px 12px;
     background-color: #fff;
     font-weight: 600;
     color: #950c17;
     font-size: 18px;
     letter-spacing: 1.50px;
+    text-align: start;
 }
 .hero .container h2{
     font-size: 50px;
