@@ -78,20 +78,61 @@ header .container a:hover{
 .hero{
     background: url('./img/hero.jpg') no-repeat center center / cover;
     height: 85vh;
+    border-bottom: 4px dashed #000;
 }
 .hero .container{
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: flex-start;
     height: 100%;
+    padding-top: 150px;
 }
 .hero .container p:first-child{
-    margin-bottom: 30px;
+    margin-bottom: 20px;
     padding: 6px 12px;
     background-color: #fff;
     font-weight: 600;
     color: #950c17;
     font-size: 18px;
     letter-spacing: 1.50px;
+}
+.hero .container h2{
+    font-size: 50px;
+    font-family: sans-serif;
+    margin-bottom: 30px;
+}
+.p2{
+    font-size: 20px;
+    width: 400px;
+    text-align: start;
+    line-height: 140%;
+    margin-bottom: 20px;
+}
+.btns button:first-child{
+    padding: 10px 22px;
+    background-color: #000;
+    color: #FFF;
+    font-size: 18px;
+    font-weight: bold;
+    margin-right: 25px;
+    cursor:pointer;
+}
+.btns button:last-child{
+    cursor:pointer;
+    background-color: transparent;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    padding-bottom: 3px
+}
+.btns button:last-child span{
+    font-size: 20px;
+    text-align: center;
+}
+.btns button:last-child:hover{
+    text-decoration: underline;
+}
+.btns button:last-child:hover span{
+    text-decoration: none;
+    margin-left: 5px;
 }
