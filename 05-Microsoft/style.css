@@ -97,7 +97,7 @@ header .container a:hover{
     text-align: start;
 }
 .hero .container h2{
-    /* font-size: 50px; */
+    font-size: 50px;
     font-family: sans-serif;
     margin-bottom: 30px;
 }
