@@ -81,8 +81,7 @@ header .container a:hover{
     border-bottom: 4px dashed #000;
 }
 .hero .container{
-    height: 100%;
-    /* padding-top: 150px; */
+    padding-top: 150px;
 }
 .hero .container p:first-child{
     margin-bottom: 20px;
