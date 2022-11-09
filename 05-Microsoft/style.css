@@ -80,7 +80,7 @@ header .container a:hover{
     height: 85vh;
     border-bottom: 4px dashed #000;
 }
-/* .hero .container{ */
+.hero .container{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
