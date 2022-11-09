@@ -98,7 +98,7 @@ header .container a:hover{
 }
 .hero .container h2{
     font-size: 50px;
-    font-family: sans-serif;
+    /* font-family: sans-serif; */
     margin-bottom: 30px;
 }
 .p2{
