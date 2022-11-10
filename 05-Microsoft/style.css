@@ -101,6 +101,7 @@ header .container a:hover {
 }
 .p2 {
   font-size: 20px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   width: 400px;
   text-align: start;
   line-height: 140%;
@@ -162,6 +163,7 @@ header .container a:hover {
 }
 .all .container > div a {
   text-decoration: underline;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   margin-top: 20px;
 }
 
@@ -173,14 +175,17 @@ header .container a:hover {
   gap: 50px;
 }
 .series .container > div h2 {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   margin-top: 23px;
 }
 .series .container > div p {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   margin-top: 20px;
   line-height: 150%;
 }
 
 .series .container > div a {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   margin-top: 20px;
   color: #950c17;
   display: block;
@@ -191,16 +196,58 @@ header .container a:hover {
   text-decoration: underline;
 }
 
+/* gift */
+.gift {
+  margin: 50px 0;
+  height: 550px;
+}
+.gift .container {
+  background: url("./img/headphones.avif") center center/cover;
+  height: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  padding-left: 100px;
+}
+.gift .container h2 {
+  font-size: 60px;
+  margin-bottom: 30px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.gift .container p {
+  font-size: 18px;
+  width: 400px;
+  line-height: 150%;
+  margin-bottom: 30px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.gift .container button {
+  max-width: 300px;
+  background-color: #000;
+  color: #fff;
+  padding: 12px 25px;
+  margin-bottom: 20px;
+}
+.gift .container a {
+  color: #000;
+  font-weight: bold;
+}
+
+/* media queries */
 @media (max-width: 1024px) {
   .series .container {
     grid-template-columns: repeat(2, 1fr);
   }
   .hero {
-    background: url("./img/hero-2.avif");
+    background: url("./img/hero-2.avif") no-repeat center center/cover;
     border: none;
   }
   .hero {
     position: relative;
+  }
+  .p2 {
+    width: 100%;
   }
   .hero .container {
     background-color: white;
@@ -209,12 +256,30 @@ header .container a:hover {
     left: 30px;
     transform: translateY(90%);
     box-shadow: 0 3px 3px rgba(0, 0, 0, 0.4);
-    padding: 60px 70px;
+    padding: 20px 70px;
   }
   .hero .container h2 {
     margin-bottom: 20px;
   }
   .all {
     margin-top: 350px;
+  }
+}
+@media (max-width: 768px) {
+  .hero .container {
+    padding: 20px 20px;
+  }
+  .hero .container h2 {
+    margin-bottom: 5px;
+    font-size: 40px;
+  }
+  .p2 {
+    width: 100%;
+    font-size: 18px;
+  }
+}
+@media (max-width: 550px) {
+  .series .container {
+    grid-template-columns: 1fr;
   }
 }
