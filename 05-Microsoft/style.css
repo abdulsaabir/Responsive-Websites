@@ -134,6 +134,9 @@ header .container a:hover {
   text-decoration: none;
   margin-left: 5px;
 }
+.hero-small {
+  display: none;
+}
 
 /* all */
 
@@ -160,4 +163,58 @@ header .container a:hover {
 .all .container > div a {
   text-decoration: underline;
   margin-top: 20px;
+}
+
+/* SERIES */
+
+.series .container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 50px;
+}
+.series .container > div h2 {
+  margin-top: 23px;
+}
+.series .container > div p {
+  margin-top: 20px;
+  line-height: 150%;
+}
+
+.series .container > div a {
+  margin-top: 20px;
+  color: #950c17;
+  display: block;
+  font-weight: bold;
+}
+
+.series .container > div a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 1024px) {
+  .series .container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .hero {
+    background: url("./img/hero-2.avif");
+    border: none;
+  }
+  .hero {
+    position: relative;
+  }
+  .hero .container {
+    background-color: white;
+    position: absolute;
+    bottom: 0;
+    left: 30px;
+    transform: translateY(90%);
+    box-shadow: 0 3px 3px rgba(0, 0, 0, 0.4);
+    padding: 60px 70px;
+  }
+  .hero .container h2 {
+    margin-bottom: 20px;
+  }
+  .all {
+    margin-top: 350px;
+  }
 }
