@@ -272,6 +272,9 @@ header .container a:hover {
     margin-top: 350px;
   }
   header .container ul {
+    display: none;
+  }
+  .menu {
     position: absolute;
     display: flex;
     flex-direction: column;
@@ -284,7 +287,6 @@ header .container a:hover {
     justify-content: center;
     z-index: 4;
     background-color: #f2f2f2;
-    padding: 0 50px;
   }
   header .container ul li {
     margin-top: 50px;
