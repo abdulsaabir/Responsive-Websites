@@ -20,7 +20,12 @@ a {
 ul {
   list-style: none;
 }
-
+.menu {
+  display: none;
+}
+.menu-item {
+  display: none;
+}
 /* header */
 header {
   height: 10vh;
@@ -274,6 +279,10 @@ header .container a:hover {
   header .container ul {
     display: none;
   }
+  header .container {
+    align-items: center;
+    justify-content: center;
+  }
   .menu {
     position: absolute;
     top: 0;
@@ -287,7 +296,7 @@ header .container a:hover {
     align-items: center;
     justify-content: center;
     transform: translateX(-100%);
-    transform: translateX(0);
+    /* transform: translateX(0); */
   }
   .menu ul li {
     padding: 15px 0;
@@ -302,6 +311,20 @@ header .container a:hover {
 .menu ul li a:hover {
   margin-left: 8px;
   color: #950c17;
+}
+.menu-item {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  z-index: 4;
+  background-color: #950c17;
+  width: 10px;
+  height: 4px;
+}
+.menu-item > div {
+  height: 2px;
+  width: 10px;
+  z-index: 5;
 }
 .scroll-of {
   overflow-y: hidden;
