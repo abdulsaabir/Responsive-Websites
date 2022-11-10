@@ -61,15 +61,16 @@ ul {
 /* header */
 header {
   position: sticky;
-  top: 10px;
+  top: 0px;
   left: 0px;
   padding: 10px;
   font-size: 1rem;
   color: black;
-  height: 13vh;
+  height: 17vh;
   width: 100%;
   z-index: 10;
   box-shadow: 0 10px 15px hsla(0, 0%, 0%, 0.1);
+  background-color: #ffffff;
 }
 
 header .container {
@@ -103,7 +104,7 @@ header .container ul li a:hover {
 /* hero */
 
 .doctor {
-  height: 100vh;
+  height: 90vh;
   background: url("./images/hero-bg.png");
 }
 .doctor .container {
@@ -113,4 +114,55 @@ header .container ul li a:hover {
 }
 .doctor .container .img img {
   width: 100%;
+}
+.doctor .container .text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.doctor .container .text h4 {
+  color: #365ed9;
+  font-weight: 800;
+  margin-bottom: 50px;
+}
+.doctor .container .text h1 {
+  font-size: 75px;
+  color: #0e254e;
+  font-weight: 900;
+}
+.doctor .container .text p {
+  margin-top: 50px;
+  color: #787878;
+  line-height: 145%;
+  font-size: 19px;
+  margin-bottom: 30px;
+}
+.doctor .container form {
+  border: none;
+  background-color: #ffffff;
+  border-radius: 6px;
+  padding: 20px 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.doctor .container form input {
+  margin: 0;
+  padding: 22px 24px;
+  border: none;
+  background-color: rgb(247, 247, 247);
+}
+.doctor .container form button {
+  margin: 0;
+  padding: 22px 24px;
+}
+.doctor .container form input,
+.doctor .container form button {
+  float: left;
+}
+
+@media (max-width: 1024px) {
+  body {
+    /* display: flex; */
+  }
 }
