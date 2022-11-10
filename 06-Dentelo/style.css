@@ -203,7 +203,7 @@ header .container ul li a:hover {
 }
 
 @media (max-width: 900px) {
-  .doctor .container {
+  . .doctor .container {
     grid-template-columns: 1fr;
   }
   .doctor .container .text {
@@ -239,5 +239,8 @@ header .container ul li a:hover {
   }
   .doctor .container .img {
     margin: auto;
+  }
+  header .container ul {
+    display: none;
   }
 }
