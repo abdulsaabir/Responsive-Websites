@@ -195,11 +195,18 @@ header .container a:hover {
 .series .container > div a:hover {
   text-decoration: underline;
 }
+.Business > h1 {
+  font-size: 40px;
+  width: 90%;
+  margin: auto;
+  margin-bottom: 30px;
+}
 
 /* gift */
 .gift {
   margin: 50px 0;
   height: 550px;
+  margin-bottom: 150px;
 }
 .gift .container {
   background: url("./img/headphones.avif") center center/cover;
