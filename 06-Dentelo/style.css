@@ -4,10 +4,37 @@
   padding: 0;
   box-sizing: border-box;
 }
+/* global styles */
 
+.container {
+  width: 73%;
+  margin: auto;
+}
+body {
+  font-family: "Roboto", sans-serif;
+}
+a {
+  text-decoration: none;
+}
+
+/* info */
 .info {
   height: 8vh;
   background-color: hsl(218, 70%, 18%);
+}
+.info .container {
+  height: 100%;
   display: flex;
   align-items: center;
+}
+.info .container p:last-child {
+  margin-left: 20px;
+}
+.info .container i {
+  color: hsl(225, 68%, 53%);
+  font-size: 13px;
+}
+.info .container p a {
+  color: #fff;
+  font-size: 16px;
 }
