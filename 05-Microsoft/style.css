@@ -6,6 +6,7 @@
 /* globl styles */
 body {
   font-family: sans-serif;
+  position: relative;
 }
 .container {
   width: 90%;
@@ -30,6 +31,11 @@ ul {
 header {
   height: 10vh;
   width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #f2f2f2;
 }
 header .container {
   display: flex;
@@ -68,6 +74,7 @@ header .container a:hover {
   align-items: center;
   justify-content: center;
   background-color: #950c17;
+  margin-top: 10vh;
 }
 .header-two a {
   font-size: 20px;
@@ -212,6 +219,7 @@ header .container a:hover {
   margin: 50px 0;
   height: 550px;
   margin-bottom: 150px;
+  position: relative;
 }
 .gift .container {
   background: url("./img/headphones.avif") center center/cover;
@@ -276,6 +284,7 @@ header .container a:hover {
   .all {
     margin-top: 350px;
   }
+
   header .container ul {
     display: none;
   }
@@ -284,7 +293,7 @@ header .container a:hover {
     justify-content: center;
   }
   .menu {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     width: 50%;
@@ -296,45 +305,66 @@ header .container a:hover {
     align-items: center;
     justify-content: center;
     transform: translateX(-100%);
-    /* transform: translateX(0); */
+    transition: transform 0.6s ease-in-out;
+  }
+  .show {
+    transform: translateX(0);
   }
   .menu ul li {
     padding: 15px 0;
     border-bottom: #000 dotted 1px;
   }
-}
-.menu ul li a {
-  color: #000;
-  font-weight: bold;
-  transition: margin 0.3s ease-in-out;
-}
-.menu ul li a:hover {
-  margin-left: 8px;
-  color: #950c17;
-}
-.menu-item {
-  display: block;
-  position: absolute;
-  right: 20px;
-  top: 20px;
-  z-index: 4;
-  cursor: pointer;
-}
-.menu-item > div {
-  background-color: #950c17;
-  height: 2px;
-  width: 30px;
-}
-.menu-item > div:nth-child(2) {
-  transform: translateY(4px);
-}
-.menu-item > div:last-child {
-  transform: translateY(8px);
-}
-.menu-item > div:first-child {
-}
-.me .scroll-of {
-  overflow-y: hidden;
+  .menu ul li a {
+    color: #000;
+    font-weight: bold;
+    transition: margin 0.3s ease-in-out;
+  }
+  .menu ul li a:hover {
+    margin-left: 8px;
+    color: #950c17;
+  }
+  .menu-item {
+    display: block;
+    position: fixed;
+    right: 20px;
+    top: 20px;
+    z-index: 4;
+    cursor: pointer;
+  }
+  .menu-item > div {
+    background-color: #950c17;
+    height: 2px;
+    width: 30px;
+  }
+  .menu-item > div:nth-child(2) {
+    transform: translateY(4px);
+  }
+  .menu-item > div:last-child {
+    transform: translateY(8px);
+  }
+
+  .scroll-of {
+    overflow-y: hidden;
+  }
+  .gift .container {
+    background: url("./img/headp.avif") no-repeat center center/cover;
+    padding-left: 20px;
+    justify-content: start;
+    align-items: center;
+  }
+  .gift .container h2 {
+    margin-bottom: 10px;
+  }
+  .gift .container p {
+    text-align: center;
+  }
+  .gift .container button {
+    margin-top: auto;
+    margin-bottom: 50px;
+  }
+  .gift .container a {
+    display: none;
+  }
 }
 @media (max-width: 768px) {
   .hero .container {
