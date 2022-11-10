@@ -66,7 +66,7 @@ header {
   padding: 10px;
   font-size: 1rem;
   color: black;
-  height: 17vh;
+  height: 13vh;
   width: 100%;
   z-index: 10;
   box-shadow: 0 10px 15px hsla(0, 0%, 0%, 0.1);
@@ -104,13 +104,16 @@ header .container ul li a:hover {
 /* hero */
 
 .doctor {
-  height: 90vh;
+  min-height: 100vh;
   background: url("./images/hero-bg.png");
 }
 .doctor .container {
   display: grid;
   grid-template-columns: 1fr 0.75fr;
   align-items: center;
+}
+.doctor .container .img {
+  width: 460px;
 }
 .doctor .container .img img {
   width: 100%;
@@ -148,21 +151,93 @@ header .container ul li a:hover {
 }
 .doctor .container form input {
   margin: 0;
-  padding: 22px 24px;
+  height: 60px;
+  max-width: 400px;
+  height: 60px;
+  max-width: 400px;
+  padding: 4px 10px;
   border: none;
   background-color: rgb(247, 247, 247);
 }
 .doctor .container form button {
   margin: 0;
-  padding: 22px 24px;
+  padding: 4px 10px;
+  height: 60px;
+  width: 150px;
 }
 .doctor .container form input,
 .doctor .container form button {
   float: left;
 }
 
-@media (max-width: 1024px) {
-  body {
-    /* display: flex; */
+@media (max-width: 1300px) {
+  .doctor .container .img {
+    width: 420px;
+  }
+  .doctor .container .text h1 {
+    font-size: 50px;
+  }
+}
+
+@media (max-width: 1100px) {
+  .doctor .container .img {
+    width: 370px;
+  }
+  .doctor .container .text h1 {
+    font-size: 50px;
+  }
+  .doctor .container form input {
+    max-width: 200px;
+  }
+}
+@media (max-width: 1100px) {
+  .container {
+    width: 95%;
+  }
+  .doctor .container .text p {
+    max-width: 360px;
+  }
+  .doctor .container form input {
+    max-width: 150px;
+  }
+}
+
+@media (max-width: 900px) {
+  .doctor .container {
+    grid-template-columns: 1fr;
+  }
+  .doctor .container .text {
+    align-items: flex-start;
+    justify-content: center;
+    text-align: start;
+  }
+  .container {
+    width: 74%;
+    margin: auto;
+  }
+  .doctor {
+    margin-top: 10px;
+    width: 100%;
+  }
+  .doctor .container form {
+    flex-direction: column;
+  }
+  .doctor .container form input {
+    max-width: 650px;
+    width: 100%;
+  }
+  .doctor .container form button {
+    width: 450px;
+  }
+  .doctor .container .text p {
+    max-width: 1000px;
+    width: 100%;
+  }
+  .doctor .container .text h4 {
+    margin-bottom: 0;
+    margin-top: 20px;
+  }
+  .doctor .container .img {
+    margin: auto;
   }
 }
