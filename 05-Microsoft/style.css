@@ -77,14 +77,14 @@ header .container a:hover{
 
 .hero{
     background: url('./img/hero.jpg') no-repeat center center / cover;
-    height: 85vh;
+    height: 65vh;
     border-bottom: 4px dashed #000;
 }
 .hero .container{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    padding-top: 150px;
+    padding-top: 100px;
 }
 .hero .container p:first-child{
     margin-bottom: 20px;
