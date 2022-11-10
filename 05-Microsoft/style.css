@@ -313,20 +313,27 @@ header .container a:hover {
   color: #950c17;
 }
 .menu-item {
+  display: block;
   position: absolute;
-  top: 10px;
   right: 20px;
+  top: 20px;
   z-index: 4;
-  background-color: #950c17;
-  width: 10px;
-  height: 4px;
+  cursor: pointer;
 }
 .menu-item > div {
+  background-color: #950c17;
   height: 2px;
-  width: 10px;
-  z-index: 5;
+  width: 30px;
 }
-.scroll-of {
+.menu-item > div:nth-child(2) {
+  transform: translateY(4px);
+}
+.menu-item > div:last-child {
+  transform: translateY(8px);
+}
+.menu-item > div:first-child {
+}
+.me .scroll-of {
   overflow-y: hidden;
 }
 @media (max-width: 768px) {
