@@ -36,6 +36,16 @@ ul {
   border-radius: 6px;
   font-weight: bold;
 }
+h4 {
+  color: #365ed9;
+  font-weight: 800;
+  margin-bottom: 50px;
+}
+h1 {
+  font-size: 75px;
+  color: #0e254e;
+  font-weight: 900;
+}
 /* info  */
 .info {
   height: 8vh;
@@ -120,16 +130,7 @@ header .container ul li a:hover {
   flex-direction: column;
   align-items: flex-start;
 }
-.doctor .container .text h4 {
-  color: #365ed9;
-  font-weight: 800;
-  margin-bottom: 50px;
-}
-.doctor .container .text h1 {
-  font-size: 75px;
-  color: #0e254e;
-  font-weight: 900;
-}
+
 .doctor .container .text p {
   margin-top: 50px;
   color: #787878;
