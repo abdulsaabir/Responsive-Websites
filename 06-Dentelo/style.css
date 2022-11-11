@@ -113,7 +113,7 @@ header .container ul li a:hover {
   align-items: center;
 }
 .doctor .container .img {
-  width: 460px;
+  max-width: 460px;
 }
 .doctor .container .img img {
   width: 100%;
