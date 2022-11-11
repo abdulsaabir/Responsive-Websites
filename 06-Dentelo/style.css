@@ -125,6 +125,11 @@ header .container ul li a:hover {
   grid-template-columns: 1fr minmax(430px, 600px);
   align-items: center;
 }
+
+.about .container {
+  grid-template-columns: minmax(430px, 450px) 1fr;
+  gap: 80px;
+}
 .doctor .container .img img {
   width: 100%;
 }
@@ -146,6 +151,15 @@ header .container ul li a:hover {
   background-color: #ffffff;
   border-radius: 6px;
   padding: 20px 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.about .container form {
+  border: none;
+  background-color: transparent;
+  border-radius: 0;
+  padding: 0 0;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -236,6 +250,19 @@ header .container ul li a:hover {
 .services .img p {
   font-size: 18px;
   color: #787878;
+}
+/* about */
+
+.about {
+  padding: 60px 0;
+}
+.about h4 {
+  margin-bottom: 10px;
+}
+.about .container .text p {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 16px;
 }
 /* media query */
 @media (max-width: 1050px) {
