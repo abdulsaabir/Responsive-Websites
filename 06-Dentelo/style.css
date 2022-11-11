@@ -105,15 +105,13 @@ header .container ul li a:hover {
 
 .doctor {
   min-height: 100vh;
+  border: 4px #0e254e solid;
   background: url("./images/hero-bg.png");
 }
 .doctor .container {
   display: grid;
-  grid-template-columns: 1fr 0.75fr;
+  grid-template-columns: 1fr minmax(430px, 600px);
   align-items: center;
-}
-.doctor .container .img {
-  max-width: 460px;
 }
 .doctor .container .img img {
   width: 100%;
@@ -168,4 +166,42 @@ header .container ul li a:hover {
 .doctor .container form input,
 .doctor .container form button {
   float: left;
+}
+
+@media (max-width: 1050px) {
+  body {
+    /* overflow-x: hidden; */
+  }
+  header .container ul {
+    display: none;
+  }
+  .doctor {
+    padding-top: 40px;
+  }
+  .doctor .container {
+    grid-template-columns: 0.9fr minmax(300px, 600px);
+  }
+  .doctor .container .text h1 {
+    font-size: 50px;
+  }
+  .doctor .container .text p {
+    font-size: 18px;
+    max-width: 300px;
+  }
+  .doctor .container form input {
+    max-width: 200px;
+  }
+  .doctor .container form button {
+    float: left;
+  }
+}
+@media (max-width: 850px) {
+  .doctor .container {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 400px;
+  }
+  .doctor .container .img img {
+    height: 100%;
+    width: 100%;
+  }
 }
