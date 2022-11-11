@@ -98,6 +98,9 @@ header .container ul {
 header .container ul li {
   margin-left: 30px;
 }
+header .container h1 {
+  font-size: 40px;
+}
 header .container h1 a {
   color: #0e254e;
   font-weight: 900;
@@ -168,10 +171,13 @@ header .container ul li a:hover {
   float: left;
 }
 
+/* servies */
+
+.service {
+  padding-top: 350px;
+}
+
 @media (max-width: 1050px) {
-  body {
-    /* overflow-x: hidden; */
-  }
   header .container ul {
     display: none;
   }
