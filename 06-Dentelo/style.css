@@ -105,7 +105,6 @@ header .container ul li a:hover {
 
 .doctor {
   min-height: 100vh;
-  border: 4px #0e254e solid;
   background: url("./images/hero-bg.png");
 }
 .doctor .container {
