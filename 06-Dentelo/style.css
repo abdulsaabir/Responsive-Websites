@@ -198,10 +198,18 @@ header .container ul li a:hover {
 @media (max-width: 850px) {
   .doctor .container {
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 400px;
+    grid-template-rows: 1fr auto;
+    overflow-y: hidden;
+    width: 90%;
+  }
+  .doctor .container .text p {
+    display: none;
+  }
+  .doctor .container .img {
+    margin: auto;
   }
   .doctor .container .img img {
-    height: 100%;
     width: 100%;
+    max-width: 300px;
   }
 }
