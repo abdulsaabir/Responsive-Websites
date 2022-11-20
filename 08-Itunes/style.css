@@ -14,3 +14,51 @@ ul {
 a {
   text-decoration: none;
 }
+
+/* header */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: #333;
+  display: flex;
+  gap: 20px;
+}
+header ul {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+header ul a {
+  padding: 10px 0 10px;
+}
+header a {
+  padding: 10px 0 10px 0;
+  color: #eeeeee;
+  margin-left: 10px;
+}
+header a:hover {
+  background: rgb(32, 32, 32);
+}
+/* main */
+main {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  place-content: center;
+  text-align: center;
+  background: url("./img/showcase.jpg") no-repeat center center / cover;
+  color: #eeeeee;
+}
+
+main p {
+  width: 70%;
+  margin: 0 auto;
+  font-size: 25px;
+  line-height: 165%;
+}
+main h1 {
+  font-size: 80px;
+  margin-bottom: 4rem;
+}
