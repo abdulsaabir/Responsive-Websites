@@ -175,6 +175,11 @@ main h2 {
   text-align: left;
   /* align-items: center; */
 }
+.gift-cards .img {
+  height:  400px;
+  display: flex;
+  align-items: center;
+}
 .gift-cards h2,
 .gift-cards p,
 .gift-cards hr {
@@ -215,6 +220,10 @@ main h2 {
   .gift-cards {
     grid-template-columns: 1fr;
   }
+  .gift-cards .img {
+    width: 100%;
+  }
+}
   @media screen and (max-width: 580px) {
     .gift-cards {
       grid-template-columns: 1fr;
