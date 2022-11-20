@@ -174,6 +174,18 @@ footer .container {
 @media (max-width: 1024px) {
   header .container ul {
     position: absolute;
+    top: 0;
+    left: -80px;
+    height: 100vh;
+    background: #c36cbb;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+    padding: 0 120px;
+    z-index: 10;
+    transform: translateX(-100%);
+    transition: transform 2s ease-in-out;
   }
   menu {
     display: block;
