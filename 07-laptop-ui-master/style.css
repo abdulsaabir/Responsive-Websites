@@ -68,7 +68,7 @@ section .img {
   display: flex;
   justify-content: center;
 }
-section img {
+section .img img {
   height: 60vh;
   min-width: 40vh;
   filter: drop-shadow(0px 3px 5px rgba(0, 0, 0, 0.6));
@@ -107,4 +107,28 @@ section button:first-child {
 section button:last-child {
   border: none;
   background: #c36cbb;
+}
+.big {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: -1;
+  opacity: 0.6;
+  height: 80%;
+}
+.mid {
+  position: absolute;
+  top: 30%;
+  right: 30%;
+  z-index: -1;
+  opacity: 0.7;
+  height: 60%;
+}
+.small {
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  z-index: -1;
+  opacity: 0.7;
+  height: 60%;
 }
