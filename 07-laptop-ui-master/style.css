@@ -25,6 +25,7 @@ menu {
   top: 20px;
   right: 20px;
   display: none;
+  cursor: pointer;
 }
 menu > div {
   width: 25px;
@@ -172,20 +173,33 @@ footer .container {
   }
 }
 @media (max-width: 1024px) {
-  header .container ul {
+  .links {
     position: absolute;
     top: 0;
     left: -80px;
     height: 100vh;
-    background: #c36cbb;
+    background: #c36cbaea;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
+    text-align: center;
     gap: 1rem;
     padding: 0 120px;
     z-index: 10;
     transform: translateX(-100%);
-    transition: transform 2s ease-in-out;
+    transition: transform 1s ease-in-out;
+  }
+  header ul li {
+    padding: 0;
+    margin: 0;
+  }
+  header ul li a {
+    color: white;
+    font-weight: bold;
+  }
+  .active {
+    transform: translateX(0%);
   }
   menu {
     display: block;
