@@ -65,9 +65,13 @@ section .content {
 }
 section .img {
   flex: 1;
+  display: flex;
+  justify-content: center;
 }
 section img {
-  width: 60vh;
+  height: 60vh;
+  min-width: 40vh;
+  filter: drop-shadow(0px 3px 5px rgba(0, 0, 0, 0.6));
 }
 section h1 {
   font-size: 50px;
@@ -77,7 +81,7 @@ section h1 {
   -webkit-text-fill-color: transparent;
 }
 section p {
-  font-size: 18px;
+  font-size: 22px;
   margin-top: 10px;
   color: darkolivegreen;
 }
@@ -85,19 +89,22 @@ section .btns {
   margin-top: 2rem;
 }
 section button {
-  padding: 10px 23px;
+  width: 150px;
+  height: 50px;
   margin-left: 15px;
   font-size: 18px;
   font-weight: bold;
   border-radius: 4px;
   color: #fff;
+  font-family: poppins;
+  cursor: pointer;
 }
 section button:first-child {
   background: transparent;
-  border: 2px solid palevioletred;
-  color: palevioletred;
+  border: 2px solid #c36cbb;
+  color: #c36cbb;
 }
 section button:last-child {
   border: none;
-  background: palevioletred;
+  background: #c36cbb;
 }
