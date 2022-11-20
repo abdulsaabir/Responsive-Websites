@@ -7,12 +7,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Itunes</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
     <nav class='cf'>
         <ul class='cf'>
-            <li><a href="#showcase">
+            <li class="hide-on-small"><a href="#showcase">
                     MyTunes
                 </a></li>
             <li>
@@ -30,15 +33,49 @@
         </ul>
         <a href='#' id='openup'>myTunes</a>
     </nav>
-    <!-- <h1>Basic Responsive Menu</h1> -->
-    <!-- <p>Playing around and learning HAML + SCSS - Basic Responsive Menu.</p> -->
-
     <main>
-        <h1>myTunes.</h1>
-        <h3>Your music, movies, and TV shows take center stage.</h3>
-        <p>myTunes is the best way to organize and enjoy the music, movies, and TV shows you already have — and shop for
-            the ones you want. Enjoy all the entertainment myTunes has to offer on your Mac and PC.</p>
+        <div class="container">
+
+            <h1>myTunes.</h1>
+            <h2>Your music, movies, and TV shows take center stage.</h2>
+            <p class="hide-on-small lead">myTunes is the best way to organize and enjoy the music, movies, and TV shows
+                you
+                already have — and shop
+                for
+                the ones you want. Enjoy all the entertainment myTunes has to offer on your Mac and PC.</p>
+        </div>
     </main>
+    <section class="music">
+        <div class="container">
+            <h1><i class="fa fa-music" aria-hidden="true"></i> Music
+            </h1>
+            <h2>45 million songs. Zero ads.</h2>
+            <p class="lead">Stream over 45 million songs, ad-free. Or download albums and tracks to listen to offline.
+                All the music
+                in your personal myTunes library — no matter where it came from — lives right alongside the Orange Music
+                catalog. Start your free three-month trial with no commitment, and cancel anytime.</p>
+            <button>Start Your Trial Now</button>
+            <p>Orange Music is available in myTunes, and for iOS and Android devices.
+                <img src="./img/mockup1.png" alt="">
+            </p>
+        </div>
+    </section>
+    <section class="music videos">
+        <div class="container">
+            <h2>The movie and TV collection you always wished for. Granted.
+            </h2>
+            </h1>
+
+            <p class="lead">With over 100,000 movies and TV shows to choose from, there’s always something great to
+                watch on myTunes and if you watch on Orange TV 4K, you’ll be able to enjoy a tremendous selection of
+                your favorite content in 4K HDR. So get ready to enjoy episodes of your favorite TV shows or hit movies
+                you’ve been waiting to see — anytime, anywhere. Just tap to play, or even download if you’re going
+                somewhere you won’t have Wi-Fi.</p>
+            <button>Read More</button>
+            <img src="./img/mockup2.png" alt="">
+            </p>
+        </div>
+    </section>
     <script src="https://code.jquery.com/jquery-3.6.1.js"
         integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
     <script src="./app.js"></script>

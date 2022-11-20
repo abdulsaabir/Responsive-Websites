@@ -4,7 +4,13 @@
   margin: 0;
   box-sizing: border-box;
 }
-
+:root {
+  --primary-color: #b90415;
+  --primary-color-hover: #d3071b;
+  --secondary-color: #103063;
+  --secondary-color-hover: #143f85;
+  --light-color: #f4f4f4;
+}
 body {
   font-family: "PT Sans", sans-serif;
   background-color: #252529;
@@ -15,6 +21,12 @@ ul {
 }
 a {
   text-decoration: none;
+}
+.container {
+  max-width: 1180px;
+  text-align: center;
+  margin: 0 auto;
+  padding: 0 3rem;
 }
 
 /* header */
@@ -27,6 +39,7 @@ nav {
   position: fixed;
   top: 0;
   left: 0;
+  z-index: 4;
 }
 nav ul {
   padding: 0;
@@ -55,33 +68,95 @@ nav a#openup {
 /* main */
 main {
   height: 100vh;
-  display: flex;
-  flex-direction: column;
-  place-content: center;
   text-align: center;
   background: url("./img/showcase.jpg") no-repeat center center / cover;
   color: #eeeeee;
+  position: relative;
+  overflow-y: hidden;
 }
-
-main p {
-  width: 75%;
+main .container {
+  margin-top: 25vh;
+}
+.lead {
   margin: 0 auto;
-  font-size: 26px;
+  font-size: 1.3rem;
 }
 main h1 {
-  font-size: 80px;
-  margin-bottom: 3rem;
+  font-size: 4rem;
+  margin-bottom: 0;
 }
-main h3 {
-  font-size: 40px;
+main h2 {
+  font-size: 2rem;
   margin-bottom: 1.5rem;
 }
 
-@media screen and (max-width: 580px) {
-  h1 {
-    font-size: 2.8em;
-  }
+/* music */
+.music {
+  color: #fff;
+}
+.music .container {
+  margin-top: 3rem;
+}
+.music .container h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  font-family: "PT Sans", sans-serif;
+}
+.music .container h2 {
+  margin: 1rem;
+  font-size: 2rem;
+}
 
+.music .container button {
+  width: 200px;
+  height: 70px;
+  background-color: #b90415;
+  color: white;
+  margin-top: 1.5rem;
+  border: none;
+}
+.music .container p:nth-child(5) {
+  margin-top: 1rem;
+}
+.music .container img {
+  width: 100%;
+  height: 100%;
+}
+/* videos */
+.videos {
+  background-color: #eee;
+  color: #252529;
+  padding-top: 3rem;
+}
+.videos .container h2 {
+  font-size: 1.9rem;
+  font-weight: bold;
+}
+.videos .container button {
+  background-color: var(--secondary-color);
+  width: 150px;
+  height: 70px;
+}
+
+@media screen and (max-width: 580px) {
+  .music .container .lead {
+    font-size: 20px;
+  }
+  .hide-on-small {
+    display: none;
+  }
+  main {
+    height: 50vh;
+  }
+  main .container {
+    margin-top: 15vh;
+  }
+  main h1 {
+    font-size: 3rem;
+  }
+  main h2 {
+    font-size: 1.5rem;
+  }
   nav {
     height: auto;
     border-bottom: 0;
