@@ -7,3 +7,90 @@
 body {
   font-family: "Poppins", sans-serif;
 }
+
+.container {
+  width: 85%;
+  margin: auto;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+img {
+  /* width: 100%; */
+  /* height: 100%; */
+}
+
+/*  */
+header .container {
+  display: flex;
+  align-items: center;
+  height: 10vh;
+}
+header .container div:first-child {
+  flex: 1;
+  display: flex;
+}
+header .container div:first-child h2 {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 0 0 0 15px;
+}
+header .container div:last-child {
+  flex: 1;
+  display: flex;
+  justify-content: end;
+}
+header .container ul:nth-child(2) {
+  flex: 2;
+  display: flex;
+  justify-content: space-around;
+}
+header ul li a {
+  font-size: 18px;
+  color: darkolivegreen;
+}
+
+/* main */
+
+section .container {
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+}
+section .content {
+  flex: 1;
+}
+section .img {
+  flex: 1;
+}
+section img {
+  width: 60vh;
+}
+section p {
+  font-size: 18px;
+  margin-top: 10px;
+  color: darkolivegreen;
+}
+section .btns {
+  margin-top: 2rem;
+}
+section button {
+  padding: 10px 23px;
+  margin-left: 15px;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 4px;
+  color: #fff;
+}
+section button:first-child {
+  background: transparent;
+  border: 2px solid palevioletred;
+  color: palevioletred;
+}
+section button:last-child {
+  border: none;
+  background: palevioletred;
+}
