@@ -7,6 +7,8 @@
 
 body {
   font-family: "PT Sans", sans-serif;
+  background-color: #252529;
+  line-height: 1.6;
 }
 ul {
   list-style: none;
@@ -16,31 +18,40 @@ a {
 }
 
 /* header */
-header {
+
+nav {
+  height: 40px;
+  width: 100%;
+  background-color: #333;
+  color: #eee;
   position: fixed;
   top: 0;
   left: 0;
-  width: 100%;
-  background: #333;
-  display: flex;
-  gap: 20px;
 }
-header ul {
-  display: flex;
-  gap: 20px;
-  align-items: center;
+nav ul {
+  padding: 0;
+  margin: 0;
 }
-header ul a {
-  padding: 10px 0 10px;
+nav li {
+  display: inline;
+  float: left;
 }
-header a {
-  padding: 10px 0 10px 0;
-  color: #eeeeee;
-  margin-left: 10px;
+nav a {
+  display: inline-block;
+  width: 100px;
+  text-align: center;
+  text-decoration: none;
+  padding: 10px 0;
+  color: #eee;
+  text-decoration: none;
 }
-header a:hover {
-  background: rgb(32, 32, 32);
+nav li:hover {
+  background-color: #444;
 }
+nav a#openup {
+  display: none;
+}
+
 /* main */
 main {
   height: 100vh;
@@ -53,12 +64,78 @@ main {
 }
 
 main p {
-  width: 70%;
+  width: 75%;
   margin: 0 auto;
-  font-size: 25px;
-  line-height: 165%;
+  font-size: 26px;
 }
 main h1 {
   font-size: 80px;
-  margin-bottom: 4rem;
+  margin-bottom: 3rem;
+}
+main h3 {
+  font-size: 40px;
+  margin-bottom: 1.5rem;
+}
+
+@media screen and (max-width: 580px) {
+  h1 {
+    font-size: 2.8em;
+  }
+
+  nav {
+    height: auto;
+    border-bottom: 0;
+  }
+  nav ul {
+    display: none;
+    height: auto;
+  }
+  nav li {
+    width: 100%;
+    float: left;
+    position: relative;
+  }
+  nav a {
+    text-align: left;
+    width: 100%;
+    text-indent: 25px;
+    background: #333;
+    border-bottom: 1px solid #555;
+  }
+  nav a:hover {
+    background: #444;
+  }
+  nav a#openup:after {
+    content: "|||";
+    transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    /* IE 9 */
+    -webkit-transform: rotate(-90deg);
+    /* Safari and Chrome */
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    position: absolute;
+    right: 5px;
+    top: 20px;
+  }
+  nav a#openup {
+    display: block;
+    background-color: #333;
+    width: 100%;
+    position: relative;
+  }
+}
+.cf:before,
+.cf:after {
+  content: "";
+  display: table;
+}
+
+.cf:after {
+  clear: both;
+}
+
+.cf {
+  zoom: 1;
 }
