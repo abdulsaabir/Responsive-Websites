@@ -24,12 +24,12 @@ menu {
   position: absolute;
   top: 20px;
   right: 20px;
+  display: none;
 }
 menu > div {
   width: 25px;
   height: 2px;
   background-color: black;
-  display: none;
 }
 menu > div:nth-child(2) {
   transform: translateY(5px);
@@ -58,7 +58,7 @@ header .container div:last-child {
   display: flex;
   justify-content: end;
 }
-header .container ul:nth-child(2) {
+header .container ul {
   flex: 2;
   display: flex;
   justify-content: space-around;
@@ -172,6 +172,14 @@ footer .container {
   }
 }
 @media (max-width: 1024px) {
+  header .container ul {
+    position: absolute;
+  }
+  menu {
+    display: block;
+    right: 60px;
+    top: 25px;
+  }
   section .container {
     flex-direction: column;
   }
