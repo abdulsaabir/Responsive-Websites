@@ -132,3 +132,15 @@ section button:last-child {
   opacity: 0.7;
   height: 50%;
 }
+
+/* footer */
+footer {
+  height: 10vh;
+}
+footer .container {
+  width: 15%;
+  display: flex;
+  justify-content: space-around;
+  position: absolute;
+  right: 20%;
+}
