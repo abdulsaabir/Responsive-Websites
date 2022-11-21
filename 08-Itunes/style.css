@@ -173,10 +173,9 @@ main h2 {
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 20px;
   text-align: left;
-  /* align-items: center; */
 }
 .gift-cards .img {
-  height:  400px;
+  height: 400px;
   display: flex;
   align-items: center;
 }
@@ -224,83 +223,82 @@ main h2 {
     width: 100%;
   }
 }
-  @media screen and (max-width: 580px) {
-    .gift-cards {
-      grid-template-columns: 1fr;
-    }
-    .gift-cards .container {
-      grid-template-columns: 1fr;
-    }
-    .music .container .lead {
-      font-size: 20px;
-    }
-    .hide-on-small {
-      display: none;
-    }
-    .entertaiment .container h3 {
-      font-size: 1.5rem;
-      text-align: start;
-    }
-    .entertaiment .container p {
-      text-align: start;
-      font-size: 0.7rem;
-      margin-top: 2rem;
-    }
-    main {
-      height: 50vh;
-    }
-    main .container {
-      margin-top: 15vh;
-    }
-    main h1 {
-      font-size: 3rem;
-    }
-    main h2 {
-      font-size: 1.5rem;
-    }
-    nav {
-      height: auto;
-      border-bottom: 0;
-    }
-    nav ul {
-      display: none;
-      height: auto;
-    }
-    nav li {
-      width: 100%;
-      float: left;
-      position: relative;
-    }
-    nav a {
-      text-align: left;
-      width: 100%;
-      text-indent: 25px;
-      background: #333;
-      border-bottom: 1px solid #555;
-    }
-    nav a:hover {
-      background: #444;
-    }
-    nav a#openup:after {
-      content: "|||";
-      transform: rotate(-90deg);
-      -ms-transform: rotate(-90deg);
-      /* IE 9 */
-      -webkit-transform: rotate(-90deg);
-      /* Safari and Chrome */
-      width: 30px;
-      height: 30px;
-      display: inline-block;
-      position: absolute;
-      right: 5px;
-      top: 20px;
-    }
-    nav a#openup {
-      display: block;
-      background-color: #333;
-      width: 100%;
-      position: relative;
-    }
+@media screen and (max-width: 580px) {
+  .gift-cards {
+    grid-template-columns: 1fr;
+  }
+  .gift-cards .container {
+    grid-template-columns: 1fr;
+  }
+  .music .container .lead {
+    font-size: 20px;
+  }
+  .hide-on-small {
+    display: none;
+  }
+  .entertaiment .container h3 {
+    font-size: 1.5rem;
+    text-align: start;
+  }
+  .entertaiment .container p {
+    text-align: start;
+    font-size: 0.7rem;
+    margin-top: 2rem;
+  }
+  main {
+    height: 50vh;
+  }
+  main .container {
+    margin-top: 15vh;
+  }
+  main h1 {
+    font-size: 3rem;
+  }
+  main h2 {
+    font-size: 1.5rem;
+  }
+  nav {
+    height: auto;
+    border-bottom: 0;
+  }
+  nav ul {
+    display: none;
+    height: auto;
+  }
+  nav li {
+    width: 100%;
+    float: left;
+    position: relative;
+  }
+  nav a {
+    text-align: left;
+    width: 100%;
+    text-indent: 25px;
+    background: #333;
+    border-bottom: 1px solid #555;
+  }
+  nav a:hover {
+    background: #444;
+  }
+  nav a#openup:after {
+    content: "|||";
+    transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    /* IE 9 */
+    -webkit-transform: rotate(-90deg);
+    /* Safari and Chrome */
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    position: absolute;
+    right: 5px;
+    top: 20px;
+  }
+  nav a#openup {
+    display: block;
+    background-color: #333;
+    width: 100%;
+    position: relative;
   }
   .cf:before,
   .cf:after {
