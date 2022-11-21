@@ -78,7 +78,7 @@ main .container {
 .text p {
   margin: 20px 0;
 }
-.container .card {
+.container .showcase-form {
   position: relative;
   top: 60px;
   height: 350px;
@@ -90,7 +90,7 @@ main .container {
 .container .card .form-control {
   margin: 28px 0;
   width: 100%;
-  border-bottom: 2px solid rgba(0, 0, 0, 0.2);
+  border-bottom: 0.8px solid rgba(0, 0, 0, 0.2);
 }
 .form-control input[type="text"],
 .form-control input[type="email"] {
@@ -118,3 +118,31 @@ main::after {
   -moz-transform: skewY(-3deg);
   -ms-transform: skewY(-3deg);
 }
+/* stats */
+.stats {
+  margin-top: 100px;
+}
+.stats h3 {
+  max-width: 500px;
+  margin: auto;
+}
+.stats .stats-under h3 {
+  font-size: 35px;
+}
+.stats .grid p {
+  font-size: 20px;
+  font-weight: bold;
+  color: var(--secondary-color);
+  margin: 10px 0;
+}
+/* cli */
+.cli .container {
+  grid-template-rows: repeat(2, 1fr);
+}
+.cli .container img {
+  grid-column: 1 / span 2;
+}
+.cli .container img {
+  grid-row: 1 / span 2;
+}
+/* cloud */
