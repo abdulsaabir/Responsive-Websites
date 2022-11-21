@@ -45,19 +45,76 @@ img {
   width: 100%;
 }
 /* navbar */
-.navbar {
-  font-weight: 600;
+nav {
+  height: 70px;
   background: var(--primary-color);
-  color: var(--light-color);
+  color: white;
 }
-.navbar h1 {
-  font-weight: 600;
+nav .container {
+  justify-content: space-between;
 }
-.navbar a {
-  color: var(--light-color);
-  font-weight: 600;
-}
-.navbar li {
+nav ul li a {
+  color: white;
   padding: 10px;
-  margin: 10px;
+  margin: 0 5px;
+}
+nav ul li a:hover {
+  border-bottom: 2px solid white;
+}
+main {
+  height: 400px;
+  background: var(--primary-color);
+  color: white;
+  position: relative;
+}
+main .container {
+  grid-template-columns: 55% auto;
+  overflow: visible;
+  gap: 30px;
+}
+.text h1 {
+  font-size: 40px;
+}
+.text p {
+  margin: 20px 0;
+}
+.container .card {
+  position: relative;
+  top: 60px;
+  height: 350px;
+  width: 400px;
+  padding: 40px;
+  z-index: 100;
+  justify-self: fle ffx-end;
+}
+.container .card .form-control {
+  margin: 28px 0;
+  width: 100%;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.2);
+}
+.form-control input[type="text"],
+.form-control input[type="email"] {
+  border: 0;
+  border-bottom: 1px solid #b4becb;
+  width: 100%;
+  padding: 3px;
+  font-size: 16px;
+}
+.showcase-form input:focus {
+  outline: none;
+}
+
+main::before,
+main::after {
+  content: "";
+  position: absolute;
+  height: 100px;
+  bottom: -70px;
+  right: 0;
+  left: 0;
+  background: #fff;
+  transform: skewY(-3deg);
+  -webkit-transform: skewY(-3deg);
+  -moz-transform: skewY(-3deg);
+  -ms-transform: skewY(-3deg);
 }
