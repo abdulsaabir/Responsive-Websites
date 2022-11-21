@@ -20,4 +20,10 @@
 .btn {
   width: 150px;
   height: 50px;
+  font-size: 18px;
+  border: none;
+  border-radius: 6px;
+}
+.btn-primary {
+  color: var(--primary-color);
 }

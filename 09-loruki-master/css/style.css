@@ -44,3 +44,20 @@ p {
 img {
   width: 100%;
 }
+/* navbar */
+.navbar {
+  font-weight: 600;
+  background: var(--primary-color);
+  color: var(--light-color);
+}
+.navbar h1 {
+  font-weight: 600;
+}
+.navbar a {
+  color: var(--light-color);
+  font-weight: 600;
+}
+.navbar li {
+  padding: 10px;
+  margin: 10px;
+}
