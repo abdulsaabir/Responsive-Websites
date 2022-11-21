@@ -151,19 +151,20 @@ main::after {
   color: white;
   padding-bottom: 1rem;
 }
-.cloud h1 {
-  font-size: 60px;
-}
-.cloud p {
-  font-size: 18px;
-}
 /* languages */
 .languages .flex {
   flex-wrap: wrap;
 }
 .languages .flex > div:hover {
   transform: translateY(-20px);
-  transition: transform 0.3s ease-in-out;
+}
+.languages .card {
+  transition: transform 0.3s ease-in;
+  margin: 18px 10px 40px;
+}
+.languages .card h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
 }
 
 @media (max-width: 768px) {
