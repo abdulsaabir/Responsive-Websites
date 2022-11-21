@@ -167,7 +167,7 @@ main::after {
   margin-bottom: 10px;
 }
 footer .social a {
-  margin-right: 20px;
+  margin: 0 10px;
 }
 
 @media (max-width: 768px) {
