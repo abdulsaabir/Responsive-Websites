@@ -82,7 +82,8 @@ main .container {
   position: relative;
   top: 60px;
   height: 350px;
-  width: 400px;
+  width: 300px;
+  max-width: 400px;
   padding: 40px;
   z-index: 100;
   justify-self: fle ffx-end;
@@ -146,3 +147,30 @@ main::after {
   grid-row: 1 / span 2;
 }
 /* cloud */
+.cloud {
+  color: white;
+  padding-bottom: 1rem;
+}
+.cloud h1 {
+  font-size: 60px;
+}
+.cloud p {
+  font-size: 18px;
+}
+/* languages */
+.languages .flex {
+  flex-wrap: wrap;
+}
+.languages .flex > div:hover {
+  transform: translateY(-20px);
+  transition: transform 0.3s ease-in-out;
+}
+
+@media (max-width: 768px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+  .grid-3 {
+    grid-template-columns: 1fr;
+  }
+}
