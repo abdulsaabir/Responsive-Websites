@@ -166,9 +166,6 @@ main::after {
   font-size: 20px;
   margin-bottom: 10px;
 }
-footer .social a {
-  margin: 0 10px;
-}
 /* features */
 .features-head {
   overflow: hidden;
@@ -178,6 +175,10 @@ footer .social a {
 }
 .features-head .container div:last-child {
   margin-left: auto;
+}
+/* footer */
+footer .social a {
+  margin: 0 10px;
 }
 
 @media (max-width: 768px) {
@@ -192,7 +193,8 @@ footer .social a {
     grid-template-columns: 1fr;
     align-items: center;
   }
-  main .text {
+  main .text,
+  .features-head .text-features {
     text-align: center;
     margin-top: 40px;
   }
@@ -202,6 +204,9 @@ footer .social a {
   }
   main {
     height: auto;
+  }
+  .features-head .container div:last-child {
+    margin: auto;
   }
   .cli .container img {
     grid-column: 1;
