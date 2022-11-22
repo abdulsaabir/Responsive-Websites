@@ -213,7 +213,9 @@
 .py-5 {
   padding: 4rem 0;
 }
-
+.p-05 {
+  padding: 0.4rem;
+}
 .p-1 {
   padding: 1rem;
 }
