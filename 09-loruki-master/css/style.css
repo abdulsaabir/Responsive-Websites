@@ -221,6 +221,9 @@ main::after {
 footer .social a {
   margin: 0 10px;
 }
+.docs pre {
+  width: 100%;
+}
 .docs code {
   width: 100%;
 }
