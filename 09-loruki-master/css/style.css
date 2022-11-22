@@ -235,6 +235,9 @@ footer .social a {
     text-align: center;
     padding: 0 8px;
   }
+  .docs .card-1 {
+    width: 280px;
+  }
 }
 @media (max-width: 768px) {
   .grid,
