@@ -173,8 +173,39 @@ footer .social a {
 @media (max-width: 768px) {
   .grid {
     grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
   }
   .grid-3 {
     grid-template-columns: 1fr;
+  }
+  main .grid {
+    grid-template-columns: 1fr;
+    align-items: center;
+  }
+  main .text {
+    text-align: center;
+    margin-top: 40px;
+  }
+  .container .showcase-form {
+    justify-self: center;
+    width: 450px;
+  }
+  main {
+    height: auto;
+  }
+}
+
+@media (max-width: 500px) {
+  nav {
+    height: 110px;
+  }
+  nav .container {
+    flex-direction: column;
+  }
+  nav ul {
+    background: rgba(255, 255, 255, 0.1);
+  }
+  .container .showcase-form {
+    width: 350px;
   }
 }
