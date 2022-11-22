@@ -194,6 +194,29 @@ main::after {
 .features-main .card > i {
   margin-right: 20px;
 }
+/* docs */
+.docs .container {
+  align-items: flex-start;
+}
+.docs .card-1 {
+  padding-left: 50px;
+  padding-right: 50px;
+  width: 300px;
+}
+.docs .card-2 {
+  grid-column: 2 / span 2;
+}
+.docs ul li {
+  padding-bottom: 4px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+.docs .intro li:first-child a {
+  color: var(--primary-color);
+}
+.docs ul li a:hover {
+  font-weight: bold;
+  color: var(--primary-color);
+}
 /* footer */
 footer .social a {
   margin: 0 10px;
