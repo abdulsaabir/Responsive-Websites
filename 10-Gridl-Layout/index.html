@@ -8,11 +8,41 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
         integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
         crossorigin="anonymous" />
+    <link rel="stylesheet" href="style.css">
     <title>Grid-Layout</title>
 </head>
 
-<body>
-    header>container-sm.grid.
+<body class="bg-dark">
+    <header>
+        <div class="container-sm py-1 ">
+            <ul class="grid grid-4 text-center">
+                <li class="bg-primary w-100"><a href="#">Home</a></li>
+                <li class="bg-primary w-100"><a href="#">About</a></li>
+                <li class="bg-primary w-100"><a href="#"></a>Services</li>
+                <li class="bg-primary w-100"><a href="#"></a>Contact</li>
+            </ul>
+        </div>
+    </header>
+    <main>
+        <div class="container-sm grid grid-3 grid-r-2">
+            <div class="full">
+                <h1 class="xl">Your Web Presence</h1>
+                <p class="sm">orem ipsum dolor sit amet consectetur adipisicing elit. Modi, ipsam! Nihil quo minima
+                    nulla atque!</p>
+                <button class="btn btn-light">Read More</button>
+            </div>
+            <div class="card">
+                <h3>Mempership</h3>
+                <p class="xl">$199/mo</p>
+                <button class="btn btn-dark">Buy Now</button>
+            </div>
+            <div class="card">
+                <h3>Mempership</h3>
+                <p class="xl">$299/mo</p>
+                <button class="btn btn-dark">Buy Now</button>
+            </div>
+        </div>
+    </main>
 </body>
 
 </html>
