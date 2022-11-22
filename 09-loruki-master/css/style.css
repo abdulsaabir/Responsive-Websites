@@ -180,12 +180,68 @@ main::after {
   width: 300px;
   margin-left: auto;
 }
+/* main-features */
+.main-features {
+  height: auto;
+}
+.main-features .container {
+  overflow: visible;
+  display: grid;
+  gap: 20px;
+  grid-template-areas:
+    "server server server server"
+    "network network network computer"
+    "database database database uppload";
+}
+.main-features .container div:nth-child(1) {
+  grid-area: server;
+}
+.main-features .container div:nth-child(2) {
+  grid-area: network;
+}
+.main-features .container div:nth-child(3) {
+  grid-area: computer;
+}
+.main-features .container div:nth-child(4) {
+  grid-area: database;
+}
+.main-features .container div:nth-child(4) {
+  grid-area: database;
+}
+.main-features .container div:nth-child(5) {
+  grid-area: uppload;
+}
+.main-features .container > div {
+  gap: 20px;
+}
+
 /* footer */
 footer .social a {
   margin: 0 10px;
 }
 
+@media (max-width: 900px) {
+  .main-features .container > div {
+    flex-direction: column;
+    text-align: center;
+    padding: 0 8px;
+  }
+  .main-features .container {
+    grid-template-areas:
+      "server server server server"
+      "network network computer computer"
+      "database database uppload uppload";
+    row-gap: 30px;
+  }
+}
 @media (max-width: 768px) {
+  .main-features .container {
+    grid-template-areas: none;
+    grid-template-rows: 1fr;
+  }
+  .main-features .container {
+    height: auto;
+  }
   .grid {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
