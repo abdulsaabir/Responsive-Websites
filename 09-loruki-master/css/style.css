@@ -169,6 +169,14 @@ main::after {
 footer .social a {
   margin: 0 10px;
 }
+/* features */
+.features {
+  height: 250px;
+  overflow: hidden;
+}
+.features img {
+  width: 100%;
+}
 
 @media (max-width: 768px) {
   .grid {
