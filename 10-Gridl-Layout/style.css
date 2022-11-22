@@ -4,6 +4,24 @@
   overflow: auto;
   padding: 0 40px;
 }
+.container-sm {
+  width: 95%;
+  margin: 0 auto;
+  overflow: auto;
+  padding: 0 20px;
+}
+.container-lg {
+  width: 88%;
+  margin: 0 auto;
+  overflow: auto;
+  padding: 0 40px;
+}
+.container-xl {
+  width: 80%;
+  margin: 0 auto;
+  overflow: auto;
+  padding: 0 40px;
+}
 
 .card {
   background-color: #fff;
@@ -138,6 +156,17 @@
   align-items: center;
   height: 100%;
 }
+.flex-end {
+  justify-content: flex-end;
+}
+
+.flex-center {
+  justify-content: center;
+}
+
+.flex-between {
+  justify-content: space-between;
+}
 
 .grid {
   display: grid;
@@ -150,6 +179,26 @@
 
 .grid-3 {
   grid-template-columns: repeat(3, 1fr);
+}
+.grid-4 {
+  grid-template-columns: repeat(4, 1fr);
+}
+.grid-5 {
+  grid-template-columns: repeat(5, 1fr);
+}
+.grid-r-1 {
+  grid-template-rows: repeat(1, 1fr);
+}
+.grid-r-2 {
+  grid-template-rows: repeat(2, 1fr);
+}
+
+.grid-r-3 {
+  grid-template-rows: repeat(3, 1fr);
+}
+
+.grid-r-4 {
+  grid-template-rows: repeat(4, 1fr);
 }
 
 /* Margin */
