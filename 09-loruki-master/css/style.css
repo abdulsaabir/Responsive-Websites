@@ -193,6 +193,10 @@ footer .social a {
   main {
     height: auto;
   }
+  .cli .container img {
+    grid-column: 1;
+    grid-row: 1;
+  }
 }
 
 @media (max-width: 500px) {
