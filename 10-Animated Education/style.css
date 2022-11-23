@@ -1,0 +1,49 @@
+:root {
+  --section-padding: 60px;
+  --ff-spartan: "League Spartan", sans-serif;
+  --shadow-1: 0 2px 25px hsla(0, 0%, 0%, 0.1);
+  --shadow-2: 0 8px 14px hsla(0, 0%, 0%, 0.1);
+  --shadow-3: 0 14px 30px hsla(0, 0%, 0%, 0.05);
+
+  --radius-6: 6px;
+  --radius-12: 12px;
+
+  --gradient-1: linear-gradient(
+    to right,
+    var(--winter-sky),
+    var(--dark-orange)
+  );
+  --gradient-2: linear-gradient(
+    to right,
+    var(--ultramarine),
+    var(--blue-violet)
+  );
+  --gradient-3: linear-gradient(
+    to right,
+    var(--winter-sky),
+    var(--dark-orange)
+  );
+  --gradient-4: linear-gradient(
+    to right,
+    var(--ultramarine),
+    var(--blue-violet)
+  );
+  --gradient-5: linear-gradient(
+    to right,
+    var(--persian-green),
+    var(--spring-green)
+  );
+  --gradient-6: linear-gradient(
+    to right,
+    var(--spanish-orange),
+    var(--gold-web-golden)
+  );
+
+  --transition-1: 0.25s ease;
+  --transition-2: 0.5s ease;
+  --cubic-out: cubic-bezier(0.33, 0.85, 0.4, 0.96);
+}
+
+body {
+  font-family: var(--ff-spartan);
+}
