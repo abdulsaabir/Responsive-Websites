@@ -55,6 +55,9 @@ body {
   overflow: visible;
   height: 100%;
 }
+body {
+  overflow-x: hidden;
+}
 img {
   width: 100%;
   display: block;
@@ -252,7 +255,7 @@ header button {
 }
 @media (max-width: 992px) {
   .container {
-    max-width: 750px;
+    max-width: 780px;
   }
   .hero .container {
     grid-template-columns: 1fr;
@@ -272,18 +275,18 @@ header button {
   .features .grid {
     grid-template-columns: 1fr;
   }
-  .features .banner-wrapper .two {
-    width: 400px;
-    margin-top: 50px;
-    bottom: 0px;
-    right: 0px;
-  }
 }
 
 @media (max-width: 768px) {
   .container {
     max-width: 540px;
     /* margin-inline: auto; */
+  }
+  .features .banner-wrapper .two {
+    width: 100%;
+    margin-top: 50px;
+    bottom: 0px;
+    right: 0px;
   }
 }
 
