@@ -8,6 +8,7 @@
 /*  */
 /*  */
 /*  */
+
 :root {
   --primary-color: #047aed;
   --secondary-color: #1c3fa8;
@@ -15,6 +16,51 @@
   --light-color: #f4f4f4;
   --success-color: #5cb85c;
   --error-color: #d9534f;
+  --gold-web-golden: hsl(50, 95%, 56%);
+  --spanish-orange: hsl(24, 100%, 45%);
+  --persian-green: hsl(175, 80%, 33%);
+  --granite-gray: hsl(0, 0%, 40%);
+  --spring-green: hsl(143, 85%, 58%);
+  --ultramarine: hsl(260, 100%, 44%);
+  --blue-violet: hsl(272, 76%, 53%);
+  --smoky-black: hsl(0, 0%, 7%);
+  --dark-orange: hsl(33, 100%, 50%);
+  --winter-sky: hsl(332, 100%, 51%);
+  --cultured-1: hsl(0, 0%, 98%);
+  --cultured-2: hsl(0, 0%, 95%);
+  --cultured-3: hsl(0, 0%, 94%);
+  --light-gray: hsl(0, 0%, 80%);
+  --alice-blue: hsl(206, 89%, 93%);
+  --gradient-1: linear-gradient(
+    to right,
+    var(--winter-sky),
+    var(--dark-orange)
+  );
+  --gradient-2: linear-gradient(
+    to right,
+    var(--ultramarine),
+    var(--blue-violet)
+  );
+  --gradient-3: linear-gradient(
+    to right,
+    var(--winter-sky),
+    var(--dark-orange)
+  );
+  --gradient-4: linear-gradient(
+    to right,
+    var(--ultramarine),
+    var(--blue-violet)
+  );
+  --gradient-5: linear-gradient(
+    to right,
+    var(--persian-green),
+    var(--spring-green)
+  );
+  --gradient-6: linear-gradient(
+    to right,
+    var(--spanish-orange),
+    var(--gold-web-golden)
+  );
 }
 
 * {
