@@ -81,6 +81,7 @@ header button {
   color: white;
   font-weight: bold;
 }
+/* */
 /*  */
 /*  */
 /* hero */
@@ -134,6 +135,29 @@ header button {
 }
 .hero-item img {
   width: auto;
+}
+
+/* solutions */
+
+.solutions .items {
+  padding: 0;
+  border-radius: var(--radius-12);
+  box-shadow: var(--shadow-3);
+}
+.solutions .items img {
+  border-radius: var(--radius-12);
+}
+.solutions h2 {
+  font-size: 33px;
+  margin: 1rem 0;
+}
+
+.solutions p {
+  font-size: 1.2rem;
+  color: var(--granite-gray);
+}
+.solutions a {
+  font-size: 28px;
 }
 /*  */
 /*  */
