@@ -237,6 +237,33 @@ header button {
   color: var(--ultramarine);
 }
 /*  */
+
+/* about-card-3 */
+.about .grid {
+  gap: 40px;
+  color: #fff;
+}
+.about-card-1 {
+  background-image: var(--gradient-3);
+}
+.about-card-2 {
+  background-image: var(--gradient-4);
+}
+.about-card-3 {
+  background-image: var(--gradient-5);
+}
+.about-card-4 {
+  background-image: var(--gradient-6);
+}
+.about-card {
+  border-radius: var(--radius-12);
+}
+.about-card .card-banner {
+  width: 150px;
+  aspect-ratio: 1/1;
+  background-color: hsla(0, 0%, 100%, 0.5);
+  border-radius: 50%;
+}
 @media (max-width: 1110px) {
   .container {
     max-width: 960px;
