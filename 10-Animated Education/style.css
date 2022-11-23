@@ -47,3 +47,101 @@
 body {
   font-family: var(--ff-spartan);
 }
+.container {
+  max-width: 1500px;
+  margin: 0 auto;
+  padding: 0 40px;
+  overflow: auto;
+  height: 100%;
+}
+
+/* header */
+
+header {
+  height: 11vh;
+  background-color: var(--dark-color);
+  box-shadow: var(--shadow-1);
+  display: block;
+  color: white;
+}
+header ul {
+  gap: 30px;
+}
+header ul a {
+  color: white;
+  font-size: 25px;
+  font-weight: 500;
+}
+header button {
+  background-image: var(--gradient-2);
+  font-size: 20px;
+  color: white;
+  font-weight: bold;
+}
+/*  */
+/*  */
+/* hero */
+.hero {
+  height: 90vh;
+}
+.hero .container {
+  gap: 50px;
+}
+.hero h1 {
+  font-size: 4rem;
+  font-weight: bold;
+  line-height: 1.3;
+}
+.hero p {
+  font-size: 25px;
+  color: var(--granite-gray);
+}
+.hero img {
+  width: 685px;
+}
+.hero form {
+  background: #f0f0f0;
+  border-radius: var(--radius-12);
+}
+.hero input {
+  border: transparent;
+  background: transparent;
+  padding: 23px;
+  font-size: 23px;
+}
+.hero input::placeholder {
+  font-size: 23px;
+}
+.hero input[type="submit"] {
+  border-radius: var(--radius-12);
+  padding: 23px 30px;
+  color: #fff;
+  font-family: var(--ff-spartan);
+  background-image: var(--gradient-3);
+}
+/*  */
+/*  */
+@media (max-width: 1200px) {
+  .container {
+    max-width: 1140px;
+    background-color: red;
+  }
+}
+
+@media (max-width: 992px) {
+  .container {
+    max-width: 960px;
+    background-color: lightblue;
+  }
+}
+@media (max-width: 768px) {
+  .container {
+    max-width: 720px;
+    background-color: blue;
+  }
+}
+@media (max-width: 576px) {
+  .container {
+    max-width: 540px;
+  }
+}
