@@ -266,12 +266,20 @@ header button {
   background-color: hsla(0, 0%, 100%, 0.5);
   border-radius: 50%;
 }
+.app .grid {
+  grid-template-columns: 2fr 3fr;
+  gap: 40px;
+}
 @media (max-width: 1110px) {
   .container {
     max-width: 960px;
   }
   .features .grid {
     grid-template-columns: 1fr 1fr;
+  }
+  .app .grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
   }
   .features .banner-wrapper .two {
     width: 400px;
@@ -327,6 +335,8 @@ header button {
     right: 0px;
   }
 }
+
+/* app */
 
 @media (max-width: 575px) {
   .container {
