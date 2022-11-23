@@ -257,9 +257,11 @@ header button {
 }
 .about-card {
   border-radius: var(--radius-12);
+  gap: 20px;
+  height: auto;
 }
 .about-card .card-banner {
-  width: 150px;
+  min-width: 150px;
   aspect-ratio: 1/1;
   background-color: hsla(0, 0%, 100%, 0.5);
   border-radius: 50%;
@@ -278,6 +280,12 @@ header button {
   }
   .features .text h1 {
     font-size: 1.5rem;
+  }
+  .about-card {
+    flex-direction: column;
+    background-color: white;
+    display: none;
+    text-align: center;
   }
 }
 @media (max-width: 992px) {
@@ -308,6 +316,9 @@ header button {
   .container {
     max-width: 540px;
     /* margin-inline: auto; */
+  }
+  .about .grid {
+    grid-template-columns: 1fr;
   }
   .features .banner-wrapper .two {
     width: 100%;
