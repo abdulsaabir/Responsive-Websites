@@ -67,6 +67,9 @@ header {
 header ul {
   gap: 30px;
 }
+.hero .img {
+  /* aspect-ratio: 1 / 0.8; */
+}
 header ul a {
   color: white;
   font-size: 25px;
@@ -88,16 +91,13 @@ header button {
   gap: 50px;
 }
 .hero h1 {
-  font-size: 4rem;
+  font-size: 4vw;
   font-weight: bold;
   line-height: 1.3;
 }
 .hero p {
   font-size: 25px;
   color: var(--granite-gray);
-}
-.hero img {
-  width: 685px;
 }
 .hero form {
   background: #f0f0f0;
@@ -121,23 +121,32 @@ header button {
 }
 /*  */
 /*  */
-@media (max-width: 1200px) {
+@media (max-width: 1500px) {
+  .hero {
+    padding-top: 4rem;
+  }
   .container {
-    max-width: 1140px;
-    background-color: red;
+    max-width: 1320px;
+  }
+}
+@media (max-width: 1300px) {
+  .container {
+    max-width: 850px;
+    overflow: visible;
+  }
+  .hero .container {
+    grid-template-columns: 1fr;
   }
 }
 
 @media (max-width: 992px) {
   .container {
     max-width: 960px;
-    background-color: lightblue;
   }
 }
 @media (max-width: 768px) {
   .container {
     max-width: 720px;
-    background-color: blue;
   }
 }
 @media (max-width: 576px) {
