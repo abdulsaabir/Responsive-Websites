@@ -240,6 +240,10 @@ header button {
   .features .grid {
     grid-template-columns: 1fr 1fr;
   }
+  .features .banner-wrapper .two {
+    width: 400px;
+    bottom: 100px;
+  }
 }
 @media (max-width: 992px) {
   .container {
