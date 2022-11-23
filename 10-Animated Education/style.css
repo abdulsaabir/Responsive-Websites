@@ -183,6 +183,39 @@ header button {
   animation: swipeLeft 5s ease infinite;
 }
 /*  */
+
+/* .features */
+.features {
+  padding: 0 0 4rem 0;
+}
+.features .container {
+  grid-template-columns: 1fr max-content;
+  gap: 70px;
+}
+.features .banner-wrapper {
+  position: relative;
+  overflow: visible;
+}
+.features .banner-wrapper .two {
+  width: 400px;
+  aspect-ratio: 1/1;
+  position: relative;
+  bottom: 150px;
+  border-radius: var(--radius-6);
+  margin-left: auto;
+}
+.icons img {
+  width: 40px;
+}
+.icons .card {
+  padding: 20px;
+  margin: 0 0 20px;
+  box-shadow: var(--shadow-1);
+}
+.icons h3 {
+  font-size: 18px;
+  margin-left: 20px;
+}
 /*  */
 @media (max-width: 1110px) {
   .container {
