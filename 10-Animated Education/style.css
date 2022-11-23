@@ -197,12 +197,18 @@ header button {
   overflow: visible;
 }
 .features .banner-wrapper .two {
-  width: 400px;
+  width: 450px;
   aspect-ratio: 1/1;
   position: relative;
   bottom: 150px;
-  border-radius: var(--radius-6);
   margin-left: auto;
+  aspect-ratio: auto 436 / 311;
+}
+.features .banner-wrapper .two img {
+  border-radius: var(--radius-12);
+}
+.features .banner-wrapper .one img {
+  border-radius: var(--radius-12);
 }
 .icons img {
   width: 40px;
@@ -216,10 +222,23 @@ header button {
   font-size: 18px;
   margin-left: 20px;
 }
+.features .text h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+}
+.features .text p {
+  color: var(--granite-gray);
+}
+.features .text .icons h3 {
+  color: var(--ultramarine);
+}
 /*  */
 @media (max-width: 1110px) {
   .container {
     max-width: 960px;
+  }
+  .features .grid {
+    grid-template-columns: 1fr 1fr;
   }
 }
 @media (max-width: 992px) {
