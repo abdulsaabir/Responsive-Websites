@@ -59,6 +59,7 @@ p {
 
 img {
   width: 100%;
+  display: block;
 }
 /* utility Classes */
 
@@ -120,6 +121,7 @@ img {
 w-100 {
   width: 100%;
 }
+
 h-100 {
   height: 100%;
 }
@@ -175,6 +177,9 @@ x-bold {
 
 .xl {
   font-size: 4rem;
+}
+.xxl {
+  font-size: 6rem;
 }
 
 .text-center {
