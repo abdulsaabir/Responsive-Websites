@@ -367,10 +367,14 @@ header button {
   grid-template-columns: 1fr 0.8fr 0.8fr 1fr;
   gap: 30px;
 }
-.footer .footer-list-title,
+.footer .footer-list-title {
+  margin-bottom: 15px;
+  font-weight: 700;
+  font-size: 1.5rem;
+}
 .footer .footer-brand .logo {
   display: inline-block;
-  margin-bottom: 15px;
+  margin-bottom: 25px;
   font-weight: 700;
   font-size: 1.5rem;
 }
