@@ -361,6 +361,39 @@ header button {
   font-size: 2.5rem;
   font-weight: 800;
 }
+/* footer */
+.footer .footer-top .container {
+  display: grid;
+  grid-template-columns: 1fr 0.8fr 0.8fr 1fr;
+  gap: 30px;
+}
+.footer .footer-list-title,
+.footer .footer-brand .logo {
+  display: inline-block;
+  margin-bottom: 15px;
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+
+.footer .footer-list {
+  gap: 10px;
+}
+.footer .flex.footer-item img {
+  width: auto;
+  margin-right: 10px;
+}
+.footer .footer-item-link {
+  color: var(--granite-gray);
+}
+.footer .footer-item:nth-child(3) {
+  line-height: 1.1;
+}
+.footer .footer-item:nth-child(3) .footer-item-link {
+  display: block;
+}
+.footer .footer-item-link:hover {
+  color: var(--primary-color);
+}
 @media (max-width: 1110px) {
   .container {
     max-width: 960px;
