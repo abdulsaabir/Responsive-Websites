@@ -266,9 +266,31 @@ header button {
   background-color: hsla(0, 0%, 100%, 0.5);
   border-radius: 50%;
 }
+/* app */
 .app .grid {
   grid-template-columns: 2fr 3fr;
   gap: 40px;
+}
+.app .btn-group {
+  gap: 30px;
+}
+.app .btn-group * {
+  padding: 0;
+}
+.app .btn-group img {
+  width: auto;
+}
+.app .btn {
+  padding: 20px 30px;
+  gap: 10px;
+  font-size: 16px;
+  color: #fff;
+}
+.app .btn.btn-primar {
+  background-image: var(--gradient-1);
+}
+.app .btn.btn-secondar {
+  background-image: var(--gradient-2);
 }
 @media (max-width: 1110px) {
   .container {
