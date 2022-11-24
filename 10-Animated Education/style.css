@@ -342,6 +342,11 @@ header button {
 .app .btn.btn-secondar {
   background-image: var(--gradient-2);
 }
+/* support */
+.support {
+  background-image: var(--gradient-2);
+  color: #fff;
+}
 @media (max-width: 1110px) {
   .container {
     max-width: 960px;
