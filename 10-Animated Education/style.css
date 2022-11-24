@@ -347,6 +347,20 @@ header button {
   background-image: var(--gradient-2);
   color: #fff;
 }
+.support .section-text {
+  width: 70%;
+}
+.support .btn {
+  background-image: var(--gradient-1);
+  color: #fff;
+  font-size: 18px;
+  text-align: center;
+  width: 250px;
+}
+.support h2 {
+  font-size: 2.5rem;
+  font-weight: 800;
+}
 @media (max-width: 1110px) {
   .container {
     max-width: 960px;
@@ -411,6 +425,19 @@ header button {
   }
   .stats-item .stats-text {
     font-size: 15px;
+  }
+  .support .container {
+    flex-direction: column;
+    align-items: start;
+  }
+  .support .btn {
+    width: 200px;
+  }
+  .support h2 {
+    font-size: 1.5rem;
+  }
+  .support .section-text {
+    width: 100%;
   }
 }
 
