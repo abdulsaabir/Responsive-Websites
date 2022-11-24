@@ -307,6 +307,10 @@ header button {
   transform: translateX(6rem);
   border-color: yellow;
 }
+.stats img {
+  width: 100%;
+  height: auto;
+}
 /* app */
 .app .grid {
   grid-template-columns: 2fr 3fr;
@@ -395,7 +399,7 @@ header button {
   }
   .stats .stats-list {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
   }
   .stats-list .stats-item {
     transform: translate(0);
@@ -434,6 +438,9 @@ header button {
 
   .features .banner-wrapper img {
     height: auto;
+  }
+  .app .btn-group {
+    flex-direction: column;
   }
 }
 
