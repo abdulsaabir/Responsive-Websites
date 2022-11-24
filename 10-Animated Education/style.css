@@ -266,6 +266,47 @@ header button {
   background-color: hsla(0, 0%, 100%, 0.5);
   border-radius: 50%;
 }
+/* stats */
+.stats {
+  background-color: var(--cultured-2);
+}
+.stats-list .stats-item:not(:last-child) {
+  margin-bottom: 1rem;
+}
+.stats-list .stats-item {
+  padding-left: 1rem;
+  border-left: 2.5px solid;
+  box-shadow: var(--shadow-2);
+  width: 350px;
+  /* min-width: 350px; */
+}
+.stats-list .stats-item span {
+  font-size: 16px;
+  color: var(--granite-gray);
+  font-weight: 500;
+}
+.stats-item .item-title {
+  font-size: 2rem;
+  font-weight: 800;
+  line-height: 1;
+}
+.stats-list .stats-text {
+  margin: 0;
+}
+.stats-list .purple {
+  border-color: blue;
+}
+.stats-list .red {
+  border-color: red;
+  transform: translateX(6rem);
+}
+.stats-list .green {
+  border-color: green;
+}
+.stats-list .yellow {
+  transform: translateX(6rem);
+  border-color: yellow;
+}
 /* app */
 .app .grid {
   grid-template-columns: 2fr 3fr;
@@ -281,10 +322,16 @@ header button {
   width: auto;
 }
 .app .btn {
-  padding: 20px 30px;
+  padding: 10px 30px;
   gap: 10px;
   font-size: 16px;
   color: #fff;
+}
+.app .md {
+  font-weight: 800;
+}
+.app .section-text {
+  color: var(--granite-gray);
 }
 .app .btn.btn-primar {
   background-image: var(--gradient-1);
@@ -302,6 +349,9 @@ header button {
   .app .grid {
     grid-template-columns: 1fr;
     gap: 40px;
+  }
+  .app .app-content {
+    text-align: center;
   }
   .features .banner-wrapper .two {
     width: 400px;
@@ -340,6 +390,20 @@ header button {
   .features .grid {
     grid-template-columns: 1fr;
   }
+  .stats .grid {
+    grid-template-columns: 1fr;
+  }
+  .stats .stats-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .stats-list .stats-item {
+    transform: translate(0);
+    width: auto;
+  }
+  .stats-item .stats-text {
+    font-size: 15px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -356,13 +420,20 @@ header button {
     bottom: 0px;
     right: 0px;
   }
+  .app .app-banner img {
+    height: auto;
+  }
 }
 
 /* app */
 
 @media (max-width: 575px) {
   .container {
-    max-width: 380px;
+    max-width: 95%;
+  }
+
+  .features .banner-wrapper img {
+    height: auto;
   }
 }
 
