@@ -88,8 +88,9 @@ header button {
 /* */
 
 /* .hero */
-.hero {
-  height: 100vh;
+
+.hero .container {
+  min-height: 100vh;
 }
 .hero form {
   background: #f0f0f0;
@@ -439,7 +440,7 @@ header button {
   }
   .hero .container {
     grid-template-columns: 1fr;
-    padding-top: 5rem;
+    padding-top: 3rem;
   }
   header ul {
     position: absolute;
@@ -498,13 +499,13 @@ header button {
   .container {
     max-width: 540px;
   }
+  .hero .container {
+    padding-top: 1.5rem;
+  }
   .footer .footer-img {
     width: 250px;
     height: 250px;
     object-fit: contain;
-  }
-  .solutions {
-    margin-top: 18rem;
   }
   .about .grid {
     grid-template-columns: 1fr;
@@ -564,11 +565,6 @@ header button {
   .footer .footer-top .container {
     grid-template-columns: 1fr;
     column-gap: 10px;
-  }
-}
-@media (max-width: 450px) {
-  .solutions {
-    margin-top: 4rem;
   }
 }
 
