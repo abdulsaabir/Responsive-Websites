@@ -86,6 +86,33 @@ header button {
   font-weight: bold;
 }
 /* */
+
+/* .hero */
+.hero {
+  height: 100vh;
+}
+.hero form {
+  background: #f0f0f0;
+  border-radius: var(--radius-12);
+  /* width: 100%; */
+}
+.hero input {
+  border: transparent;
+  background: transparent;
+  padding: 23px;
+  font-size: 23px;
+}
+.hero input::placeholder {
+  font-size: 23px;
+}
+.hero input[type="submit"] {
+  border-radius: var(--radius-12);
+  padding: 23px 30px;
+  color: #fff;
+  font-family: var(--ff-spartan);
+  background-image: var(--gradient-1);
+}
+
 /*  */
 /*  */
 /* 
@@ -392,7 +419,11 @@ header button {
   .container {
     max-width: 95%;
   }
-
+  .hero form {
+    flex-direction: column;
+    background: transparent;
+    align-items: flex-start;
+  }
   .features .banner-wrapper img {
     height: auto;
   }
