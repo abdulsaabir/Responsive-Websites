@@ -113,6 +113,21 @@ header button {
   background-image: var(--gradient-1);
 }
 
+.hero-list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+  margin-top: 1rem;
+}
+.hero-list .hero-item {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
+.hero-item img {
+  width: auto;
+}
 /*  */
 /*  */
 /* 
@@ -424,11 +439,33 @@ header button {
     background: transparent;
     align-items: flex-start;
   }
+  .hero .text-part h1 {
+    font-size: 25px;
+  }
+  .hero input[type="email"] {
+    background: #f0f0f0;
+    border-radius: var(--radius-6);
+    margin-bottom: 18px;
+    padding: 15px;
+  }
+  .hero input::placeholder {
+    font-size: 15px;
+  }
+  .hero input[type="submit"] {
+    padding: 15px 20px;
+    border-radius: var(--radius-6);
+  }
   .features .banner-wrapper img {
     height: auto;
   }
   .app .btn-group {
     flex-direction: column;
+  }
+  .solutions {
+    margin-top: 2.5rem;
+  }
+  .solutions h1 {
+    font-size: 23px;
   }
 }
 
