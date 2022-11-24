@@ -467,6 +467,9 @@ header button {
   .solutions h1 {
     font-size: 23px;
   }
+  .app .app-content h2 {
+    font-size: 23px;
+  }
 }
 
 @keyframes swipeLeft {
