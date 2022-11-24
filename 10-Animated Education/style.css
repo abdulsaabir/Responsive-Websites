@@ -117,12 +117,12 @@ header button {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  gap: 10px;
+  gap: 5px;
   margin-top: 1rem;
 }
 .hero-list .hero-item {
   display: flex;
-  gap: 5px;
+  gap: 4px;
   align-items: center;
 }
 .hero-item img {
@@ -446,9 +446,6 @@ header button {
     visibility: hidden;
     display: none;
   }
-  .solutions {
-    margin-top: 10rem;
-  }
   .solutions h1 {
     font-size: 2rem;
   }
@@ -506,6 +503,9 @@ header button {
     height: 250px;
     object-fit: contain;
   }
+  .solutions {
+    margin-top: 18rem;
+  }
   .about .grid {
     grid-template-columns: 1fr;
   }
@@ -526,6 +526,7 @@ header button {
   .container {
     max-width: 95%;
   }
+
   .hero form {
     flex-direction: column;
     background: transparent;
@@ -553,9 +554,7 @@ header button {
   .app .btn-group {
     flex-direction: column;
   }
-  .solutions {
-    margin-top: 2.5rem;
-  }
+
   .solutions h1 {
     font-size: 23px;
   }
@@ -565,6 +564,11 @@ header button {
   .footer .footer-top .container {
     grid-template-columns: 1fr;
     column-gap: 10px;
+  }
+}
+@media (max-width: 450px) {
+  .solutions {
+    margin-top: 4rem;
   }
 }
 
