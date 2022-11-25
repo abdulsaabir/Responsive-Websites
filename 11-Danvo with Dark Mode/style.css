@@ -1,6 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700;800&display=swap");
-
-.light {
+:root {
   --mainColor: #64bcf4;
   --hoverColor: #5bacdf;
   --backgroundColor: #f1f8fc;
@@ -8,11 +7,8 @@
   --darkTwo: #45424b;
   --lightOne: #919191;
   --lightTwo: #aaa;
-}
-
-.dark {
   --mainColor: #64bcf4;
-  --hoverColor: #5bacdf;
+  --hoverColor: #242a2d;
   --backgroundColor: #192e3a;
   --darkOne: #f3f3f3;
   --darkTwo: #fff;
@@ -31,11 +27,6 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
-.stop-scrolling {
-  height: 100%;
-  overflow: hidden;
-}
-
 img {
   width: 100%;
 }
@@ -48,14 +39,22 @@ ul {
 }
 .wrapper {
   overflow: hidden;
-  background: var(--backgroundColor);
 }
 .container {
   width: 80%;
   margin: 0 auto;
 }
+.btn {
+  padding: 0.6rem 1.6rem;
+  background-color: var(--mainColor);
+  border-radius: 8px;
+  color: #fff;
+}
 
 /* header */
+header {
+  background-color: transparent;
+}
 header .container {
   padding: 1rem 0.7rem;
   display: flex;
@@ -70,4 +69,13 @@ header img {
 }
 header ul {
   display: flex;
+}
+header ul li a {
+  font-size: 18px;
+  margin-left: 1.7rem;
+}
+header ul .btn {
+  padding: 0.6rem 1.6rem;
+  background-color: var(--mainColor);
+  border-radius: 8px;
 }
