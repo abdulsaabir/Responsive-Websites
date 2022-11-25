@@ -8,6 +8,7 @@ function getElements() {
 }
 getElements();
 function toggleAnimation() {
+  document.body.classList.add("stop-scrolling");
   dark = !dark;
   let clone = wrapper.cloneNode(true);
   if (dark) {
@@ -25,6 +26,7 @@ function toggleAnimation() {
     clone.classList.remove("copy");
     getElements();
     toggleBtn.addEventListener("click", toggleAnimation);
+    document.body.classList.remove("stop-scrolling");
   });
 }
 toggleBtn.addEventListener("click", toggleAnimation);

@@ -200,6 +200,10 @@ main .btn {
   z-index: 100;
   animation: appear 1s 1 both;
 }
+.stop-scrolling {
+  height: 100%;
+  overflow: hidden;
+}
 
 @keyframes appear {
   0% {
