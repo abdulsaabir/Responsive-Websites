@@ -118,7 +118,6 @@ header ul .btn:hover {
   background-color: var(--hoverColor);
 }
 /* main */
-
 main .container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
