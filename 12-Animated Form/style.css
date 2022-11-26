@@ -63,20 +63,37 @@ form {
   margin: 2.5rem 0;
 }
 form input {
-  margin-bottom: 1rem;
+  margin-bottom: 1.4rem;
   width: 80%;
-  border: 1.5px solid rgba(165, 42, 42, 0.39);
+  border: 1.5px solid #a52a2a63;
   border-radius: 4px;
   outline: none;
-  padding: 10px 0;
+  padding: 10px 8px;
+  cursor: text;
 }
 .group,
-.group-2 {
+.group-two {
   position: relative;
 }
-.placeholder {
+form h3 {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+.PlaceHolder {
+  cursor: text;
   position: absolute;
-  top: 0;
+  top: 5px;
+  left: 10px;
+  color: rgb(164, 160, 160);
+  pointer-events: none;
+  transition: 0.3s;
+}
+form input:focus + .PlaceHolder {
+  top: -16px;
+  left: 10px;
+  background-color: #fff;
+  color: #a52a2a63;
+  font-weight: bold;
 }
 .container {
   background-color: #e8d5be;
