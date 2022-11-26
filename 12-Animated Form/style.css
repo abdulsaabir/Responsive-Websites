@@ -59,6 +59,25 @@ img {
 .signUp a {
   font-weight: bold;
 }
+form {
+  margin: 2.5rem 0;
+}
+form input {
+  margin-bottom: 1rem;
+  width: 80%;
+  border: 1.5px solid rgba(165, 42, 42, 0.39);
+  border-radius: 4px;
+  outline: none;
+  padding: 10px 0;
+}
+.group,
+.group-2 {
+  position: relative;
+}
+.placeholder {
+  position: absolute;
+  top: 0;
+}
 .container {
   background-color: #e8d5be;
   padding: 2rem;
