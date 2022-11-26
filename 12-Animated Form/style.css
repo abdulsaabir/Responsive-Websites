@@ -37,17 +37,6 @@ main {
   left: 50%;
   transform: translate(-50%, -50%);
 }
-.form-wrap {
-  top: 0;
-  left: 0;
-  position: absolute;
-  height: 100%;
-  width: 45%;
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 1fr;
-  transition: 2s;
-}
 .left {
   display: flex;
   flex-direction: column;
@@ -59,21 +48,32 @@ main {
   opacity: 0;
   pointer-events: none;
 }
-.right {
+.form-wrap {
   position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 45%;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  transition: 2s ease-in-out;
+}
+.coursel {
+  position: absolute;
+  transition: 2s ease-in-out;
+  border-radius: 1.5rem;
   top: 0;
   right: 0;
   height: 100%;
   width: 55%;
   background-color: #ffe0d2;
-  border-radius: 1.5rem;
-  transition: 2s ease-in-out;
 }
 
 main.sign-up-mode .form-wrap {
   right: 55%;
 }
-main.sign-up-mode .right {
+main.sign-up-mode .coursel {
   left: 0;
 }
 
