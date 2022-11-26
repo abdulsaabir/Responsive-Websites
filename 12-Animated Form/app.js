@@ -5,3 +5,18 @@ btnToggle.forEach((btn) => {
     Main.classList.toggle("sign-up-mode");
   });
 });
+
+let bullets = document.querySelectorAll(".bullets span");
+bullets.forEach((bullet) => {
+  bullet.addEventListener("click", (e) => {
+    console.log(e.dataset);
+    RemoveActive();
+    bullet.classList.add("active");
+  });
+});
+
+function RemoveActive() {
+  bullets.forEach((bullet) => {
+    bullet.classList.remove("active");
+  });
+}
