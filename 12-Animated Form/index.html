@@ -14,29 +14,66 @@
     <main>
         <div class="box">
             <div class="inner-box">
-                <div class="left">
-                    <div class="logo">
-                        <img src="./img/logo.png" alt="logo">
-                        <h2>easyClass</h2>
-                    </div>
-                    <h1>Welcome Back</h1>
-                    <div class="signUp">
-                        <p>not Registered Yet?</p>
-                        <a href="#"> Sign In</a>
-                    </div>
-                    <form>
-                        <h3>Sign Up</h3>
-                        <div class="group">
-                            <input type="text" name="username">
-                            <label class="PlaceHolder">username</label>
+                <div class="form-wrap">
+                    <div class="left signin">
+                        <div class="logo">
+                            <img src="./img/logo.png" alt="logo">
+                            <h2>easyClass</h2>
                         </div>
-                        <div class="group-two">
-                            <input type="password" name="password">
-                            <label class="PlaceHolder">password</label>
+                        <h1>Welcome Back</h1>
+                        <div class="signUp">
+                            <p>not Registered Yet?</p>
+                            <a class="btn-toggle" href="#"> Sign In</a>
                         </div>
-                        <button class="btn">Sign In</button>
-                    </form>
-                    <p>Forget Your Password or your Log in details ? <a href="#">Get Help</a> Singing In</p>
+                        <div class="actual-form">
+                            <form>
+                                <h3>Sign Up</h3>
+                                <div class="group">
+                                    <input type="text" required autocomplete="off" name="username">
+                                    <label class="PlaceHolder">username</label>
+                                </div>
+                                <div class="group-two">
+                                    <input type="password" required autocomplete="off" name="password">
+                                    <label class="PlaceHolder">password</label>
+                                </div>
+                                <button class="btn">Sign In</button>
+                            </form>
+                        </div>
+                        <p class="last-pragraph">Forget Your Password or your Log in details ? <a href="#">Get Help</a>
+                            Singing In</p>
+                    </div>
+                    <div class="left signup">
+                        <div class="logo">
+                            <img src="./img/logo.png" alt="logo">
+                            <h2>easyClass</h2>
+                        </div>
+                        <div class="actual-form">
+                            <h1>Get Started</h1>
+                            <div class="signUp">
+                                <p>Already Have an Account ?</p>
+                                <a class="btn-toggle" href="#"> Sign Up</a>
+                            </div>
+                            <form>
+                                <h3>Sign in</h3>
+                                <div class="group">
+                                    <input type="text" required autocomplete="off" name="username">
+                                    <label class="PlaceHolder">username</label>
+                                </div>
+                                <div class="group-two">
+                                    <input type="password" required autocomplete="off" name="password">
+                                    <label class="PlaceHolder">password</label>
+                                </div>
+                                <div class="group-two">
+                                    <input type="Email" required autocomplete="off" name="Email">
+                                    <label class="PlaceHolder">Email</label>
+                                </div>
+                                <button class="btn">Sign In</button>
+                            </form>
+                        </div>
+                        <p class="last-pragraph">By singing In I agree <a href="#">terms and service</a> and
+                            <a href="#">Privacy Policy</a>
+                        </p>
+                    </div>
                 </div>
                 <div class="right">
                     <!-- <div class="container">

@@ -37,12 +37,26 @@ main {
   left: 50%;
   transform: translate(-50%, -50%);
 }
-.left {
+.form-wrap {
   top: 0;
   left: 0;
   position: absolute;
   height: 100%;
   width: 45%;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+}
+.left {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  grid-row: 1/2;
+  grid-column: 1/2;
+}
+.left.signup {
+  opacity: 0;
+  pointer-events: none;
 }
 .right {
   position: absolute;
@@ -58,6 +72,9 @@ main {
   align-items: center;
   justify-content: flex-start;
 }
+.logo img {
+  width: 25px;
+}
 .logo h2 {
   font-size: 25px;
   margin-top: -7px;
@@ -66,7 +83,6 @@ main {
 }
 .left h1 {
   font-size: 40px;
-  margin: 1.5rem 0 0.4rem;
 }
 .signUp {
   display: flex;
@@ -76,14 +92,14 @@ main {
   color: gray;
   text-transform: capitalize;
   font-size: 18px;
+}
+.last-pragraph {
   width: 80%;
 }
 .left a {
   font-weight: bold;
 }
-form {
-  margin: 2rem 0;
-}
+
 form input {
   margin-bottom: 1.4rem;
   width: 80%;
@@ -97,9 +113,12 @@ form input {
 .group-two {
   position: relative;
 }
+form {
+  margin-top: 1.5rem;
+}
 form h3 {
-  font-size: 1.2rem;
-  margin-bottom: 1rem;
+  margin-bottom: 10px;
+  font-size: 1rem;
 }
 .PlaceHolder {
   cursor: text;
@@ -110,7 +129,8 @@ form h3 {
   pointer-events: none;
   transition: 0.3s;
 }
-form input:focus + .PlaceHolder {
+form input:focus ~ .PlaceHolder,
+form input:not(:focus):valid ~ .PlaceHolder {
   top: -16px;
   left: 10px;
   background-color: #fff;
@@ -129,10 +149,11 @@ form input:focus + .PlaceHolder {
   font-weight: bold;
   letter-spacing: 1.5px;
 }
+.btn:hover {
+  background-color: #8371fd;
+}
+
 /*  
-
-
-
 
 
 
