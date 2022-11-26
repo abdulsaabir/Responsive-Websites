@@ -139,3 +139,15 @@ form input:focus + .PlaceHolder {
   width: 17px;
   background-color: #000;
 }
+.image {
+  animation: slider 1s;
+}
+
+@keyframes slider {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
