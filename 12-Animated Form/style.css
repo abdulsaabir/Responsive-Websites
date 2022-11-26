@@ -6,7 +6,6 @@
 }
 body {
   font-family: "Poppins", sans-serif;
-  background-color: #da9848;
 }
 a {
   text-decoration: none;
@@ -14,26 +13,158 @@ a {
 img {
   width: 100%;
 }
+main {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  background-color: #ff8c6b;
+}
 .box {
+  margin: auto;
+  position: relative;
+  width: 100%;
+  max-width: 1020px;
+  height: 640px;
+  background-color: #fff;
+  border-radius: 3.3rem;
+  box-shadow: 0 60px 40px -30px rgba(0, 0, 0, 0.27);
+}
+.inner-box {
   position: absolute;
+  width: calc(100% - 4.1rem);
+  height: calc(100% - 4.1rem);
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
-.logo img {
-  width: 25px;
-}
-.inner-box {
-  width: 100%;
+.left {
+  top: 0;
+  left: 0;
+  position: absolute;
   height: 100%;
-  padding: 2.5rem 6rem;
-  background-color: #fff;
-  border-radius: 30px;
-  display: grid;
-  grid-template-columns: repeat(2, minmax(400px, 1fr));
-  gap: 40px;
+  width: 45%;
+}
+.right {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 55%;
+  background-color: #ffe0d2;
+  border-radius: 1.5rem;
 }
 .logo {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.logo h2 {
+  font-size: 25px;
+  margin-top: -7px;
+  margin-left: -4px;
+  letter-spacing: -2px;
+}
+.left h1 {
+  font-size: 40px;
+  margin: 1.5rem 0 0.4rem;
+}
+.signUp {
+  display: flex;
+  gap: 10px;
+}
+.left p {
+  color: gray;
+  text-transform: capitalize;
+  font-size: 18px;
+  width: 80%;
+}
+.left a {
+  font-weight: bold;
+}
+form {
+  margin: 2rem 0;
+}
+form input {
+  margin-bottom: 1.4rem;
+  width: 80%;
+  border: 1.5px solid #a52a2a63;
+  border-radius: 4px;
+  outline: none;
+  padding: 10px 8px;
+  cursor: text;
+}
+.group,
+.group-two {
+  position: relative;
+}
+form h3 {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+.PlaceHolder {
+  cursor: text;
+  position: absolute;
+  top: 5px;
+  left: 10px;
+  color: rgb(164, 160, 160);
+  pointer-events: none;
+  transition: 0.3s;
+}
+form input:focus + .PlaceHolder {
+  top: -16px;
+  left: 10px;
+  background-color: #fff;
+  color: #a52a2a63;
+  font-weight: bold;
+}
+.btn {
+  display: inline-block;
+  padding: 0.7rem 1.3rem;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  width: 80%;
+  background-color: rgba(0, 0, 0, 0.962);
+  color: #fff;
+  font-weight: bold;
+  letter-spacing: 1.5px;
+}
+/*  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+*/
+/* .logo {
   display: flex;
   align-items: center;
   justify-content: flex-start;
@@ -141,7 +272,7 @@ form input:focus + .PlaceHolder {
 }
 .image {
   animation: slider 1s;
-}
+} */
 
 @keyframes slider {
   0% {
