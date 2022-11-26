@@ -52,11 +52,13 @@ img {
   display: flex;
   gap: 10px;
 }
-.signUp p {
+.left p {
   color: gray;
   text-transform: capitalize;
+  font-size: 18px;
+  width: 80%;
 }
-.signUp a {
+.left a {
   font-weight: bold;
 }
 form {
@@ -111,4 +113,5 @@ form input:focus + .PlaceHolder {
   background-color: #e8d5be;
   padding: 2rem;
   border-radius: 35px;
+  height: 100%;
 }
