@@ -1,10 +1,11 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700;800&display=swap");
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 body {
-  font-family: sans-serif;
+  font-family: "Poppins", sans-serif;
   background-color: #da9848;
 }
 a {
@@ -29,12 +30,37 @@ img {
   background-color: #fff;
   border-radius: 30px;
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(2, minmax(400px, 1fr));
   gap: 40px;
 }
 .logo {
   display: flex;
-  gap: 10px;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
+}
+.logo h2 {
+  font-size: 25px;
+  margin-top: -7px;
+  margin-left: -4px;
+  letter-spacing: -2px;
+}
+.left h1 {
+  font-size: 40px;
+  margin: 2.5rem 0 0.4rem;
+}
+.signUp {
+  display: flex;
+  gap: 10px;
+}
+.signUp p {
+  color: gray;
+  text-transform: capitalize;
+}
+.signUp a {
+  font-weight: bold;
+}
+.container {
+  background-color: #e8d5be;
+  padding: 2rem;
+  border-radius: 35px;
 }
