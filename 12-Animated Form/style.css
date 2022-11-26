@@ -111,7 +111,28 @@ form input:focus + .PlaceHolder {
 }
 .container {
   background-color: #e8d5be;
-  padding: 2rem;
+  padding: 3rem 2rem;
   border-radius: 35px;
   height: 100%;
+}
+.right h1 {
+  font-size: 23px;
+  text-align: center;
+  margin-top: 25px;
+}
+.dots {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
+  gap: 10px;
+}
+.dots > * {
+  width: 13px;
+  border-radius: 20px;
+  height: 8px;
+  background-color: #000;
+}
+.focused {
+  width: 18px;
 }
