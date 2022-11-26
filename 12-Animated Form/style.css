@@ -125,14 +125,17 @@ form input:focus + .PlaceHolder {
   justify-content: center;
   align-items: center;
   margin-top: 1rem;
-  gap: 10px;
+  gap: 5px;
 }
 .dots > * {
-  width: 13px;
+  width: 10px;
   border-radius: 20px;
-  height: 8px;
-  background-color: #000;
+  height: 10px;
+  background-color: rgba(0, 0, 0, 0.395);
+  transform: 0.7s;
+  cursor: pointer;
 }
 .focused {
-  width: 18px;
+  width: 17px;
+  background-color: #000;
 }
