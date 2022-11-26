@@ -28,4 +28,13 @@ img {
   padding: 2.5rem 6rem;
   background-color: #fff;
   border-radius: 30px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+}
+.logo {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
 }
