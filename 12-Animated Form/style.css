@@ -46,7 +46,7 @@ img {
 }
 .left h1 {
   font-size: 40px;
-  margin: 2.5rem 0 0.4rem;
+  margin: 1.5rem 0 0.4rem;
 }
 .signUp {
   display: flex;
@@ -60,7 +60,7 @@ img {
   font-weight: bold;
 }
 form {
-  margin: 2.5rem 0;
+  margin: 2rem 0;
 }
 form input {
   margin-bottom: 1.4rem;
@@ -94,6 +94,18 @@ form input:focus + .PlaceHolder {
   background-color: #fff;
   color: #a52a2a63;
   font-weight: bold;
+}
+.btn {
+  display: inline-block;
+  padding: 0.7rem 1.3rem;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  width: 80%;
+  background-color: rgba(0, 0, 0, 0.962);
+  color: #fff;
+  font-weight: bold;
+  letter-spacing: 1.5px;
 }
 .container {
   background-color: #e8d5be;
