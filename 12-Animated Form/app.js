@@ -9,7 +9,7 @@ btnToggle.forEach((btn) => {
 let bullets = document.querySelectorAll(".bullets span");
 bullets.forEach((bullet) => {
   bullet.addEventListener("click", (e) => {
-    console.log(e.dataset);
+    let value = bullet.dataset.value;
     RemoveActive();
     bullet.classList.add("active");
   });
