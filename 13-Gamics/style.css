@@ -187,7 +187,25 @@ nav .logo-container a {
 .brand img {
   width: 90px;
 }
-/*  */
+/*  latest*/
+.latest {
+  padding: var(--section-padding);
+  height: 100vh;
+  font-family: var(--ff-oxanium);
+  background-image: url("./images/section-wrapper-bg.png");
+}
+.latest .container h1 {
+  position: relative;
+}
+
+.latest.container h1::after {
+  position: absolute;
+  content: "";
+  background-image: url("./images/title-underline.png");
+  bottom: -50px;
+  left: 50%;
+  transform: translateX(-50%);
+}
 @media (max-width: 1110px) {
   .container {
     max-width: 960px;
