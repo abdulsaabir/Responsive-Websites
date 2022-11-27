@@ -14,7 +14,7 @@
   --marigold_75: hsla(42, 99%, 46%, 0.75);
   --xiketic_90: hsla(280, 37%, 8%, 0.9);
   --cultured-2: hsl(0, 0%, 97%);
-  --marigold: hsl(42, 99%, 46%);
+  --marigold: hwb(42 0% 9%);
   --platinum: hsl(0, 0%, 89%);
   --dim-gray: hsl(0, 0%, 42%);
   --white_15: hsla(0, 0%, 100%, 0.15);
@@ -47,8 +47,24 @@ body {
   background-color: var(--raisin-black-3);
   font-size: 1.6rem;
   line-height: 1.5;
-  color: var(--white);
 }
+.d3 {
+  padding: 1.2rem 2.2rem;
+  font-weight: bold;
+  color: white;
+  position: relative;
+  z-index: 1;
+}
+
+.d3::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  transform: skewX(var(--skewX, -16deg));
+  background-color: #febf29;
+  z-index: -1;
+}
+
 .container {
   max-width: 1100px;
   max-width: 1200px;
@@ -65,11 +81,79 @@ main {
   background-repeat: no-repeat;
   background-size: cover;
 }
+/* header */
 header {
   padding: 1rem 0;
-  color: var(--white);
+  background-color: var(--raisin-black-2);
+  opacity: 0.8;
+}
+header .logo {
+  gap: 10px;
+}
+header .logo h4 {
+  color: white;
+}
+header .links {
+  gap: 15px;
+}
+header .links p {
+  font-size: 14px;
+  margin-right: 5px;
+  font-weight: bold;
+  color: white;
+}
+header .links i {
+  color: #febf29;
+  cursor: 0;
+}
+/* nav */
+nav {
+  padding: 1.2rem 0;
+  background-color: #202427;
+  color: #fff;
+  font-family: var(--ff-oxanium);
+}
+nav .text {
+  background-color: black;
+}
+nav .text li {
+  padding: 10px 15px;
+  background-color: transparent;
+}
+nav .text li:hover {
+  background-color: #febf29;
+}
+nav .text li a {
+  text-transform: uppercase;
+}
+nav .icons {
+  gap: 20px;
+  margin-left: 2.5rem;
+}
+nav .logo-container a {
+  font-size: 35px;
+}
+/* /hero */
+.hero {
+  min-height: 80vh;
+  height: 80vh;
+  color: #fff;
+}
+.hero .container {
+  height: 100%;
+  gap: 30px;
+}
+.text-hero h4 {
+  font-size: 3.5rem;
+  text-transform: uppercase;
+  color: #febf29;
+}
+.hero button {
+  background: transparent;
+  border: navajowhite;
 }
 
+/*  */
 @media (max-width: 1110px) {
   .container {
     max-width: 960px;
@@ -95,4 +179,18 @@ header {
   .container {
     max-width: 450px;
   }
+}
+
+.skewBg {
+  position: relative;
+  z-index: 1;
+}
+
+.skewBg::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  transform: skewX(var(--skewX, -16deg));
+  background-color: var(--bg, var(--marigold));
+  z-index: -1;
 }
