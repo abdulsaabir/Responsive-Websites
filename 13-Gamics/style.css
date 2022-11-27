@@ -193,12 +193,12 @@ nav .logo-container a {
   height: 100vh;
   font-family: var(--ff-oxanium);
   background-image: url("./images/section-wrapper-bg.png");
-  padding-bottom: 90rem;
 }
 .latest .container .after-title {
   position: relative;
   font-size: 4rem;
   color: #e8e6e3;
+  margin-bottom: 10rem;
 }
 
 .latest .container .after-title::after {
@@ -240,6 +240,10 @@ nav .logo-container a {
 }
 .text-latest h1 {
   font-size: 20px;
+}
+.text-latest p {
+  font-size: 14px;
+  line-height: 1.6;
 }
 @media (max-width: 1110px) {
   .container {
