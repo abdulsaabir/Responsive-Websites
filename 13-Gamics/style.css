@@ -44,7 +44,7 @@ html {
   scroll-behavior: smooth;
 }
 body {
-  /* background-color: var(--raisin-black-3); */
+  background-color: var(--raisin-black-3);
   font-size: 1.6rem;
   line-height: 1.5;
 }
@@ -58,8 +58,11 @@ body {
 }
 main {
   width: 100%;
-  background-image: url("./images/hero-bg.jpg") no-repeat center center / cover !important;
   height: 100vh;
+  background-image: url("./images/hero-bg.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 @media (max-width: 1110px) {
