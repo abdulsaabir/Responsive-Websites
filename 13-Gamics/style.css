@@ -193,18 +193,53 @@ nav .logo-container a {
   height: 100vh;
   font-family: var(--ff-oxanium);
   background-image: url("./images/section-wrapper-bg.png");
+  padding-bottom: 90rem;
 }
-.latest .container h1 {
+.latest .container .after-title {
   position: relative;
+  font-size: 4rem;
+  color: #e8e6e3;
 }
 
-.latest.container h1::after {
+.latest .container .after-title::after {
   position: absolute;
   content: "";
   background-image: url("./images/title-underline.png");
-  bottom: -50px;
+  bottom: -10px;
   left: 50%;
+  width: 125px;
+  height: 10px;
   transform: translateX(-50%);
+}
+.latest .latest-features {
+  gap: 30px;
+}
+.latest-features > div {
+  aspect-ratio: 1/1.2;
+  display: flex;
+  align-items: flex-end;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.latest-features > div:first-child {
+  background-image: url("./images/latest-game-1.jpg");
+}
+
+.latest-features > div:nth-child(2) {
+  background-image: url("./images/latest-game-2.jpg");
+}
+.latest-features > div:last-child {
+  background-image: url("./images/latest-game-3.jpg");
+}
+.latest-features > div .text-latest {
+  padding: 2rem 0 2rem 2rem;
+  width: 100%;
+  background-color: rgba(18, 10, 22, 0.9);
+  text-align: start;
+}
+.text-latest h1 {
+  font-size: 20px;
 }
 @media (max-width: 1110px) {
   .container {
