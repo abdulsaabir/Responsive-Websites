@@ -211,50 +211,12 @@ nav .logo-container a {
   height: 10px;
   transform: translateX(-50%);
 }
-.latest .latest-features {
-  gap: 30px;
-}
-.latest-features > div {
-  min-width: 250px;
-  aspect-ratio: 1/1.2;
-  display: flex;
-  align-items: flex-end;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-.latest-features > div:first-child {
-  background-image: url("./images/latest-game-1.jpg");
-}
-
-.latest-features > div:nth-child(2) {
-  background-image: url("./images/latest-game-2.jpg");
-}
-.latest-features > div:last-child {
-  background-image: url("./images/latest-game-3.jpg");
-}
-.latest-features > div .text-latest {
-  padding: 2rem 0 2rem 2rem;
-  width: 100%;
-  background-color: rgba(18, 10, 22, 0.9);
-  text-align: start;
-}
-.text-latest h1 {
-  font-size: 20px;
-}
-.text-latest p {
-  font-size: 14px;
-  line-height: 1.6;
+.latest-features {
+  gap: 50px;
 }
 @media (max-width: 1110px) {
   .container {
     max-width: 960px;
-  }
-  .latest-features > div {
-    min-width: 300px;
-  }
-  .latest-features {
-    overflow-x: scroll;
   }
 }
 @media (max-width: 992px) {
@@ -304,18 +266,4 @@ nav .logo-container a {
   .container {
     max-width: 450px;
   }
-}
-
-.skewBg {
-  position: relative;
-  z-index: 1;
-}
-
-.skewBg::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  transform: skewX(var(--skewX, -16deg));
-  background-color: var(--bg, var(--marigold));
-  z-index: -1;
 }
