@@ -2,85 +2,94 @@
 <html lang="en">
 
 <head>
-
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Animated Form</title>
-    <link rel="stylesheet" href="./style.css">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign in & Sign up Form</title>
+    <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
     <main>
         <div class="box">
             <div class="inner-box">
-                <div class="form-wrap">
-                    <div class="left signin">
+                <div class="forms-wrap">
+                    <form action="index.html" autocomplete="off" class="sign-in-form">
                         <div class="logo">
-                            <img src="./img/logo.png" alt="logo">
-                            <h2>easyClass</h2>
+                            <img src="./img/logo.png" alt="easyclass" />
+                            <h4>easyclass</h4>
                         </div>
-                        <h1>Welcome Back</h1>
-                        <div class="signUp">
-                            <p>not Registered Yet?</p>
-                            <a class="btn-toggle" href="#"> Sign In</a>
-                        </div>
-                        <div class="actual-form">
-                            <form>
-                                <h3>Sign Up</h3>
-                                <div class="group">
-                                    <input type="text" required autocomplete="off" name="username">
-                                    <label class="PlaceHolder">username</label>
-                                </div>
-                                <div class="group-two">
-                                    <input type="password" required autocomplete="off" name="password">
-                                    <label class="PlaceHolder">password</label>
-                                </div>
-                                <button class="btn">Sign In</button>
-                            </form>
-                        </div>
-                        <p class="last-pragraph">Forget Your Password or your Log in details ? <a href="#">Get Help</a>
-                            Singing In</p>
-                    </div>
-                    <div class="left signup">
-                        <div class="logo">
-                            <img src="./img/logo.png" alt="logo">
-                            <h2>easyClass</h2>
-                        </div>
-                        <div class="actual-form">
-                            <h1>Get Started</h1>
-                            <div class="signUp">
-                                <p>Already Have an Account ?</p>
-                                <a class="btn-toggle" href="#"> Sign Up</a>
-                            </div>
-                            <form>
-                                <h3>Sign in</h3>
-                                <div class="group">
-                                    <input type="text" required autocomplete="off" name="username">
-                                    <label class="PlaceHolder">username</label>
-                                </div>
-                                <div class="group-two">
-                                    <input type="password" required autocomplete="off" name="password">
-                                    <label class="PlaceHolder">password</label>
-                                </div>
-                                <div class="group-two">
-                                    <input type="Email" required autocomplete="off" name="Email">
-                                    <label class="PlaceHolder">Email</label>
-                                </div>
-                                <button class="btn">Sign In</button>
-                            </form>
-                        </div>
-                        <p class="last-pragraph">By singing In I agree <a href="#">terms and service</a> and
-                            <a href="#">Privacy Policy</a>
-                        </p>
-                    </div>
-                </div>
-                <div class="coursel">
 
+                        <div class="heading">
+                            <h2>Welcome Back</h2>
+                            <h6>Not registred yet?</h6>
+                            <a href="#" class="toggle">Sign up</a>
+                        </div>
+
+                        <div class="actual-form">
+                            <div class="input-wrap">
+                                <input type="text" minlength="4" class="input-field" autocomplete="off" required />
+                                <label>Name</label>
+                            </div>
+
+                            <div class="input-wrap">
+                                <input type="password" minlength="4" class="input-field" autocomplete="off" required />
+                                <label>Password</label>
+                            </div>
+
+                            <input type="submit" value="Sign In" class="sign-btn" />
+
+                            <p class="text">
+                                Forgotten your password or you login datails?
+                                <a href="#">Get help</a> signing in
+                            </p>
+                        </div>
+                    </form>
+
+                    <form action="index.html" autocomplete="off" class="sign-up-form">
+                        <div class="logo">
+                            <img src="./img/logo.png" alt="easyclass" />
+                            <h4>easyclass</h4>
+                        </div>
+
+                        <div class="heading">
+                            <h2>Get Started</h2>
+                            <h6>Already have an account?</h6>
+                            <a href="#" class="toggle">Sign in</a>
+                        </div>
+
+                        <div class="actual-form">
+                            <div class="input-wrap">
+                                <input type="text" minlength="4" class="input-field" autocomplete="off" required />
+                                <label>Name</label>
+                            </div>
+
+                            <div class="input-wrap">
+                                <input type="email" class="input-field" autocomplete="off" required />
+                                <label>Email</label>
+                            </div>
+
+                            <div class="input-wrap">
+                                <input type="password" minlength="4" class="input-field" autocomplete="off" required />
+                                <label>Password</label>
+                            </div>
+
+                            <input type="submit" value="Sign Up" class="sign-btn" />
+
+                            <p class="text">
+                                By signing up, I agree to the
+                                <a href="#">Terms of Services</a> and
+                                <a href="#">Privacy Policy</a>
+                            </p>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="carousel">
                     <div class="images-wrapper">
-                        <img src="./img/image1.png" class="image img-1 show" alt="">
-                        <img src="./img/image2.png" class="image img-2" alt="">
-                        <img src="./img/image3.png" class="image img-3" alt="">
+                        <img src="./img/image1.png" class="image img-1 show" alt="" />
+                        <img src="./img/image2.png" class="image img-2" alt="" />
+                        <img src="./img/image3.png" class="image img-3" alt="" />
                     </div>
 
                     <div class="text-slider">
@@ -98,12 +107,14 @@
                             <span data-value="3"></span>
                         </div>
                     </div>
-
                 </div>
             </div>
         </div>
     </main>
-    <script src="./app.js"></script>
+
+    <!-- Javascript file -->
+
+    <script src="app.js"></script>
 </body>
 
 </html>

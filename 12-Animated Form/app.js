@@ -1,36 +1,42 @@
-let btnToggle = document.querySelectorAll(".btn-toggle");
-let Main = document.querySelector("main");
-btnToggle.forEach((btn) => {
+const inputs = document.querySelectorAll(".input-field");
+const toggle_btn = document.querySelectorAll(".toggle");
+const main = document.querySelector("main");
+const bullets = document.querySelectorAll(".bullets span");
+const images = document.querySelectorAll(".image");
+
+inputs.forEach((inp) => {
+  inp.addEventListener("focus", () => {
+    inp.classList.add("active");
+  });
+  inp.addEventListener("blur", () => {
+    if (inp.value != "") return;
+    inp.classList.remove("active");
+  });
+});
+
+toggle_btn.forEach((btn) => {
   btn.addEventListener("click", () => {
-    Main.classList.toggle("sign-up-mode");
+    main.classList.toggle("sign-up-mode");
   });
 });
 
-let bullets = document.querySelectorAll(".bullets span");
-let imagesWrapper = document.querySelectorAll(".images-wrapper .image");
+function moveSlider() {
+  let index = this.dataset.value;
+
+  let currentImage = document.querySelector(`.img-${index}`);
+  images.forEach((img) => img.classList.remove("show"));
+  currentImage.classList.add("show");
+
+  const textSlider = document.querySelector(".text-group");
+  textSlider.style.transform = `translateY(${-(index - 1) * 2.2}rem)`;
+
+  bullets.forEach((bull) => bull.classList.remove("active"));
+  this.classList.add("active");
+}
+
 bullets.forEach((bullet) => {
-  bullet.addEventListener("click", (e) => {
-    let value = bullet.dataset.value;
-    ImagesActive(value);
-    RemoveActive();
-    bullet.classList.add("active");
-  });
+  bullet.addEventListener("click", moveSlider);
 });
-
-function RemoveActive() {
-  bullets.forEach((bullet) => {
-    bullet.classList.remove("active");
-  });
-}
-function ImagesActive(value) {
-  imagesWrapper.forEach((image) => {
-    if (image.classList.contains(`img-${value}`)) {
-      image.classList.add("show");
-    } else {
-      image.classList.remove("show");
-    }
-  });
-}
 
 // 1- Closures
 // 2- prototypes
