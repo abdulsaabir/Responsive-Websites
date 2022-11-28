@@ -193,6 +193,7 @@ nav .logo-container a {
   height: 100vh;
   font-family: var(--ff-oxanium);
   background-image: url("./images/section-wrapper-bg.png");
+  padding-bottom: 255rem;
 }
 .latest .container .after-title {
   position: relative;
@@ -212,7 +213,7 @@ nav .logo-container a {
   transform: translateX(-50%);
 }
 .latest-features {
-  gap: 50px;
+  gap: 30px;
 }
 @media (max-width: 1110px) {
   .container {
@@ -230,7 +231,7 @@ nav .logo-container a {
     grid-template-columns: 1fr;
     text-align: center;
   }
-  .brand .container {
+  .bran0d .container {
     grid-template-columns: repeat(3, 1fr);
     justify-content: center;
     /* background-color: red; */
