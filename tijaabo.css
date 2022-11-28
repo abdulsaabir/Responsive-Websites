@@ -20,7 +20,6 @@ git checkout 12bda3d ; git pull
     grid-template-columns: 1fr;
   }
 }
-
 @media (max-width: 768px) {
   .container {
     max-width: 95%;
