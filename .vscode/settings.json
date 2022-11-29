@@ -1,4 +1,5 @@
 {
   "cSpell.enableFiletypes": ["!css"],
-  "cSpell.words": ["Danvo", "Gamics", "Loruki", "Techx"]
+  "cSpell.words": ["Danvo", "Gamics", "Loruki", "Techx"],
+  "liveServer.settings.port": 5501
 }
