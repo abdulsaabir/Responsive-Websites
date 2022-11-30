@@ -37,16 +37,3 @@ function moveSlider() {
 bullets.forEach((bullet) => {
   bullet.addEventListener("click", moveSlider);
 });
-
-// 1- Closures
-// 2- prototypes
-// 3- es-6
-// part two
-// 4- async/ await
-// 5-event loop
-// 6 -micro tasks / promises / callback
-// 7-v8-engine
-// 8-debugging & profiling
-// 9 - ecoSystem => ex  web-back / babel
-//
-//
