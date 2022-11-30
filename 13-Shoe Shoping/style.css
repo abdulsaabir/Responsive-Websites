@@ -60,11 +60,13 @@ header .btn {
 .featured {
   padding-top: 7rem;
   text-align: center;
+  background-color: #eee;
 }
 .featured img {
   width: 100%;
 }
-.featured h1 {
+.featured h1,
+.products h1 {
   text-align: center;
   font-size: clamp(2.5rem, calc(5vw + 1rem), 4rem);
   line-height: 1;
@@ -100,6 +102,35 @@ header .btn {
   background: rgb(171, 102, 102);
   border-radius: 50%;
   z-index: -1;
+}
+.split .featured__item p {
+  opacity: 0;
+  transition: 250ms ease-in-out;
+}
+.split .featured__item:hover p {
+  opacity: 1;
+}
+.split .featured__item span {
+  font-size: 30px;
+  font-weight: 800;
+  display: block;
+}
+.split .featured__item:nth-child(2) p {
+  margin-top: 10px;
+}
+.products {
+  padding-top: 7rem;
+  /* background-color: #fff; */
+}
+.product {
+  /* padding: 1em; */
+  background-color: red;
+  /* background: radial-gradient(var(--clr-inner, orange), var(--clr-outer, red)); */
+  margin-bottom: 50rem;
+  border-radius: 1rem;
+}
+.product img {
+  width: 100%;
 }
 @media (max-width: 768px) {
   header .container {
