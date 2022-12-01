@@ -42,7 +42,7 @@ header h1 {
 .container {
   padding: 1rem 20px 0;
   height: 100vh;
-  overflow: hidden;
+  /* overflow: hidden; */
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -129,12 +129,32 @@ ul li {
   border-radius: 6px;
   cursor: pointer;
   transition: 0.3s;
+  position: relative;
 }
 header.active ul li span {
   margin-left: 15px;
   display: inline-block;
 }
 header ul li span {
+  display: none;
+}
+header ul li::after {
+  position: absolute;
+  content: attr(content);
+  top: 50%;
+  left: 70px;
+  transform: translateY(-50%);
+  z-index: 10;
+  background-color: #070750;
+  padding: 4px 8px;
+  border-radius: 5px;
+  display: none;
+  transition: 0.5s;
+}
+header ul li:hover::after {
+  display: inline-block;
+}
+header.active ul li::after {
   display: none;
 }
 ul li.active {
@@ -146,4 +166,40 @@ section {
   padding: 20px;
   color: #000022;
   transition: 0.3s;
+}
+
+footer {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  padding: none;
+  border-radius: 6px;
+  padding: 8px 10px;
+  transition: 0.3s;
+  background-color: orangered;
+}
+header footer .text,
+header footer .img {
+  display: none;
+}
+header.active footer .text,
+header.active footer .img {
+  display: inline-block;
+}
+header .text h2 {
+  font-size: 16px;
+}
+footer .img {
+  width: 23px;
+  height: 23px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+footer .img img {
+  width: 100%;
+}
+footer .icon {
+  transform: rotate(180deg);
+  font-size: 14px;
 }
