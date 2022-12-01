@@ -1,0 +1,45 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 16px;
+}
+body {
+  background-color: #e0e0f1;
+  color: #fff;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 15rem;
+  background-color: #000022;
+  bottom: 0;
+}
+.container {
+  padding: 0 20px;
+  height: 100vh;
+  overflow: hidden;
+}
+header .btn {
+  position: absolute;
+  right: -25px;
+  top: 10px;
+  background-color: #000022;
+  color: #fff;
+  padding: 6px 6px;
+  font-size: 8px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+header .btn.left {
+  display: none;
+}
