@@ -131,3 +131,10 @@ header ul li span {
 ul li.active {
   background-color: #070750;
 }
+
+section {
+  margin-left: 7rem;
+  padding: 20px;
+  color: #000022;
+  transition: 0.3s;
+}
