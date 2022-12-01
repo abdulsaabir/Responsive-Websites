@@ -22,7 +22,7 @@ header {
   position: fixed;
   top: 0;
   left: 0;
-  width: 4rem;
+  width: 5rem;
   background-color: #000022;
   bottom: 0;
   transition: 0.3s linear;
@@ -43,8 +43,9 @@ header .logo b {
 }
 header.active .logo b {
   display: inline-block;
+  margin-left: 20px;
 }
-header .btn {
+header nav i {
   position: absolute;
   right: -25px;
   top: 10px;
@@ -56,18 +57,6 @@ header .btn {
   cursor: pointer;
   transition: 0.3s;
 }
-header.active .btn.right {
-  display: none;
-}
-header.active .btn.left {
-  display: block;
-}
-header .btn.right {
-  display: block;
-}
-header .btn.left {
-  display: none;
-}
 
 header .logo {
   font-size: 20px;
@@ -75,6 +64,10 @@ header .logo {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+header .logo a {
+  font-size: 30px;
+  margin-left: 6px;
 }
 header a {
   color: #fff;
@@ -89,9 +82,9 @@ header form {
   padding: 8px 20px;
   width: 2rem;
   margin-bottom: 20px;
-  transition: width 3s;
+  transition: width 0.3s;
 }
-header.active {
+header.active form {
   width: 13rem;
 }
 header.active form input {
@@ -103,6 +96,7 @@ header.active form input {
   width: 100%;
   margin-left: 20px;
   transition: 3s;
+  display: inline-block;
 }
 header form input {
   display: none;
@@ -125,9 +119,14 @@ ul li {
   align-items: center;
   border-radius: 6px;
   cursor: pointer;
+  transition: 0.3s;
 }
-ul li span {
+header.active ul li span {
   margin-left: 15px;
+  display: inline-block;
+}
+header ul li span {
+  display: none;
 }
 ul li.active {
   background-color: #070750;
