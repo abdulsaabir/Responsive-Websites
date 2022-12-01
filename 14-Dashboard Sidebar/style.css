@@ -129,7 +129,12 @@ ul li {
   border-radius: 6px;
   cursor: pointer;
   transition: 0.3s;
+  background-color: #fff;
+  color: #070750;
   position: relative;
+}
+ul li i {
+  color: #000022;
 }
 header.active ul li span {
   margin-left: 15px;
@@ -159,6 +164,7 @@ header.active ul li::after {
 }
 ul li.active {
   background-color: #070750;
+  color: #fff;
 }
 
 section {
