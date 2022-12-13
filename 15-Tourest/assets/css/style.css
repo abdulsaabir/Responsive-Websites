@@ -33,6 +33,7 @@ a{
 
 .container{
   max-width: 1200px;
+  position: relative; 
   margin: 0 auto;
   padding: 0 20px;
 }
@@ -51,14 +52,18 @@ a{
   color: var(--white-1);
   background-color: transparent;
 }
+.menu{
+  display: none;
+}
 /* header */
 header{
   height: 10vh;
   background-color: var(--viridian-green); 
-  position: relative; 
   overflow: hidden;
+  transition: height 0.2s;
 }
 header .container{
+  position: relative; 
   height: 100%;
   display: flex;
   justify-content: space-between;
@@ -89,11 +94,14 @@ header ul a:hover{
 }
 
 @media (max-width: 992px) {
+  header .btn{
+    display: none;
+  }
   .container {
     max-width: 780px;
+    background-color: red;
   }
   header.active{
-    background-color: var(--independence);
     height: 18rem;
     padding-top: 20px;
   }
@@ -101,19 +109,40 @@ header ul a:hover{
     height: fit-content;
   }
   header ul {
-    position:absolute;
-    flex-direction: column;
+    position: absolute;
+    display: block;
+    left: 0px;
     top:80px;
-    left: -30px;
+    flex-direction: column;
+    
   }
   /* header.active ul {
-    top:80px;
-    left: -30px;
+   
+    left: 0px;
   } */
   header ul li {
     margin: 5px 0;
   }
-  header ul a{
-    color: red;
+  .menu {
+    position: absolute;
+    display: block;
+    right: 50px;
+    font-size: 30px;
+    color: var(--white-1);
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    max-width:95%;
+    margin-inline: auto;
+    background-color: red;
+  }
+}
+
+@media (max-width: 575px) {
+  .container {
+    max-width: 450px;
+    background-color: red;
   }
 }
