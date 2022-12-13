@@ -35,7 +35,6 @@ a{
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 20px;
-  position: relative;
 }
 .btn{
   padding: 13px 16px;
@@ -55,7 +54,9 @@ a{
 /* header */
 header{
   height: 10vh;
-  background-color: var(--viridian-green);  
+  background-color: var(--viridian-green); 
+  position: relative; 
+  overflow: hidden;
 }
 header .container{
   height: 100%;
@@ -77,4 +78,42 @@ header ul a {
 }
 header ul a:hover{
  border-bottom: 2px solid white;
+}
+
+
+
+@media (max-width: 1110px) {
+  .container {
+    max-width: 960px;
+  }
+}
+
+@media (max-width: 992px) {
+  .container {
+    max-width: 780px;
+  }
+  header.active{
+    background-color: var(--independence);
+    height: 18rem;
+    padding-top: 20px;
+  }
+  header.active .container{
+    height: fit-content;
+  }
+  header ul {
+    position:absolute;
+    flex-direction: column;
+    top:80px;
+    left: -30px;
+  }
+  /* header.active ul {
+    top:80px;
+    left: -30px;
+  } */
+  header ul li {
+    margin: 5px 0;
+  }
+  header ul a{
+    color: red;
+  }
 }
