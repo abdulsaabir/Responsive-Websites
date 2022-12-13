@@ -99,7 +99,7 @@ header ul a:hover{
   }
   .container {
     max-width: 780px;
-    background-color: red;
+  
   }
   header.active{
     height: 18rem;
@@ -111,8 +111,8 @@ header ul a:hover{
   header ul {
     position: absolute;
     display: block;
-    left: 0px;
-    top:80px;
+    left: -70px;
+    top:60px;
     flex-direction: column;
     
   }
@@ -136,13 +136,13 @@ header ul a:hover{
   .container {
     max-width:95%;
     margin-inline: auto;
-    background-color: red;
+  
   }
 }
 
 @media (max-width: 575px) {
   .container {
     max-width: 450px;
-    background-color: red;
+  
   }
 }
