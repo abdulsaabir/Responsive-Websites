@@ -1,3 +1,20 @@
+:root{
+  --battleship-gray: hsl(0, 0%, 53%);
+--viridian-green: hsl(180, 98%, 31%);
+--silver-chalice: hsl(0, 0%, 69%);
+--mikado-yellow: hsl(47, 98%, 50%);
+--granite-gray: hsl(0, 0%, 40%);
+--independence: hsl(219, 20%, 32%);
+--spanish-gray: hsl(0, 0%, 61%);
+--oxford-blue: hsl(222, 46%, 17%);
+--black-coral: hsl(223, 8%, 44%);
+--eerie-black: hsl(210, 11%, 15%);
+--light-gray: hsl(0, 0%, 80%);
+--white-2: hsl(0, 0%, 98%);
+--white-1: hsl(0, 0%, 100%);
+--black: hsl(0, 0%, 0%);
+--jet: hsl(0, 0%, 20%);
+}
 *{
   margin: 0;
   padding: 0;
@@ -8,6 +25,7 @@ body{
 }
 ul{
   list-style: none;
+  display: flex;
 }
 a{
   text-decoration: none;
@@ -19,5 +37,44 @@ a{
   padding: 0 20px;
   position: relative;
 }
-
+.btn{
+  padding: 13px 16px;
+  background-color: var(--white-2);
+  border: none;
+  border-radius: 4px;
+  color: var(--viridian-green);
+  font-size: 16px;
+  border: 1px solid var(--white-1);
+  font-weight: bold;
+  transition: background-color 0.5s;
+}
+.btn:hover{
+  color: var(--white-1);
+  background-color: transparent;
+}
 /* header */
+header{
+  height: 10vh;
+  background-color: var(--viridian-green);  
+}
+header .container{
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--white-1);
+}
+header  ul {
+  flex: 1;
+  margin: 0 6rem;
+  justify-content: space-between;
+}
+header ul a {
+  color: inherit;
+  font-size: 20px;
+  font-weight: bold;
+  transition: border-bottom 0.3s ease-in-out;
+}
+header ul a:hover{
+ border-bottom: 2px solid white;
+}
