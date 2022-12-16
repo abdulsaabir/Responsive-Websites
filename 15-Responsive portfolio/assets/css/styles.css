@@ -185,8 +185,10 @@ img {
   position: fixed;
   bottom: 1rem;
   width: 90%;
-  background-color:hsl(var(--first-hue), var(--sat), 71%);
-  border-radius:5rem;
+  background-color: var(--container-color);
+  border-radius:4rem;
+  padding: 1rem, 2.25rem;
+  backdrop-filter: blur(10px)
 }
 .nav_list{
   display: flex;
@@ -195,14 +197,20 @@ img {
   align-items: center;
 }
 .nav_link{
+  color: var(--text-color);
+  font-size: 1.25rem;
+  padding: .4rem;
   display: flex;
   align-items: center;
-  padding: .5rem;
   border-radius: 5rem;
 }
 /* Active link */
 .Active-link{
-  background-color: hsl(var(--first-hue), var(--sat), var(--lig));
+  background-color: linear-gradient(180deg, 
+  hsla(var(--first-hue), var(--sat), var(--lig) , 1),
+  hsla(var(--first-hue), var(--sat), var(--lig) , .2),
+  );
+  box-shadow: 0 0 16px hsla(var(--first-hue), var(--sat), var(--lig) , .4);
 }
 
 /* Change background header */

@@ -1,23 +1,8 @@
-/*=============== CHANGE BACKGROUND HEADER ===============*/
+let nav_link = document.querySelectorAll('.nav_link')
 
-
-/*=============== SERVICES MODAL ===============*/
-
-
-/*=============== MIXITUP FILTER PORTFOLIO ===============*/
-
-
-/* Link active work */ 
-
-
-/*=============== SWIPER TESTIMONIAL ===============*/
-
-
-/*=============== SCROLL SECTIONS ACTIVE LINK ===============*/
-
-
-/*=============== LIGHT DARK THEME ===============*/ 
-
-
-/*=============== SCROLL REVEAL ANIMATION ===============*/
-
+nav_link.forEach(link => {
+   link.addEventListener(('click') , e => {
+    nav_link.forEach(link => link.classList.remove('Active-link'))
+    link.classList.add('Active-link')
+   })
+})
