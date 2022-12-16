@@ -185,9 +185,8 @@ img {
   position: fixed;
   bottom: 1rem;
   width: 90%;
-  background-color: var(--container-color);
+  background: var(--container-color);
   border-radius:4rem;
-  padding: 1rem, 2.25rem;
   backdrop-filter: blur(10px)
 }
 .nav_list{
@@ -206,10 +205,7 @@ img {
 }
 /* Active link */
 .Active-link{
-  background-color: linear-gradient(180deg, 
-  hsla(var(--first-hue), var(--sat), var(--lig) , 1),
-  hsla(var(--first-hue), var(--sat), var(--lig) , .2),
-  );
+  background: var(--first-color);
   box-shadow: 0 0 16px hsla(var(--first-hue), var(--sat), var(--lig) , .4);
 }
 
@@ -217,10 +213,119 @@ img {
 
 
 /*=============== HOME ===============*/
-
-
+.home_container{
+  position: relative;
+  row-gap: 3.5rem;
+  padding-top: 2rem;
+}
+.home_data{
+  text-align: center;
+}
+.home_greeting, .home_education{
+  font-size: var(--small-font-size);
+  font-weight: var(--font-medium);
+}
+.home_greeting{
+  display: block;
+  color: var(--title-color);
+  margin-bottom: .25rem;
+}
+.home_education {
+  color: var(--text-color);
+  margin-bottom: 1.5rem;
+}
+.home_name{
+  font-size: var(--biggest-font-size);
+}
+.home_img{
+  width: 160px;
+}
+.home_handle{
+  justify-self: center;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  overflow: hidden;
+  width: 190px;
+  height: 293px;
+  background: linear-gradient(180deg , 
+              hsla(var(--first-hue), var(--sat), var(--lig), 1),
+              hsla(var(--first-hue), var(--sat), var(--lig), .2)
+  );
+  border-radius: 10rem 10rem 1rem 1rem;
+}
+.home_buttons{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+}
+.home_socail,.home_scroll{
+  position: absolute;
+}
+.home_socail{
+  bottom: 5rem;
+  left: 0;
+  display: grid;
+  row-gap: .5rem;;
+}
+.home_socail_link{
+  width: max-content;
+  background-color: var(--container-color);
+  color: var(--first-color);
+  padding: .25rem;
+  border-radius: .25rem;
+  display: flex;
+  font-size: 1rem;
+  transition: .4s;
+}
+.home_socail_link:hover{
+  background-color: var(--first-color);
+  color: #000;
+}
+.home_socail::after{
+  content: '';
+  width: 32px;
+  height: 2px;
+  background-color: var(--first-color);
+  transform: rotate(90deg) translate(16px,3px);;
+}
+.home_scroll{
+  color: var(--first-color);
+  bottom: 4.5rem;
+  right: -1.5rem;
+  display: grid;
+  gap: 2.25rem;
+  justify-items: center;
+}
+.home_scroll_icon{
+  font-size: 1.25rem;
+}
+.home_scroll_name{
+  font-size: var(--smaller-font-size);
+  transform: rotate(90deg);
+}
 /*=============== BUTTONS ===============*/
-
+.button{
+  background-color: var(--first-color);
+  color: var(--body-color);
+  display: inline-block;
+  padding: .75rem 1rem;
+  border-radius: .5rem;
+  font-weight: var(--font-medium);
+  transition: .4s;
+}
+.button_ghost{
+  background-color: transparent;
+  border: 2px solid var(--first-color);
+  color: var(--first-color);
+}
+.button:hover{
+  background-color: var(--first-color);
+  color: var(--body-color);
+  opacity: 0.8;
+  
+}
 
 /*=============== ABOUT ===============*/
 

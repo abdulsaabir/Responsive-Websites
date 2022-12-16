@@ -13,6 +13,13 @@
 
     <!--=============== BOXICONS ===============-->
     <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
 
     <!--=============== SWIPER CSS ===============-->
     <link rel="stylesheet" href="" />
@@ -31,41 +38,78 @@
           <ul class="nav_list">
             <li class="nav_item">
               <a href="#home" class="nav_link Active-link">
-                <box-icon name="home"></box-icon>
+                <i class="fa-solid fa-house-user"></i>
               </a>
             </li>
 
             <li class="nav_item">
               <a href="#about" class="nav_link">
-                <box-icon name="user"></box-icon>
+                <i class="fa-solid fa-user"></i>
               </a>
             </li>
             <li class="nav_item">
               <a href="#skills" class="nav_link">
-                <box-icon name="book"></box-icon>
+                <i class="fa-solid fa-book"></i>
               </a>
             </li>
             <li class="nav_item">
               <a href="#Projects" class="nav_link">
-                <box-icon type="solid" name="briefcase-alt-2"></box-icon>
+                <i class="fa-solid fa-briefcase"></i>
               </a>
             </li>
             <li class="nav_item">
               <a href="#contact" class="nav_link">
-                <box-icon name="message-square-detail"></box-icon>
+                <i class="fa-regular fa-envelope"></i>
               </a>
             </li>
           </ul>
         </div>
         <!-- toggle theme icon -->
-        <box-icon name="moon" class="change-theme" id="theme-button"></box-icon>
+        <i class="fa-regular fa-moon"></i>
       </nav>
     </header>
 
     <!--=============== MAIN ===============-->
     <main class="main">
       <!--=============== HOME ===============-->
-      <section class="home section" id="home"></section>
+      <section class="home section" id="home">
+        <div class="home_container container grid">
+          <div class="home_data">
+            <span class="home_greeting">Hello I'm</span>
+            <h1 class="home_name">Ansel Kapnow</h1>
+            <h3 class="home_education">FrontEnd Developer</h3>
+
+            <div class="home_buttons">
+              <a
+                download="Ansel-Cv"
+                href="./assets/pdf/Ansel-Cv.pdf"
+                class="button button_ghost"
+              >
+                Download Cv</a
+              >
+              <a href="#about" class="button">About Me</a>
+            </div>
+          </div>
+          <div class="home_handle">
+            <img src="./assets/img/perfil.png" alt="" class="home_img" />
+          </div>
+          <div class="home_socail">
+            <a href="https://www.linkedin.com/" class="home_socail_link"
+              ><i class="fa-brands fa-linkedin"></i
+            ></a>
+            <a href="https://github.com/" class="home_socail_link"
+              ><i class="fa-brands fa-square-github"></i
+            ></a>
+            <a href="https://twitter.com/" class="home_socail_link">
+              <i class="fa-brands fa-square-twitter"></i>
+            </a>
+          </div>
+          <a href="#" class="home_scroll">
+            <i class="fa-solid fa-computer-mouse home_scroll_icon"></i>
+            <span class="home_scroll_name">Scroll Down</span>
+          </a>
+        </div>
+      </section>
 
       <!--=============== ABOUT ===============-->
       <section class="about section" id="about"></section>
