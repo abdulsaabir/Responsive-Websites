@@ -12,7 +12,6 @@
     />
 
     <!--=============== BOXICONS ===============-->
-    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
@@ -22,7 +21,7 @@
     />
 
     <!--=============== SWIPER CSS ===============-->
-    <link rel="stylesheet" href="" />
+    <link rel="stylesheet" href="./assets/css/swiper-bundle.min.css" />
 
     <!--=============== CSS ===============-->
     <link rel="stylesheet" href="./assets/css/styles.css" />
@@ -81,7 +80,7 @@
 
             <div class="home_buttons">
               <a
-                download="Ansel-Cv"
+                download=""
                 href="./assets/pdf/Ansel-Cv.pdf"
                 class="button button_ghost"
               >
@@ -461,14 +460,124 @@
         <span class="section_subtitle">My Portfolio </span>
         <h2 class="section_title">Recent Works</h2>
 
-        <div class="work_filters"></div>
+        <div class="work_filters">
+          <span class="work_item active_work" data-filter="all">All</span>
+          <span class="work_item" data-filter=".web">Web</span>
+          <span class="work_item" data-filter=".design">Design</span>
+          <span class="work_item" data-filter=".movil">Movil</span>
+        </div>
+        <div class="work_container container grid">
+          <!-- card -->
+          <div class="work_card mix web">
+            <img src="./assets/img/work1.jpg" alt="" class="work_img" />
+
+            <h3 class="work_title">Web design</h3>
+            <a href="" class="work_button"
+              >Demo<i class="fa-solid fa-arrow-right service_icon"></i
+            ></a>
+          </div>
+          <!-- card -->
+          <div class="work_card mix movil">
+            <img src="./assets/img/work2.jpg" alt="" class="work_img" />
+
+            <h3 class="work_title">App movil</h3>
+
+            <a href="" class="work_button"
+              >Demo<i class="fa-solid fa-arrow-right service_icon"></i
+            ></a>
+          </div>
+          <!-- card -->
+          <div class="work_card mix design">
+            <img src="./assets/img/work3.jpg" alt="" class="work_img" />
+
+            <h3 class="work_title">Brand design</h3>
+
+            <a href="" class="work_button"
+              >Demo<i class="fa-solid fa-arrow-right service_icon"></i
+            ></a>
+          </div>
+          <!-- card -->
+          <div class="work_card mix web">
+            <img src="./assets/img/work4.jpg" alt="" class="work_img" />
+
+            <h3 class="work_title">Web design</h3>
+
+            <a href="" class="work_button"
+              >Demo<i class="fa-solid fa-arrow-right service_icon"></i
+            ></a>
+          </div>
+          <!-- card -->
+          <div class="work_card mix movil">
+            <img src="./assets/img/work5.jpg" alt="" class="work_img" />
+
+            <h3 class="work_title">App movil</h3>
+
+            <a href="" class="work_button"
+              >Demo<i class="fa-solid fa-arrow-right service_icon"></i
+            ></a>
+          </div>
+        </div>
       </section>
 
       <!--=============== TESTIMONIALS ===============-->
-      <section class="testimonial section"></section>
+      <section class="testimonial section">
+        <span class="section_subtitle">My clients say</span>
+        <h2 class="section_title">Testimonial</h2>
+
+        <div class="testimonial_container container swiper">
+          <div class="swiper-wrapper">
+            <!-- card -->
+            <div class="testimonial_card swiper-slide">
+              <img
+                src="./assets/img/testimonial1.png"
+                alt=""
+                class="testimonial_img"
+              />
+
+              <h3 class="testimonial_name">John Doe</h3>
+              <p class="testimonial__description">
+                A really good job, all aspects of the project were followed step
+                by step and with good results.
+              </p>
+            </div>
+            <!-- card -->
+            <div class="testimonial_card swiper-slide">
+              <img
+                src="./assets/img/testimonial2.png"
+                alt=""
+                class="testimonial_img"
+              />
+
+              <h3 class="testimonial_name">Paula Vusy</h3>
+              <p class="testimonial__description">
+                A really good job, all aspects of the project were followed step
+                by step and with good results.
+              </p>
+            </div>
+            <!-- card -->
+            <div class="testimonial_card swiper-slide">
+              <img
+                src="./assets/img/testimonial3.png"
+                alt=""
+                class="testimonial_img"
+              />
+
+              <h3 class="testimonial_name">Sara Cill</h3>
+              <p class="testimonial__description">
+                A really good job, all aspects of the project were followed step
+                by step and with good results.
+              </p>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </section>
 
       <!--=============== CONTACT ===============-->
-      <section class="contact section" id="contact"></section>
+      <section class="contact section" id="contact">
+        <span class="section_subtitle">Get in touch</span>
+        <h2 class="section_title">Contact Me</h2>
+      </section>
     </main>
 
     <!--=============== FOOTER ===============-->
@@ -478,10 +587,10 @@
     <script src=""></script>
 
     <!--=============== SWIPER JS ===============-->
-    <script src=""></script>
+    <script src="./assets/js/swiper-bundle.min.js"></script>
 
     <!--=============== MIXITUP FILTER ===============-->
-    <script src=""></script>
+    <script src="./assets/js/mixitup.min.js"></script>
 
     <!--=============== MAIN JS ===============-->
     <script src="./assets/js/main.js"></script>
