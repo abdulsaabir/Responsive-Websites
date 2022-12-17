@@ -684,8 +684,10 @@ img {
 }
 .contact_card_data{
   display: block;
+  margin-bottom: .75rem;
 }
 .contact_button{
+  color: var(--first-color);
   margin-top: 1rem;
   font-size: var(--small-font-size);
   display: flex;
@@ -700,6 +702,48 @@ transition: .4s;
 }
 .contact_button:hover .contact_button_icon{
 transform: translateX(.25rem)
+}
+
+.contact_form{
+  display: grid;
+  gap: 1.5rem;
+}
+.contact_form_input{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: none;
+  border: 2px solid var(--text-color-light);
+  outline: none;
+  padding: 1.5rem;
+  color: var(--text-color);
+  border-radius: .75rem;
+  z-index: 1;
+}
+.contact_form_input::placeholder{
+  font-size: var(--small-font-size);
+}
+.contact_form_div{
+  margin-bottom: 2rem;
+  height: 4rem;
+  width: 100%;
+  position: relative;
+}
+.contact_form_tag{
+  position: absolute;
+  left: 15px;
+  z-index: 4;
+  top: -15px;
+  padding: .25rem;
+  background-color: var(--body-color);
+}
+.contact_form_area{
+  height: 11rem;
+}
+textarea{
+  resize: none;
 }
 /*=============== FOOTER ===============*/
 
