@@ -406,15 +406,14 @@ img {
 }
 
 /*=============== SKILLS ===============*/
-.skills_container {
+.skills_container{
   row-gap: 2.5rem;
   padding-top: 1.5rem;
 }
-
-.skills_content {
+.skills_content{
   background-color: var(--container-color);
   padding: 1.5rem;
-  border-radius:1rem;
+  border-radius: 1.25rem;
 }
 .skills_title  {
   font-size:var(--normal-font-size);
@@ -426,6 +425,7 @@ img {
 .skills_box{
   display: flex;
   justify-content: center;
+  align-items: flex-start;
   column-gap: 2.5rem;
 }
 .skills_data{
@@ -433,9 +433,9 @@ img {
   gap: .5rem;
   margin-bottom: 1.5rem;
 }
-.fa-solid{
-  color: var(--first-color);
+ .skills_data .fa-solid{
   font-size: 1rem;
+  color: var(--first-color);
 }
 .skills_name{
   font-size: var(--normal-font-size);
