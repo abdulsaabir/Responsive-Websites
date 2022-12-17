@@ -6,3 +6,10 @@ nav_link.forEach(link => {
     link.classList.add('Active-link')
    })
 })
+
+// add background shaddow to the header
+function ScrollHeader() {
+   let header = document.getElementById('header')
+   this.scrollY > 50 ? header.classList.add('scroll-header') : header.classList.remove('scroll-header')
+}
+window.addEventListener('scroll' , ScrollHeader)

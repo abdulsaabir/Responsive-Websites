@@ -18,7 +18,8 @@
   --lig: 75%;
   --second-hue: 219;
   --first-color: hsl(var(--first-hue), var(--sat), var(--lig));
-  --first-color-alt: hsl(var(--first-hue), var(--sat), 71%); /* -4% */
+  --first-color-alt: hsl(var(--first-hue), var(--sat), 71%);
+  /* -4% */
   --title-color: hsl(var(--second-hue), 15%, 95%);
   --text-color: hsl(var(--second-hue), 8%, 75%);
   --text-color-light: hsl(var(--second-hue), 4%, 55%);
@@ -82,10 +83,13 @@ textarea {
 body {
   background-color: var(--body-color);
   color: var(--text-color);
-  transition: .4s; /* for light mode animation */
+  transition: .4s;
+  /* for light mode animation */
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
   color: var(--title-color);
   font-weight: var(--font-semibold);
 }
@@ -141,25 +145,22 @@ img {
   padding: 4.5rem 0 1rem;
 }
 
-.section__title, 
-.section__subtitle {
-  text-align: center;
-}
-
-.section__title {
+.section_title {
   font-size: var(--h2-font-size);
+  text-align: center;
   color: var(--first-color);
   margin-bottom: 2rem;
 }
 
-.section__subtitle {
+.section_subtitle {
   display: block;
+  text-align: center;
   font-size: var(--smaller-font-size);
   color: var(--text-color-light);
 }
 
 /*=============== HEADER & NAV===============*/
-.header{
+.header {
   position: fixed;
   top: 0;
   left: 0;
@@ -167,35 +168,41 @@ img {
   background-color: var(--body-color);
   z-index: var(--z-fixed);
 }
-.nav{
+
+.nav {
   height: var(--header-height);
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-.nav_logo{
+
+.nav_logo {
   color: var(--first-color);
   font-weight: var(--font-medium);
   transition: 0.4s;
 }
-.nav_logo:hover{
+
+.nav_logo:hover {
   color: var(--first-color-alt);
 }
-.nav_menu{
+
+.nav_menu {
   position: fixed;
   bottom: 1rem;
   width: 90%;
   background: var(--container-color);
-  border-radius:4rem;
+  border-radius: 4rem;
   backdrop-filter: blur(10px)
 }
-.nav_list{
+
+.nav_list {
   display: flex;
   padding: 1.25rem 2rem;
   justify-content: space-between;
   align-items: center;
 }
-.nav_link{
+
+.nav_link {
   color: var(--text-color);
   font-size: 1.25rem;
   padding: .4rem;
@@ -203,44 +210,55 @@ img {
   align-items: center;
   border-radius: 5rem;
 }
+
 /* Active link */
-.Active-link{
+.Active-link {
   background: var(--first-color);
-  box-shadow: 0 0 16px hsla(var(--first-hue), var(--sat), var(--lig) , .4);
+  box-shadow: 0 0 16px hsla(var(--first-hue), var(--sat), var(--lig), .4);
 }
 
 /* Change background header */
-
+.scroll-header{
+  box-shadow: 0 4px 4px hsla(0, 0%, 4%, .3);
+}
 
 /*=============== HOME ===============*/
-.home_container{
+.home_container {
   position: relative;
   row-gap: 3.5rem;
   padding-top: 2rem;
 }
-.home_data{
+
+.home_data {
   text-align: center;
 }
-.home_greeting, .home_education{
+
+.home_greeting,
+.home_education {
   font-size: var(--small-font-size);
   font-weight: var(--font-medium);
 }
-.home_greeting{
+
+.home_greeting {
   display: block;
   color: var(--title-color);
   margin-bottom: .25rem;
 }
+
 .home_education {
   color: var(--text-color);
   margin-bottom: 1.5rem;
 }
-.home_name{
+
+.home_name {
   font-size: var(--biggest-font-size);
 }
-.home_img{
+
+.home_img {
   width: 160px;
 }
-.home_handle{
+
+.home_handle {
   justify-self: center;
   display: flex;
   align-items: flex-end;
@@ -248,28 +266,33 @@ img {
   overflow: hidden;
   width: 190px;
   height: 293px;
-  background: linear-gradient(180deg , 
-              hsla(var(--first-hue), var(--sat), var(--lig), 1),
-              hsla(var(--first-hue), var(--sat), var(--lig), .2)
-  );
+  background: linear-gradient(180deg,
+      hsla(var(--first-hue), var(--sat), var(--lig), 1),
+      hsla(var(--first-hue), var(--sat), var(--lig), .2));
   border-radius: 10rem 10rem 1rem 1rem;
 }
-.home_buttons{
+
+.home_buttons {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 1.5rem;
 }
-.home_socail,.home_scroll{
+
+.home_socail,
+.home_scroll {
   position: absolute;
 }
-.home_socail{
+
+.home_socail {
   bottom: 5rem;
   left: 0;
   display: grid;
-  row-gap: .5rem;;
+  row-gap: .5rem;
+  ;
 }
-.home_socail_link{
+
+.home_socail_link {
   width: max-content;
   background-color: var(--container-color);
   color: var(--first-color);
@@ -279,18 +302,22 @@ img {
   font-size: 1rem;
   transition: .4s;
 }
-.home_socail_link:hover{
+
+.home_socail_link:hover {
   background-color: var(--first-color);
   color: #000;
 }
-.home_socail::after{
+
+.home_socail::after {
   content: '';
   width: 32px;
   height: 2px;
   background-color: var(--first-color);
-  transform: rotate(90deg) translate(16px,3px);;
+  transform: rotate(90deg) translate(16px, 3px);
+  ;
 }
-.home_scroll{
+
+.home_scroll {
   color: var(--first-color);
   bottom: 4.5rem;
   right: -1.5rem;
@@ -298,15 +325,18 @@ img {
   gap: 2.25rem;
   justify-items: center;
 }
-.home_scroll_icon{
+
+.home_scroll_icon {
   font-size: 1.25rem;
 }
-.home_scroll_name{
+
+.home_scroll_name {
   font-size: var(--smaller-font-size);
   transform: rotate(90deg);
 }
+
 /*=============== BUTTONS ===============*/
-.button{
+.button {
   background-color: var(--first-color);
   color: var(--body-color);
   display: inline-block;
@@ -315,20 +345,65 @@ img {
   font-weight: var(--font-medium);
   transition: .4s;
 }
-.button_ghost{
+
+.button_ghost {
   background-color: transparent;
   border: 2px solid var(--first-color);
   color: var(--first-color);
 }
-.button:hover{
+
+.button:hover {
   background-color: var(--first-color);
   color: var(--body-color);
   opacity: 0.8;
-  
+
 }
 
 /*=============== ABOUT ===============*/
+.about_container {
+  row-gap: 2.5rem;
+}
 
+.about_img {
+  width: 220px;
+  justify-self: center;
+  border-radius: 1.5rem;
+}
+
+.about_data {
+  text-align: center;
+}
+
+.about_info {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: .5rem;
+  margin-bottom: 2rem;
+}
+
+.about_box {
+  background-color: var(--container-color);
+  padding: .75rem .5rem;
+  border-radius: .75rem;
+}
+
+.about_icon {
+  font-size: 1.5rem;
+  color: var(--first-color);
+  margin-bottom: .5rem;
+}
+
+.about_title {
+  font-size: var(--smaller-font-size);
+}
+
+.about_subtitle {
+  font-size: var(--tiny-font-size);
+}
+
+.about_description {
+  margin-bottom: 2rem;
+}
 
 /*=============== SKILLS ===============*/
 
