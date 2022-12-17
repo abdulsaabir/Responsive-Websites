@@ -511,8 +511,8 @@ img {
 }
 
 .service_modal_content {
-  background-color: hsl(var(--second-hue), 48%, 8%);
-  padding: 2rem 1rem;
+  background-color: var(--body-color);
+  padding: 4.5rem 1.5rem 2.5rem; 
   border-radius: 1.25rem;
   position: relative;
 }
@@ -523,34 +523,33 @@ img {
 }
 
 .service_modal_title {
-  font-size: var(--normal-font-size);
+  font-size: var(--h3-font-size);
   color: var(--first-color);
   margin-bottom: 1rem;
   font-weight: var(--font-medium);
 }
 
 .services__modal_description {
-  font-size: var(--normal-font-size);
-  width: 80%;
-  margin: auto;
+  font-size: var(--small-font-size);
 }
 
 .service_modal_list {
   margin-top: 1.5rem;
+  display: grid;
+  row-gap: .75rem;
 }
 
 .service_modal_item {
   display: flex;
   align-items: flex-start;
   gap: .5rem;
-  margin-bottom: 1rem;
 }
 
 .service_modal_icon {
-  font-size: 1rem;
+  font-size: 1.5rem;
   color: var(--first-color);
   margin-top: .2rem;
-
+  
 }
 
 .service_modal_info {
@@ -563,6 +562,7 @@ img {
   top: 1.5rem;
   right: 1.5rem;
   cursor: pointer;
+  color: var(--first-color);
 }
 
 /*Active modal*/

@@ -17,15 +17,16 @@ window.addEventListener('scroll' , ScrollHeader)
 // modal toggle 
 
 let service_Button = document.querySelectorAll('.service_Button') 
+let service_modal = document.querySelectorAll('.service_modal') 
+let service_modal_close = document.querySelectorAll('.service_modal_close') 
 
-service_Button.forEach(btn => {
-   btn.addEventListener('click' , (e) =>  {
-      let ParentElement = e.target.parentElement;
-      let modal = ParentElement.querySelector('.service_modal');
-      modal.classList.add('active_modal')
-      let ModalClose = ParentElement.querySelector('.service_modal_close')
-      ModalClose.addEventListener('click',() => {
-         modal.classList.remove('active_modal')
-      })
-   })
+const Modal = (index) => {
+   service_modal[index].classList.add('active_modal')
+}
+
+service_Button.forEach((btn,index )=> {
+   btn.addEventListener('click'  , () =>Modal(index))    
+})
+service_modal_close.forEach((btn,index )=> {
+   btn.addEventListener('click'  , () =>   service_modal[index].classList.remove('active_modal'))    
 })
