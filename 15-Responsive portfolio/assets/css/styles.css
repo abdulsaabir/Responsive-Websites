@@ -218,7 +218,7 @@ img {
 }
 
 /* Change background header */
-.scroll-header{
+.scroll-header {
   box-shadow: 0 4px 4px hsla(0, 0%, 4%, .3);
 }
 
@@ -406,8 +406,44 @@ img {
 }
 
 /*=============== SKILLS ===============*/
+.skills_container {
+  row-gap: 2.5rem;
+  padding-top: 1.5rem;
+}
 
-
+.skills_content {
+  background-color: var(--container-color);
+  padding: 1.5rem;
+  border-radius:1rem;
+}
+.skills_title  {
+  font-size:var(--normal-font-size);
+  font-weight: var(--font-medium);
+  color: var(--first-color);
+  text-align: center;
+  margin-bottom:2.5rem;
+}
+.skills_box{
+  display: flex;
+  justify-content: center;
+  column-gap: 2.5rem;
+}
+.skills_data{
+  display: flex;
+  gap: .5rem;
+  margin-bottom: 1.5rem;
+}
+.fa-solid{
+  color: var(--first-color);
+  font-size: 1rem;
+}
+.skills_name{
+  font-size: var(--normal-font-size);
+  line-height: 1rem;
+}
+.skills_level{
+  font-size: var(--tiny-font-size);
+}
 /*=============== SERVICES ===============*/
 
 
