@@ -420,33 +420,66 @@ img {
   font-weight: var(--font-medium);
   color: var(--first-color);
   text-align: center;
-  margin-bottom:2.5rem;
+  margin-bottom: 1.5rem;
 }
 .skills_box{
   display: flex;
   justify-content: center;
-  align-items: flex-start;
   column-gap: 2.5rem;
+  row-gap: 1rem;
+}
+.skills_group{
+  display: grid;
+  align-content: flex-start;
+  gap: 1rem;
 }
 .skills_data{
   display: flex;
   gap: .5rem;
-  margin-bottom: 1.5rem;
 }
  .skills_data .fa-solid{
-  font-size: 1rem;
+  font-size: .75rem;
   color: var(--first-color);
+  margin-top: 3px;
 }
 .skills_name{
   font-size: var(--normal-font-size);
-  line-height: 1rem;
+  font-weight: var(--font-medium);
+  line-height: 18px;
 }
 .skills_level{
   font-size: var(--tiny-font-size);
 }
 /*=============== SERVICES ===============*/
-
-
+.service_container{
+  grid-template-columns: repeat(2,1fr);
+  gap: 1.5rem;
+  padding-top: 1rem;
+}
+.service_card{
+  padding: 3rem 1.5rem 1.5rem;
+  background-color: var(--container-color);
+  border-radius: .75rem;
+}
+.service_title{
+  font-size: var(--h3-font-size);
+  margin-bottom: 2.5rem;
+}
+.service_Button{
+  font-size: var(--small-font-size);
+  color: var(--first-color);
+  display: flex;
+  align-items: center;
+  gap: .25rem;
+  cursor: pointer;
+}
+.service_icon{
+  font-size: 1rem;
+  transition: .4s;
+}
+.service_Button:hover .service_icon{
+  transform: translateX(.25rem);
+}
 /* Services modal */
 
 
