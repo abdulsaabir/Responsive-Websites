@@ -651,8 +651,56 @@ img {
 }
 
 /*=============== CONTACT ===============*/
-
-
+.contact_container{
+  row-gap: 3rem;
+ padding-bottom: 3rem;
+}
+.contact_title{
+  text-align: center;
+  font-size: var(--h3-font-size);
+  font-weight: var(--font-medium);
+  margin-bottom: 1.5rem;
+}
+.contact_info{
+  display: grid;
+  gap: 1.25rem;
+}
+.contact_card{
+  background-color: var(--container-color);
+  border-radius: .75rem;
+  padding: 1rem 0;
+  text-align: center;
+}
+.contact_Card_icon{
+  font-size: 2rem;
+  color: var(--title-color);
+  margin-bottom: .25rem;
+}
+.contact_button_icon , .contact_card_data{
+  font-size: var(--small-font-size);
+}
+.contact_card_title{
+  font-weight: var(--font-medium);
+}
+.contact_card_data{
+  display: block;
+}
+.contact_button{
+  margin-top: 1rem;
+  font-size: var(--small-font-size);
+  display: flex;
+  gap: .25rem;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+.contact_button_icon{
+font-size: 1rem;
+transition: .4s;
+}
+.contact_button:hover .contact_button_icon{
+transform: translateX(.25rem)
+}
 /*=============== FOOTER ===============*/
 
 
