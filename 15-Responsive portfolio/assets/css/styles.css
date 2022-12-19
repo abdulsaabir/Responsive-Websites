@@ -192,7 +192,7 @@ img {
   width: 90%;
   background: var(--container-color);
   border-radius: 4rem;
-  backdrop-filter: blur(10px)
+  backdrop-filter: blur(10px);
 }
 
 .nav_list {
@@ -746,8 +746,49 @@ textarea{
   resize: none;
 }
 /*=============== FOOTER ===============*/
+.footer{
+  background: var(--first-color);
+  padding: 1.5rem 0;
+}
 
+.footer_title, .footer_link{
+  color: var(--body-color)
+}
+.footer_title{
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.footer_list{
+  display: flex;
+  justify-content:center;
+  column-gap: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+.footer_link{
+  color: black;
+  font-weight:  var(--font-medium);
 
+}
+.footer_socail{
+  display: flex;
+  justify-content:center;
+  column-gap: 1.25rem;
+}
+.footer_socail_link{
+  background-color: var(--body-color);
+  color:var(--first-color);
+  padding: .10rem .30rem;
+  border-radius: .25rem;
+  font-size: var(--small-font-size);
+  display: inline-block;
+}
+.footer_copy{
+  font-size: var(--normal-font-size);
+  margin-top: 4rem;
+  text-align: center;
+  color: var(--container-color);
+  display: block;
+}
 /*=============== SCROLL BAR ===============*/
 
 

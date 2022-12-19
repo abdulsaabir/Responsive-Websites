@@ -71,3 +71,15 @@ let SwiperTestimonial = new Swiper (".testimonial_container", {
       }
    } 
 })
+
+
+let Forms = [
+   {
+      names ,
+      number,
+      distric,      
+   },
+   {
+      age: [12,23,45]
+   }
+]
