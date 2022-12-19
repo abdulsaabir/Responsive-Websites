@@ -1,11 +1,11 @@
-let nav_link = document.querySelectorAll('.nav_link')
+// let nav_link = document.querySelectorAll('.nav_link')
 
-nav_link.forEach(link => {
-   link.addEventListener(('click') , e => {
-    nav_link.forEach(link => link.classList.remove('Active-link'))
-    link.classList.add('Active-link')
-   })
-})
+// nav_link.forEach(link => {
+//    link.addEventListener(('click') , e => {
+//     nav_link.forEach(link => link.classList.remove('active-link'))
+//     link.classList.add('active-link')
+//    })
+// })
 
 // add background shaddow to the header
 function ScrollHeader() {
@@ -73,13 +73,23 @@ let SwiperTestimonial = new Swiper (".testimonial_container", {
 })
 
 
-let Forms = [
-   {
-      names ,
-      number,
-      distric,      
-   },
-   {
-      age: [12,23,45]
-   }
-]
+const sections = document.querySelectorAll('section[id]')
+    
+const scrollActive = () =>{
+  	const scrollY = window.pageYOffset
+
+	sections.forEach(current =>{
+		const sectionHeight = current.offsetHeight,
+			  sectionTop = current.offsetTop - 58,
+			  sectionId = current.getAttribute('id'),
+			  sectionsClass = document.querySelector('.nav_menu a[href*=' + sectionId + ']')
+           if(!sectionsClass) return
+      // sectionsClass ?? console.log(sectionsClass)
+		if(scrollY > sectionTop && scrollY <= sectionTop + sectionHeight){
+			sectionsClass.classList.add('active-link')
+		}else{
+			sectionsClass.classList.remove('active-link')
+		}                                                    
+	})
+}
+window.addEventListener('scroll',scrollActive)
